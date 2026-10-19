@@ -4,7 +4,7 @@ Open experiments, measurements and materials about [Extella](https://extella.dev
 
 | Folder | What it holds |
 |---|---|
-| [`cspl/`](cspl/) | Materials behind the article [CSPL: a program is stored separately from the way it is executed](https://extella.dev/cspl/) ([на русском](https://extella.dev/cspl/ru/)) |
+| [`cspl/`](cspl/) | Materials behind the article [CSPL: a program is stored separately from the way it is executed](https://extella.dev/articles/cspl/) ([на русском](https://extella.dev/ru/articles/cspl/)) |
 
 More topics will be added as separate top-level folders.
 

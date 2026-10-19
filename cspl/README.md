@@ -1,6 +1,6 @@
 # CSPL: materials behind the article
 
-The article: [extella.dev/cspl/](https://extella.dev/cspl/) (English), [extella.dev/cspl/ru/](https://extella.dev/cspl/ru/) (на русском).
+The article: [extella.dev/articles/cspl/](https://extella.dev/articles/cspl/) (English), [extella.dev/ru/articles/cspl/](https://extella.dev/ru/articles/cspl/) (на русском). The experiments page of the article "One handler, many programs": [extella.dev/articles/one-handler/](https://extella.dev/articles/one-handler/).
 Every folder holds the script that was run and the answers it recorded. One run on our own machines each, not a benchmark series.
 
 ## По строкам таблицы статьи / By the rows of the article's table
@@ -22,3 +22,4 @@ Every folder holds the script that was run and the answers it recorded. One run 
 | [`tally-example/`](tally-example/) | 4. Declaring a language: the `tally` handler, the script that registers and runs it, and the raw answers of 1 and 16 October 2026 |
 | [`three-languages-chain/`](three-languages-chain/) | 5. A chain of three experts in three languages |
 | [`custom-mcp/`](custom-mcp/) | A custom MCP server on top of the Extella API: 6 tools against 44 |
+| [`take-home/`](take-home/) | 8. Reproduce: run an expert from an extella.dev demo on your own device |
