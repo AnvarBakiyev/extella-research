@@ -1,0 +1,5 @@
+{
+ "token_issued_in_ce": true,
+ "container_state": "exited 101",
+ "log_tail": "Failed to install rustls crypto provider\nBinary is in 'agent' mode with BASE_INTERNAL_URL=http://op21-windmill-server-1:8000\n\nthread 'main' (1) panicked at windmill-common/src/utils.rs:133:21:\nAgent mode is only available in the EE, ignoring...\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+}

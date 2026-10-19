@@ -1,0 +1,203 @@
+{
+ "area": "shifts",
+ "handler_lines": 51,
+ "tasks": {
+  "s1": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1450,
+    "chars": 4216,
+    "seconds": 9.7,
+    "errors": [
+     "day 4 at 08:00 only 0 on duty; 1 needed",
+     "day 5 at 08:00 only 0 on duty; 1 needed",
+     "day 6 at 08:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 6792,
+    "chars": 10349,
+    "seconds": 22.8,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 458,
+    "chars": 169,
+    "seconds": 11.4,
+    "errors": []
+   }
+  },
+  "s2": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 2589,
+    "chars": 7847,
+    "seconds": 17.6,
+    "errors": [
+     "day 1 at 09:00 only 1 on duty; 2 needed",
+     "day 2 at 09:00 only 1 on duty; 2 needed",
+     "day 3 at 09:00 only 1 on duty; 2 needed"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 10474,
+    "chars": 18285,
+    "seconds": 38.5,
+    "errors": [
+     "day 1 at 09:00 only 1 on duty; 2 needed",
+     "day 2 at 09:00 only 1 on duty; 2 needed",
+     "day 3 at 09:00 only 1 on duty; 2 needed"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 2331,
+    "chars": 1023,
+    "seconds": 40.8,
+    "errors": [
+     "Ana works 48.0 h in the week; the limit is 40 h",
+     "Bek works 48.0 h in the week; the limit is 40 h"
+    ]
+   }
+  },
+  "s3": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1167,
+    "chars": 2689,
+    "seconds": 6.7,
+    "errors": [
+     "day 1 at 15:00 only 0 on duty; 1 needed",
+     "day 2 at 15:00 only 0 on duty; 1 needed",
+     "day 3 at 15:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 10835,
+    "chars": 26408,
+    "seconds": 75.8,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 1382,
+    "chars": 513,
+    "seconds": 30.2,
+    "errors": [
+     "shift 1 (Ana day 1): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 2 (Bek day 2): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 3 (Cara day 3): 16.0 h; a shift must be 4 to 12 hours"
+    ]
+   }
+  },
+  "s4": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 2383,
+    "chars": 5930,
+    "seconds": 15.8,
+    "errors": [
+     "Dana: shifts 11 and 4 overlap"
+    ]
+   },
+   "B": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 8907,
+    "chars": 11508,
+    "seconds": 41.9,
+    "errors": []
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 2446,
+    "chars": 977,
+    "seconds": 34.1,
+    "errors": [
+     "day 6 at 20:00 only 0 on duty; 1 needed",
+     "day 7 at 12:00 only 1 on duty; 2 needed"
+    ]
+   }
+  },
+  "s5": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 2468,
+    "chars": 7035,
+    "seconds": 14.9,
+    "errors": [
+     "Ana works 88.0 h in the week; the limit is 40 h",
+     "Ana: only 4.0 h rest between shifts 1 and 9; at least 11 h required",
+     "Ana: only 0.0 h rest between shifts 2 and 10; at least 11 h required"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 13041,
+    "chars": 27009,
+    "seconds": 54.1,
+    "errors": [
+     "Ana: only 4.0 h rest between shifts 7 and 1; at least 11 h required",
+     "Bek: only 4.0 h rest between shifts 8 and 2; at least 11 h required",
+     "Cara: only 4.0 h rest between shifts 9 and 3; at least 11 h required"
+    ]
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 846,
+    "chars": 516,
+    "seconds": 12.8,
+    "errors": []
+   }
+  },
+  "s6": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 4219,
+    "chars": 9253,
+    "seconds": 28.9,
+    "errors": []
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 8703,
+    "chars": 14425,
+    "seconds": 38.5,
+    "errors": [
+     "output is not the JSON asked for: list index out of range"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 1765,
+    "chars": 579,
+    "seconds": 43.1,
+    "errors": [
+     "Cara: only 0.0 h rest between shifts 3 and 4; at least 11 h required",
+     "day 3 at 09:00 only 1 on duty; 2 needed"
+    ]
+   }
+  }
+ }
+}

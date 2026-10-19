@@ -1,0 +1,189 @@
+{
+ "arm": "extella",
+ "timeline": [
+  {
+   "at": 20.9,
+   "what": "prepared",
+   "actions": 5,
+   "seconds": 20.9,
+   "info": "{'status': 'success', 'registered': 'opyt16go'} / {'status': 'success', 'registered': 'opyt16go'}"
+  },
+  {
+   "at": 53.1,
+   "what": "all consumers, first implementation",
+   "report": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 9.5
+   },
+   "dashboard": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 11.1
+   },
+   "night_job": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 11.6
+   }
+  },
+  {
+   "at": 67.5,
+   "what": "implementation replaced while a 30-second call is running",
+   "actions": 1,
+   "seconds": 2.4
+  },
+  {
+   "at": 80.5,
+   "what": "a new call made right after the replacement",
+   "impl": "go-v2",
+   "correct": true,
+   "error": null
+  },
+  {
+   "at": 93.1,
+   "what": "the call that was in flight finished",
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 40.0
+  },
+  {
+   "at": 115.5,
+   "what": "all consumers, after the replacement",
+   "report": {
+    "impl": "go-v2",
+    "correct": true,
+    "error": null,
+    "seconds": 6.9
+   },
+   "dashboard": {
+    "impl": "go-v2",
+    "correct": true,
+    "error": null,
+    "seconds": 9.5
+   },
+   "night_job": {
+    "impl": null,
+    "correct": false,
+    "error": "[Execution Error] Go compiler is not installed on this device",
+    "seconds": 6.1
+   }
+  },
+  {
+   "at": 118.0,
+   "what": "rolled back to the first implementation",
+   "actions": 1,
+   "seconds": 2.5
+  },
+  {
+   "at": 147.5,
+   "what": "all consumers, after the rollback",
+   "report": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 6.8
+   },
+   "dashboard": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 11.5
+   },
+   "night_job": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 11.1
+   }
+  }
+ ],
+ "prepare": {
+  "actions": 5,
+  "seconds": 20.9,
+  "info": "{'status': 'success', 'registered': 'opyt16go'} / {'status': 'success', 'registered': 'opyt16go'}"
+ },
+ "before": {
+  "report": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 9.5
+  },
+  "dashboard": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 11.1
+  },
+  "night_job": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 11.6
+  }
+ },
+ "swap": {
+  "actions": 1,
+  "seconds": 2.4
+ },
+ "new_call_right_after_swap": {
+  "impl": "go-v2",
+  "correct": true,
+  "error": null
+ },
+ "in_flight": {
+  "impl": "python-v1",
+  "correct": true,
+  "error": null,
+  "seconds": 40.0
+ },
+ "after_swap": {
+  "report": {
+   "impl": "go-v2",
+   "correct": true,
+   "error": null,
+   "seconds": 6.9
+  },
+  "dashboard": {
+   "impl": "go-v2",
+   "correct": true,
+   "error": null,
+   "seconds": 9.5
+  },
+  "night_job": {
+   "impl": null,
+   "correct": false,
+   "error": "[Execution Error] Go compiler is not installed on this device",
+   "seconds": 6.1
+  }
+ },
+ "rollback": {
+  "actions": 1,
+  "seconds": 2.5
+ },
+ "after_rollback": {
+  "report": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 6.8
+  },
+  "dashboard": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 11.5
+  },
+  "night_job": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 11.1
+  }
+ }
+}

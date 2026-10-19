@@ -1,0 +1,232 @@
+{
+ "date": "2026-10-02 15:52",
+ "transport": "MCP streamable HTTP, tools save_expert and run_expert only",
+ "language": "ledger",
+ "calls": [
+  {
+   "tool": "save_expert",
+   "name": "mcph_register_ledger_v1",
+   "cspl": "fython",
+   "seconds": 3.8
+  },
+  {
+   "tool": "save_expert",
+   "name": "mcph_register_ledger_v2",
+   "cspl": "fython",
+   "seconds": 3.1
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_register_ledger_v1",
+   "device": "device 1",
+   "seconds": 10.4,
+   "answer": {
+    "status": "success",
+    "registered": "ledger",
+    "handler": 1
+   }
+  },
+  {
+   "tool": "save_expert",
+   "name": "mcph_ledger_a",
+   "cspl": "ledger",
+   "seconds": 2.1
+  },
+  {
+   "tool": "save_expert",
+   "name": "mcph_ledger_b",
+   "cspl": "ledger",
+   "seconds": 3.1
+  },
+  {
+   "tool": "save_expert",
+   "name": "mcph_ledger_c",
+   "cspl": "ledger",
+   "seconds": 3.2
+  },
+  {
+   "tool": "save_expert",
+   "name": "mcph_ledger_d",
+   "cspl": "ledger",
+   "seconds": 2.4
+  },
+  {
+   "tool": "save_expert",
+   "name": "mcph_ledger_e",
+   "cspl": "ledger",
+   "seconds": 2.9
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_a",
+   "device": "device 1",
+   "seconds": 8.6,
+   "answer": {
+    "status": "success",
+    "handler": 1,
+    "total": 10,
+    "os": "Darwin"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_b",
+   "device": "device 1",
+   "seconds": 11.1,
+   "answer": {
+    "status": "success",
+    "handler": 1,
+    "total": 99,
+    "os": "Darwin"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_c",
+   "device": "device 1",
+   "seconds": 10.2,
+   "answer": {
+    "status": "success",
+    "handler": 1,
+    "total": 42,
+    "os": "Darwin"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_d",
+   "device": "device 1",
+   "seconds": 6.0,
+   "answer": {
+    "status": "success",
+    "handler": 1,
+    "total": 21,
+    "os": "Darwin"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_e",
+   "device": "device 1",
+   "seconds": 6.0,
+   "answer": {
+    "status": "rejected",
+    "reason": "statement 2 is not a ledger statement: import os"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_register_ledger_v2",
+   "device": "device 1",
+   "seconds": 6.0,
+   "answer": {
+    "status": "success",
+    "registered": "ledger",
+    "handler": 2
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_a",
+   "device": "device 1",
+   "seconds": 10.4,
+   "answer": {
+    "status": "success",
+    "handler": 2,
+    "total": 10,
+    "entries": 3,
+    "largest": 7,
+    "os": "Darwin"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_b",
+   "device": "device 1",
+   "seconds": 11.5,
+   "answer": {
+    "status": "success",
+    "handler": 2,
+    "total": 99,
+    "entries": 2,
+    "largest": 100,
+    "os": "Darwin"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_c",
+   "device": "device 1",
+   "seconds": 9.5,
+   "answer": {
+    "status": "success",
+    "handler": 2,
+    "total": 42,
+    "entries": 2,
+    "largest": 40,
+    "os": "Darwin"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_d",
+   "device": "device 1",
+   "seconds": 6.0,
+   "answer": {
+    "status": "success",
+    "handler": 2,
+    "total": 21,
+    "entries": 4,
+    "largest": 30,
+    "os": "Darwin"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_register_ledger_v1",
+   "device": "device 2",
+   "seconds": 6.0,
+   "answer": {
+    "status": "success",
+    "registered": "ledger",
+    "handler": 1
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_a",
+   "device": "device 2",
+   "seconds": 6.1,
+   "answer": {
+    "status": "success",
+    "handler": 1,
+    "total": 10,
+    "os": "Linux"
+   }
+  },
+  {
+   "tool": "run_expert",
+   "name": "mcph_ledger_d",
+   "device": "device 2",
+   "seconds": 6.5,
+   "answer": {
+    "status": "success",
+    "handler": 1,
+    "total": 21,
+    "os": "Linux"
+   }
+  }
+ ],
+ "checks": {
+  "four programs ran under handler 1 with the expected totals": true,
+  "a text that is not a ledger program was rejected by the handler": true,
+  "after replacing the handler the same four programs, not saved again, ran under handler 2 with the same totals and the new fields": true,
+  "device 2 ran the same programs under handler 1 while device 1 held handler 2": true
+ },
+ "notes": [
+  "Every step was a call of an MCP tool; no HTTP API call and no shell access to the devices was used.",
+  "One laptop and one Linux server; one day; a toy language of two statements.",
+  "A script made the calls. The same sequence was also done by a model through the same MCP tools in a working session on the same day; that session's transcript is not published.",
+  "No sandbox: the handler is a Python function that runs with the rights of the user that runs Extella on the device."
+ ]
+}

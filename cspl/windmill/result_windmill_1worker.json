@@ -1,0 +1,172 @@
+{
+ "timeline": [
+  {
+   "at": 0.0,
+   "what": "version",
+   "version": "CE v1.825.0-6-geab3dd5a52"
+  },
+  {
+   "at": 0.1,
+   "what": "workspace",
+   "http": 200,
+   "resp": "Created workspace op21b"
+  },
+  {
+   "at": 0.7,
+   "what": "prepare: deploy v1 (1 действие)",
+   "seconds": 0.6,
+   "http": 201,
+   "resp": "6233229dfe7e9490"
+  },
+  {
+   "at": 2.7,
+   "what": "hash v1",
+   "hash": "6233229dfe7e9490"
+  },
+  {
+   "at": 3.5,
+   "what": "первый вызов v1 (холодный)",
+   "seconds": 0.78,
+   "impl": "python-v1",
+   "correct": true,
+   "error": null
+  },
+  {
+   "at": 10.3,
+   "what": "10 повторных вызовов v1",
+   "seconds_min": 0.63,
+   "seconds_max": 0.88,
+   "median": 0.67
+  },
+  {
+   "at": 12.3,
+   "what": "три потребителя до замены",
+   "results": [
+    {
+     "impl": "python-v1",
+     "correct": true,
+     "error": null,
+     "s": 0.64
+    },
+    {
+     "impl": "python-v1",
+     "correct": true,
+     "error": null,
+     "s": 0.7
+    },
+    {
+     "impl": "python-v1",
+     "correct": true,
+     "error": null,
+     "s": 0.64
+    }
+   ]
+  },
+  {
+   "at": 43.9,
+   "what": "ЗАМЕНА: deploy v2 go (1 действие)",
+   "seconds": 25.61,
+   "http": 201,
+   "resp": "5c3df4d221f269e0"
+  },
+  {
+   "at": 44.0,
+   "what": "hash v2",
+   "hash": "5c3df4d221f269e0"
+  },
+  {
+   "at": 45.4,
+   "what": "первый вызов после замены (сборка Go)",
+   "seconds": 1.49,
+   "impl": "go-v2",
+   "correct": true,
+   "error": null
+  },
+  {
+   "at": 46.0,
+   "what": "три потребителя после замены",
+   "results": [
+    {
+     "impl": "go-v2",
+     "correct": true,
+     "error": null,
+     "s": 0.22
+    },
+    {
+     "impl": "go-v2",
+     "correct": true,
+     "error": null,
+     "s": 0.22
+    },
+    {
+     "impl": "go-v2",
+     "correct": true,
+     "error": null,
+     "s": 0.17
+    }
+   ]
+  },
+  {
+   "at": 46.0,
+   "what": "вызов, шедший во время замены",
+   "seconds": 30.95,
+   "impl": "python-v1",
+   "correct": true,
+   "error": null
+  },
+  {
+   "at": 46.1,
+   "what": "история версий",
+   "http": 200,
+   "count": 3,
+   "sample": "[{\"script_hash\": \"5c3df4d221f269e0\", \"created_at\": \"2026-10-06T19:36:46.640738Z\", \"created_by\": \"admin\"}, {\"script_hash\": \"6233229dfe7e9490\", \"created_at\": \"2026-10-06T19:36:28.370460Z\", \"created_by\":"
+  },
+  {
+   "at": 46.6,
+   "what": "ОТКАТ: взять прежнюю версию по хешу и развернуть (2 действия через API)",
+   "seconds": 0.55,
+   "http": 201,
+   "actions": 2
+  },
+  {
+   "at": 47.2,
+   "what": "вызов после отката",
+   "seconds": 0.65,
+   "impl": "python-v1",
+   "correct": true,
+   "error": null
+  }
+ ],
+ "deploys": [
+  {
+   "summary": "v1 python",
+   "api_seconds": 0.06,
+   "until_callable_seconds": 0.6,
+   "status": {
+    "lock": "# py: 3.12\n",
+    "lock_error_logs": null,
+    "job_id": "01a112b7-a7ed-c963-8715-9037b96e6ca8"
+   }
+  },
+  {
+   "summary": "v2 go",
+   "api_seconds": 0.05,
+   "until_callable_seconds": 25.61,
+   "status": {
+    "lock": "module mymod\n\ngo 1.27.1\n//go.sum\n",
+    "lock_error_logs": null,
+    "job_id": "01a112b7-ef56-7145-5911-cd04a554b279"
+   }
+  },
+  {
+   "summary": "rollback to v1",
+   "api_seconds": 0.03,
+   "until_callable_seconds": 0.54,
+   "status": {
+    "lock": "# py: 3.12\n",
+    "lock_error_logs": null,
+    "job_id": "01a112b8-5b88-898c-0403-2363ecf20066"
+   }
+  }
+ ]
+}

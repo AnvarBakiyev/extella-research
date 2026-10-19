@@ -1,0 +1,25 @@
+register: {'save': 'success', 'run': {'status': 'success', 'registered': 'plate22', 'bytes': 3318}, 'seconds': 24.6}
+p1 A {'ok': True, 'calls': 1, 'tokens': 945, 'chars': 1914, 'seconds': 5.6, 'last_error': None}
+p1 B {'ok': True, 'calls': 1, 'tokens': 898, 'chars': 1749, 'seconds': 4.9}
+p1 C {'ok': True, 'calls': 1, 'tokens': 212, 'chars': 43, 'seconds': 11.6, 'device_runs_s': [10.2]}
+p2 A {'ok': True, 'calls': 1, 'tokens': 966, 'chars': 2418, 'seconds': 5.5, 'last_error': None}
+p2 B {'ok': True, 'calls': 1, 'tokens': 893, 'chars': 1892, 'seconds': 4.9}
+p2 C {'ok': True, 'calls': 1, 'tokens': 228, 'chars': 54, 'seconds': 23.6, 'device_runs_s': [22.1]}
+p3 A {'ok': True, 'calls': 1, 'tokens': 1216, 'chars': 2875, 'seconds': 7.0, 'last_error': None}
+p3 B {'ok': True, 'calls': 1, 'tokens': 1050, 'chars': 2285, 'seconds': 5.3}
+p3 C {'ok': True, 'calls': 1, 'tokens': 235, 'chars': 61, 'seconds': 14.2, 'device_runs_s': [12.7]}
+p4 A {'ok': False, 'calls': 1, 'tokens': 983, 'chars': 1933, 'seconds': 5.5, 'last_error': None}
+p4 B {'ok': True, 'calls': 1, 'tokens': 1011, 'chars': 2179, 'seconds': 5.6}
+p4 C {'ok': True, 'calls': 2, 'tokens': 490, 'chars': 84, 'seconds': 33.9, 'device_runs_s': [10.2, 20.3]}
+p5 A {'ok': True, 'calls': 1, 'tokens': 873, 'chars': 1740, 'seconds': 5.2, 'last_error': None}
+p5 B {'ok': True, 'calls': 1, 'tokens': 930, 'chars': 1946, 'seconds': 4.7}
+p5 C {'ok': True, 'calls': 1, 'tokens': 219, 'chars': 50, 'seconds': 29.1, 'device_runs_s': [27.6]}
+p6 A {'ok': False, 'calls': 1, 'tokens': 1088, 'chars': 2744, 'seconds': 6.0, 'last_error': "output is not the JSON asked for: 'plate'"}
+p6 B {'ok': True, 'calls': 1, 'tokens': 974, 'chars': 2280, 'seconds': 5.1}
+p6 C {'ok': True, 'calls': 2, 'tokens': 579, 'chars': 132, 'seconds': 38.6, 'device_runs_s': [17.0, 17.8]}
+p7 A {'ok': True, 'calls': 1, 'tokens': 883, 'chars': 1672, 'seconds': 4.9, 'last_error': None}
+p7 B {'ok': True, 'calls': 1, 'tokens': 938, 'chars': 2142, 'seconds': 5.1}
+p7 C {'ok': True, 'calls': 1, 'tokens': 212, 'chars': 43, 'seconds': 21.9, 'device_runs_s': [20.4]}
+p8 A {'ok': True, 'calls': 1, 'tokens': 874, 'chars': 1810, 'seconds': 5.2, 'last_error': None}
+p8 B {'ok': True, 'calls': 1, 'tokens': 961, 'chars': 2096, 'seconds': 5.1}
+p8 C {'ok': True, 'calls': 1, 'tokens': 205, 'chars': 40, 'seconds': 31.2, 'device_runs_s': [29.8]}

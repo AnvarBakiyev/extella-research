@@ -1,0 +1,225 @@
+{
+ "area": "plates",
+ "model_agent": "platform Qwen via agent",
+ "handler_lines": 47,
+ "tasks": {
+  "p1": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2511,
+    "chars": 604,
+    "seconds": 21.2,
+    "last_error": null
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2237,
+    "chars": 485,
+    "seconds": 23.9
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1352,
+    "chars": 43,
+    "seconds": 26.6,
+    "device_runs_s": [
+     9.9
+    ]
+   }
+  },
+  "p2": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 3754,
+    "chars": 1084,
+    "seconds": 38.3,
+    "last_error": null
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2045,
+    "chars": 1658,
+    "seconds": 17.6
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 5122,
+    "chars": 54,
+    "seconds": 77.7,
+    "device_runs_s": [
+     12.9
+    ]
+   }
+  },
+  "p3": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2374,
+    "chars": 152,
+    "seconds": 24.2,
+    "last_error": null
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2237,
+    "chars": 120,
+    "seconds": 23.0
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1606,
+    "chars": 61,
+    "seconds": 41.4,
+    "device_runs_s": [
+     23.7
+    ]
+   }
+  },
+  "p4": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 3063,
+    "chars": 817,
+    "seconds": 29.6,
+    "last_error": null
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2020,
+    "chars": 809,
+    "seconds": 16.8
+   },
+   "C": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 2178,
+    "chars": 84,
+    "seconds": 52.6,
+    "device_runs_s": [
+     22.0,
+     9.4
+    ]
+   }
+  },
+  "p5": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2139,
+    "chars": 911,
+    "seconds": 18.6,
+    "last_error": null
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2675,
+    "chars": 105,
+    "seconds": 24.0
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1570,
+    "chars": 50,
+    "seconds": 33.5,
+    "device_runs_s": [
+     16.1
+    ]
+   }
+  },
+  "p6": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 5295,
+    "chars": 871,
+    "seconds": 45.9,
+    "last_error": null
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 3969,
+    "chars": 694,
+    "seconds": 31.4
+   },
+   "C": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 2882,
+    "chars": 131,
+    "seconds": 68.8,
+    "device_runs_s": [
+     28.5,
+     12.7
+    ]
+   }
+  },
+  "p7": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2464,
+    "chars": 858,
+    "seconds": 22.7,
+    "last_error": null
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 3789,
+    "chars": 965,
+    "seconds": 30.7
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 964,
+    "chars": 43,
+    "seconds": 30.8,
+    "device_runs_s": [
+     20.3
+    ]
+   }
+  },
+  "p8": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2347,
+    "chars": 91,
+    "seconds": 21.6,
+    "last_error": null
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2797,
+    "chars": 774,
+    "seconds": 22.4
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1815,
+    "chars": 40,
+    "seconds": 38.9,
+    "device_runs_s": [
+     19.5
+    ]
+   }
+  }
+ }
+}

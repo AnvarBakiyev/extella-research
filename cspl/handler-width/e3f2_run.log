@@ -1,0 +1,19 @@
+register: {'save': 'success', 'run': {'status': 'success', 'registered': 'shift22', 'bytes': 2857}, 'seconds': 10.2}
+s1 A {'ok': False, 'calls': 1, 'tokens': 1704, 'chars': 6480, 'seconds': 10.7, 'errors': ['Ana: only 0.0 h rest between shifts 1 and 4; at least 11 h required', 'Ana: only 0.0 h rest between shifts 4 and 5; at least 11 h required', 'Bek: only 0.0 h rest between shifts 2 and 6; at least 11 h required']}
+s1 B {'ok': False, 'calls': 3, 'tokens': 6975, 'chars': 15498, 'seconds': 25.5, 'errors': ['sv2wx8mgt40000gn/T/tmp6hd86r2h/m.py", line 113, in <module>\n    generate_schedule()\n  File "/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmp6hd86r2h/m.py", line 98, in generate_schedule\n    raise RuntimeError(f"Could not assign shift for day {day}")\nRuntimeError: Could not assign shift for day 4']}
+s1 C {'ok': True, 'calls': 1, 'tokens': 373, 'chars': 169, 'seconds': 9.2, 'errors': []}
+s2 A {'ok': False, 'calls': 1, 'tokens': 2235, 'chars': 3608, 'seconds': 12.9, 'errors': ['day 1 at 09:00 only 1 on duty; 2 needed', 'day 2 at 09:00 only 1 on duty; 2 needed', 'day 3 at 15:00 only 1 on duty; 2 needed']}
+s2 B {'ok': True, 'calls': 1, 'tokens': 7674, 'chars': 22111, 'seconds': 42.5, 'errors': []}
+s2 C {'ok': True, 'calls': 1, 'tokens': 556, 'chars': 489, 'seconds': 15.3, 'errors': []}
+s3 A {'ok': False, 'calls': 1, 'tokens': 2401, 'chars': 7194, 'seconds': 13.2, 'errors': ['File "/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmpko9soyhw/m.py", line 162\n    shifts = []\nIndentationError: expected an indented block after \'if\' statement on line 152']}
+s3 B {'ok': False, 'calls': 3, 'tokens': 6310, 'chars': 12236, 'seconds': 23.7, 'errors': ['Traceback (most recent call last):\n  File "/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmp_lihyjzw/m.py", line 131, in <module>\n    raise RuntimeError("No valid schedule found")\nRuntimeError: No valid schedule found']}
+s3 C {'ok': False, 'calls': 3, 'tokens': 2139, 'chars': 852, 'seconds': 31.6, 'errors': ['Ana: only 0.0 h rest between shifts 1 and 2; at least 11 h required', 'Ana: only 0.0 h rest between shifts 11 and 12; at least 11 h required', 'Bek: only 0.0 h rest between shifts 3 and 4; at least 11 h required']}
+s4 A {'ok': False, 'calls': 1, 'tokens': 2302, 'chars': 6816, 'seconds': 12.3, 'errors': ['timeout']}
+s4 B {'ok': False, 'calls': 3, 'tokens': 9398, 'chars': 11734, 'seconds': 30.6, 'errors': ['day 6 at 20:00 only 0 on duty; 1 needed', 'day 7 at 20:00 only 0 on duty; 1 needed']}
+s4 C {'ok': False, 'calls': 3, 'tokens': 2047, 'chars': 828, 'seconds': 28.8, 'errors': ['day 6 at 20:00 only 0 on duty; 1 needed', 'day 7 at 20:00 only 0 on duty; 1 needed']}
+s5 A {'ok': False, 'calls': 1, 'tokens': 2670, 'chars': 8911, 'seconds': 15.4, 'errors': ['Traceback (most recent call last):\n  File "/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmpvghfs1_o/m.py", line 53, in <module>\n    if s_end > last_shift_end:\n       ^^^^^^^^^^^^^^^^^^^^^^\nTypeError: \'>\' not supported between instances of \'float\' and \'NoneType\'']}
+s5 B {'ok': False, 'calls': 3, 'tokens': 13964, 'chars': 27873, 'seconds': 48.1, 'errors': ['Bek works 44.0 h in the week; the limit is 40 h', 'day 1 at 06:00 only 0 on duty; 1 needed', 'day 2 at 06:00 only 0 on duty; 1 needed']}
+s5 C {'ok': False, 'calls': 3, 'tokens': 5374, 'chars': 2932, 'seconds': 41.7, 'errors': ['Ana works 48.0 h in the week; the limit is 40 h', 'Ana: only 8.0 h rest between shifts 25 and 19; at least 11 h required', 'Ana: only 8.0 h rest between shifts 19 and 13; at least 11 h required']}
+s6 A {'ok': False, 'calls': 1, 'tokens': 1993, 'chars': 4898, 'seconds': 11.1, 'errors': ['day 3 at 13:00 only 0 on duty; 1 needed']}
+s6 B {'ok': False, 'calls': 3, 'tokens': 18122, 'chars': 22531, 'seconds': 58.3, 'errors': ['day 3 at 13:00 only 0 on duty; 1 needed']}
+s6 C {'ok': True, 'calls': 2, 'tokens': 827, 'chars': 314, 'seconds': 19.9, 'errors': ['day 3 at 09:00 only 1 on duty; 2 needed']}

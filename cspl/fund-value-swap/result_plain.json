@@ -1,0 +1,189 @@
+{
+ "arm": "plain",
+ "timeline": [
+  {
+   "at": 10.9,
+   "what": "prepared",
+   "actions": 5,
+   "seconds": 10.9,
+   "info": "python script with a shebang placed on both machines"
+  },
+  {
+   "at": 16.2,
+   "what": "all consumers, first implementation",
+   "report": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 0.9
+   },
+   "dashboard": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 0.4
+   },
+   "night_job": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 3.9
+   }
+  },
+  {
+   "at": 43.3,
+   "what": "implementation replaced while a 30-second call is running",
+   "actions": 8,
+   "seconds": 15.1
+  },
+  {
+   "at": 44.4,
+   "what": "a new call made right after the replacement",
+   "impl": "go-v2",
+   "correct": true,
+   "error": null
+  },
+  {
+   "at": 46.7,
+   "what": "the call that was in flight finished",
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 30.5
+  },
+  {
+   "at": 49.7,
+   "what": "all consumers, after the replacement",
+   "report": {
+    "impl": "go-v2",
+    "correct": true,
+    "error": null,
+    "seconds": 0.1
+   },
+   "dashboard": {
+    "impl": "go-v2",
+    "correct": true,
+    "error": null,
+    "seconds": 0.1
+   },
+   "night_job": {
+    "impl": "go-v2",
+    "correct": true,
+    "error": null,
+    "seconds": 2.9
+   }
+  },
+  {
+   "at": 53.0,
+   "what": "rolled back to the first implementation",
+   "actions": 2,
+   "seconds": 3.2
+  },
+  {
+   "at": 57.7,
+   "what": "all consumers, after the rollback",
+   "report": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 0.7
+   },
+   "dashboard": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 0.4
+   },
+   "night_job": {
+    "impl": "python-v1",
+    "correct": true,
+    "error": null,
+    "seconds": 3.6
+   }
+  }
+ ],
+ "prepare": {
+  "actions": 5,
+  "seconds": 10.9,
+  "info": "python script with a shebang placed on both machines"
+ },
+ "before": {
+  "report": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 0.9
+  },
+  "dashboard": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 0.4
+  },
+  "night_job": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 3.9
+  }
+ },
+ "swap": {
+  "actions": 8,
+  "seconds": 15.1
+ },
+ "new_call_right_after_swap": {
+  "impl": "go-v2",
+  "correct": true,
+  "error": null
+ },
+ "in_flight": {
+  "impl": "python-v1",
+  "correct": true,
+  "error": null,
+  "seconds": 30.5
+ },
+ "after_swap": {
+  "report": {
+   "impl": "go-v2",
+   "correct": true,
+   "error": null,
+   "seconds": 0.1
+  },
+  "dashboard": {
+   "impl": "go-v2",
+   "correct": true,
+   "error": null,
+   "seconds": 0.1
+  },
+  "night_job": {
+   "impl": "go-v2",
+   "correct": true,
+   "error": null,
+   "seconds": 2.9
+  }
+ },
+ "rollback": {
+  "actions": 2,
+  "seconds": 3.2
+ },
+ "after_rollback": {
+  "report": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 0.7
+  },
+  "dashboard": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 0.4
+  },
+  "night_job": {
+   "impl": "python-v1",
+   "correct": true,
+   "error": null,
+   "seconds": 3.6
+  }
+ }
+}

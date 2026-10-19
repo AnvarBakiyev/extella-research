@@ -1,0 +1,346 @@
+{
+ "recorded": "2026-10-02",
+ "what": "one session of an MCP client with extella_custom_mcp.py against a real Extella account, two devices",
+ "devices": {
+  "server": "a Linux server",
+  "laptop": "a MacBook"
+ },
+ "agent": "a demo agent (id not stored)",
+ "tools": {
+  "custom_server": {
+   "count": 6,
+   "definitions_bytes": 3249,
+   "definitions_bytes_name_description_input_schema": 3249,
+   "names": [
+    "save_program",
+    "run_program",
+    "get_program",
+    "history",
+    "diff_versions",
+    "rollback"
+   ]
+  },
+  "standard_extella_server_same_minute": {
+   "count": 44,
+   "definitions_bytes": 53044,
+   "definitions_bytes_name_description_input_schema": 33366
+  },
+  "how_measured": "JSON of the tool list as the official Python SDK parses it; the second number counts only name, description and input schema"
+ },
+ "program": "cmcp_price_with_tax",
+ "versions_in_this_session": "2 to 6",
+ "checks": {
+  "the first save makes a new version and keeps the copy it replaced": true,
+  "the saved program answers 110.0 on the server": true,
+  "the changed version answers 112.0 on the server": true,
+  "saving the same code makes no new version": true,
+  "the diff shows the changed line": true,
+  "after the rollback the laptop answers 110.0": true,
+  "a save made elsewhere is noticed and kept as a version": true,
+  "an unknown device name is refused with the list of known names": true,
+  "the history has every version and the runs": true,
+  "with the API unreachable the code is read from the local history": true,
+  "with the API unreachable a save is refused, nothing is changed": true,
+  "the placeholder is put back for the next recording": true
+ },
+ "all_checks_passed": true,
+ "steps": [
+  {
+   "tool": "save_program",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "code": "<3 lines>",
+    "language": "python",
+    "description": "Price with tax (custom MCP record)",
+    "note": "rate 10%"
+   },
+   "seconds": 3.8,
+   "answer": {
+    "status": "success",
+    "name": "cmcp_price_with_tax",
+    "version": 2,
+    "new_version": true,
+    "language": "fython"
+   }
+  },
+  {
+   "tool": "run_program",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "params": {
+     "price": 100
+    },
+    "device": "server"
+   },
+   "seconds": 8.2,
+   "answer": {
+    "status": "success",
+    "result": {
+     "status": "success",
+     "total": 110.0,
+     "rate": "10%",
+     "os": "Linux"
+    },
+    "version": 2,
+    "device": "server",
+    "seconds": 6.9
+   }
+  },
+  {
+   "tool": "save_program",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "code": "<3 lines>",
+    "language": "python",
+    "description": "Price with tax (custom MCP record)",
+    "note": "rate 12%"
+   },
+   "seconds": 3.7,
+   "answer": {
+    "status": "success",
+    "name": "cmcp_price_with_tax",
+    "version": 3,
+    "new_version": true,
+    "language": "fython"
+   }
+  },
+  {
+   "tool": "run_program",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "params": {
+     "price": 100
+    },
+    "device": "server"
+   },
+   "seconds": 8.3,
+   "answer": {
+    "status": "success",
+    "result": {
+     "status": "success",
+     "total": 112.0,
+     "rate": "12%",
+     "os": "Linux"
+    },
+    "version": 3,
+    "device": "server",
+    "seconds": 7.0
+   }
+  },
+  {
+   "tool": "save_program",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "code": "<3 lines>",
+    "language": "python",
+    "description": "Price with tax (custom MCP record)",
+    "note": "the same code again"
+   },
+   "seconds": 3.9,
+   "answer": {
+    "status": "success",
+    "name": "cmcp_price_with_tax",
+    "version": 3,
+    "new_version": false,
+    "language": "fython"
+   }
+  },
+  {
+   "tool": "diff_versions",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "old": 2,
+    "new": 3
+   },
+   "seconds": 0.0,
+   "answer": {
+    "status": "success",
+    "name": "cmcp_price_with_tax",
+    "diff": "--- v2\n+++ v3\n@@ -3,4 +3,4 @@\n \n def cmcp_price_with_tax(price: float = 0.0) -> dict:\n     import platform\n-    return {\"status\": \"success\", \"total\": round(float(price) * 1.10, 2), \"rate\": \"10%\", \"os\": platform.system()}\n+    return {\"status\": \"success\", \"total\": round(float(price) * 1.12, 2), \"rate\": \"12%\", \"os\": platform.system()}"
+   }
+  },
+  {
+   "tool": "rollback",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "version": 2
+   },
+   "seconds": 3.4,
+   "answer": {
+    "status": "success",
+    "name": "cmcp_price_with_tax",
+    "version": 4,
+    "new_version": true,
+    "language": "fython",
+    "restored_from": 2
+   }
+  },
+  {
+   "tool": "run_program",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "params": {
+     "price": 100
+    },
+    "device": "laptop"
+   },
+   "seconds": 10.8,
+   "answer": {
+    "status": "success",
+    "result": {
+     "status": "success",
+     "total": 110.0,
+     "rate": "10%",
+     "os": "Darwin"
+    },
+    "version": 4,
+    "device": "laptop",
+    "seconds": 9.5
+   }
+  },
+  {
+   "outside_this_server": "the program was overwritten through the plain HTTP API (rate 20%)"
+  },
+  {
+   "tool": "run_program",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "params": {
+     "price": 100
+    },
+    "device": "server"
+   },
+   "seconds": 9.0,
+   "answer": {
+    "status": "success",
+    "result": {
+     "status": "success",
+     "total": 120.0,
+     "rate": "20%",
+     "os": "Linux"
+    },
+    "version": 5,
+    "device": "server",
+    "seconds": 7.7
+   }
+  },
+  {
+   "tool": "history",
+   "arguments": {
+    "name": "cmcp_price_with_tax"
+   },
+   "seconds": 0.0,
+   "answer": {
+    "status": "success",
+    "name": "cmcp_price_with_tax",
+    "versions": [
+     {
+      "version": 1,
+      "saved_at": "2026-10-02 12:55:50 UTC",
+      "language": "fython",
+      "note": "saved outside this server",
+      "sha256": "3bc842086b88",
+      "lines": 5
+     },
+     {
+      "version": 2,
+      "saved_at": "2026-10-02 12:55:52 UTC",
+      "language": "fython",
+      "note": "rate 10%",
+      "sha256": "898f703ef169",
+      "lines": 6
+     },
+     {
+      "version": 3,
+      "saved_at": "2026-10-02 12:56:04 UTC",
+      "language": "fython",
+      "note": "rate 12%",
+      "sha256": "4d9d9ec74c1b",
+      "lines": 6
+     },
+     {
+      "version": 4,
+      "saved_at": "2026-10-02 12:56:20 UTC",
+      "language": "fython",
+      "note": "rollback to version 2",
+      "sha256": "898f703ef169",
+      "lines": 6
+     },
+     {
+      "version": 5,
+      "saved_at": "2026-10-02 12:56:35 UTC",
+      "language": "fython",
+      "note": "saved outside this server",
+      "sha256": "e577353ccbb3",
+      "lines": 6
+     }
+    ],
+    "last_runs": [
+     {
+      "version": 5,
+      "ran_at": "2026-10-02 12:56:42 UTC",
+      "device": "server",
+      "seconds": 7.7,
+      "ok": true
+     },
+     {
+      "version": 4,
+      "ran_at": "2026-10-02 12:56:30 UTC",
+      "device": "laptop",
+      "seconds": 9.5,
+      "ok": true
+     },
+     {
+      "version": 3,
+      "ran_at": "2026-10-02 12:56:12 UTC",
+      "device": "server",
+      "seconds": 7.0,
+      "ok": true
+     },
+     {
+      "version": 2,
+      "ran_at": "2026-10-02 12:56:00 UTC",
+      "device": "server",
+      "seconds": 6.9,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "tool": "run_program",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "params": {
+     "price": 100
+    },
+    "device": "printer"
+   },
+   "seconds": 0.0,
+   "answer": {
+    "status": "error",
+    "error": "no device named 'printer'; known: laptop, server"
+   }
+  },
+  {
+   "tool": "rollback",
+   "arguments": {
+    "name": "cmcp_price_with_tax",
+    "version": 2
+   },
+   "seconds": 3.3,
+   "answer": {
+    "status": "success",
+    "name": "cmcp_price_with_tax",
+    "version": 6,
+    "new_version": true,
+    "language": "fython",
+    "restored_from": 2
+   }
+  }
+ ],
+ "seconds_total": 63.9,
+ "before_the_session": "the account held a placeholder under this name, left by the script itself; the first save keeps it as version 1 and makes version 2",
+ "not_shown": "polling of a deferred run (every run here answered in the same call); failures of the API in the middle of a job are covered by test_offline.py with a stub",
+ "not_measured": "model tokens, the work of a real agent (the client here is a script), two users at once, loss of the history file"
+}

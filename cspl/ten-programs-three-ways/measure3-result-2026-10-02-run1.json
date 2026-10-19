@@ -1,0 +1,731 @@
+{
+ "date": "2026-10-02 12:56",
+ "capabilities": 10,
+ "machine": "<laptop>",
+ "python": "3.12.9",
+ "repeat_calls_per_path": 10,
+ "paths": {
+  "fixed": {
+   "transport": "MCP stdio, own server (official Python SDK, FastMCP), one tool per capability",
+   "rows": [
+    {
+     "n": 1,
+     "capability": "word_count",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 1,
+     "tool_definitions_bytes": 193,
+     "seconds_to_first_call": 0.299,
+     "seconds_call_only": 0.002,
+     "ok": true
+    },
+    {
+     "n": 2,
+     "capability": "total",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 2,
+     "tool_definitions_bytes": 397,
+     "seconds_to_first_call": 0.289,
+     "seconds_call_only": 0.002,
+     "ok": true
+    },
+    {
+     "n": 3,
+     "capability": "reverse_text",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 3,
+     "tool_definitions_bytes": 594,
+     "seconds_to_first_call": 0.298,
+     "seconds_call_only": 0.002,
+     "ok": true
+    },
+    {
+     "n": 4,
+     "capability": "is_prime",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 4,
+     "tool_definitions_bytes": 775,
+     "seconds_to_first_call": 0.295,
+     "seconds_call_only": 0.002,
+     "ok": true
+    },
+    {
+     "n": 5,
+     "capability": "fibonacci",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 5,
+     "tool_definitions_bytes": 958,
+     "seconds_to_first_call": 0.335,
+     "seconds_call_only": 0.002,
+     "ok": true
+    },
+    {
+     "n": 6,
+     "capability": "to_fahrenheit",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 6,
+     "tool_definitions_bytes": 1166,
+     "seconds_to_first_call": 0.296,
+     "seconds_call_only": 0.002,
+     "ok": true
+    },
+    {
+     "n": 7,
+     "capability": "slug",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 7,
+     "tool_definitions_bytes": 1350,
+     "seconds_to_first_call": 0.301,
+     "seconds_call_only": 0.001,
+     "ok": true
+    },
+    {
+     "n": 8,
+     "capability": "median",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 8,
+     "tool_definitions_bytes": 1556,
+     "seconds_to_first_call": 0.308,
+     "seconds_call_only": 0.002,
+     "ok": true
+    },
+    {
+     "n": 9,
+     "capability": "vowels",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 9,
+     "tool_definitions_bytes": 1741,
+     "seconds_to_first_call": 0.304,
+     "seconds_call_only": 0.002,
+     "ok": true
+    },
+    {
+     "n": 10,
+     "capability": "longest_word",
+     "server_edits": 1,
+     "server_restarts": 1,
+     "tools_listed": 10,
+     "tool_definitions_bytes": 1938,
+     "seconds_to_first_call": 0.308,
+     "seconds_call_only": 0.002,
+     "ok": true
+    }
+   ],
+   "repeat_calls": [
+    {
+     "capability": "word_count",
+     "seconds": 0.0014,
+     "ok": true
+    },
+    {
+     "capability": "total",
+     "seconds": 0.0016,
+     "ok": true
+    },
+    {
+     "capability": "reverse_text",
+     "seconds": 0.0015,
+     "ok": true
+    },
+    {
+     "capability": "is_prime",
+     "seconds": 0.0014,
+     "ok": true
+    },
+    {
+     "capability": "fibonacci",
+     "seconds": 0.0014,
+     "ok": true
+    },
+    {
+     "capability": "to_fahrenheit",
+     "seconds": 0.0014,
+     "ok": true
+    },
+    {
+     "capability": "slug",
+     "seconds": 0.0014,
+     "ok": true
+    },
+    {
+     "capability": "median",
+     "seconds": 0.0015,
+     "ok": true
+    },
+    {
+     "capability": "vowels",
+     "seconds": 0.0014,
+     "ok": true
+    },
+    {
+     "capability": "longest_word",
+     "seconds": 0.0013,
+     "ok": true
+    }
+   ],
+   "tools_listed_before_first": {
+    "count": 0,
+    "definitions_bytes": 0,
+    "note": "the server does not exist before the first capability"
+   },
+   "tools_listed_after_tenth": {
+    "count": 10,
+    "definitions_bytes": 1938
+   },
+   "second_machine": "not measured: the server would have to be deployed there",
+   "summary": {
+    "correct_of_10": 10,
+    "server_edits": 10,
+    "server_restarts": 10,
+    "median_seconds_to_first_call": 0.3,
+    "repeat_calls": 10,
+    "repeat_calls_correct": 10,
+    "median_seconds_repeat_call": 0.001
+   }
+  },
+  "generic": {
+   "transport": "MCP stdio, generic_server.py (official Python SDK, FastMCP), 4 fixed tools",
+   "rows": [
+    {
+     "n": 1,
+     "capability": "word_count",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.002,
+     "seconds_run": 0.024,
+     "seconds_to_first_call": 0.026,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 2,
+     "capability": "total",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.003,
+     "seconds_run": 0.022,
+     "seconds_to_first_call": 0.025,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 3,
+     "capability": "reverse_text",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.002,
+     "seconds_run": 0.023,
+     "seconds_to_first_call": 0.026,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 4,
+     "capability": "is_prime",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.003,
+     "seconds_run": 0.023,
+     "seconds_to_first_call": 0.025,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 5,
+     "capability": "fibonacci",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.003,
+     "seconds_run": 0.027,
+     "seconds_to_first_call": 0.03,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 6,
+     "capability": "to_fahrenheit",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.003,
+     "seconds_run": 0.026,
+     "seconds_to_first_call": 0.028,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 7,
+     "capability": "slug",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.003,
+     "seconds_run": 0.023,
+     "seconds_to_first_call": 0.026,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 8,
+     "capability": "median",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.003,
+     "seconds_run": 0.022,
+     "seconds_to_first_call": 0.025,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 9,
+     "capability": "vowels",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.003,
+     "seconds_run": 0.022,
+     "seconds_to_first_call": 0.024,
+     "ok": true,
+     "save_status": "success"
+    },
+    {
+     "n": 10,
+     "capability": "longest_word",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 0.003,
+     "seconds_run": 0.022,
+     "seconds_to_first_call": 0.024,
+     "ok": true,
+     "save_status": "success"
+    }
+   ],
+   "repeat_calls": [
+    {
+     "capability": "word_count",
+     "seconds": 0.0226,
+     "ok": true
+    },
+    {
+     "capability": "total",
+     "seconds": 0.0233,
+     "ok": true
+    },
+    {
+     "capability": "reverse_text",
+     "seconds": 0.0235,
+     "ok": true
+    },
+    {
+     "capability": "is_prime",
+     "seconds": 0.0256,
+     "ok": true
+    },
+    {
+     "capability": "fibonacci",
+     "seconds": 0.0258,
+     "ok": true
+    },
+    {
+     "capability": "to_fahrenheit",
+     "seconds": 0.0249,
+     "ok": true
+    },
+    {
+     "capability": "slug",
+     "seconds": 0.0236,
+     "ok": true
+    },
+    {
+     "capability": "median",
+     "seconds": 0.0239,
+     "ok": true
+    },
+    {
+     "capability": "vowels",
+     "seconds": 0.0238,
+     "ok": true
+    },
+    {
+     "capability": "longest_word",
+     "seconds": 0.0256,
+     "ok": true
+    }
+   ],
+   "session_start_seconds": 0.294,
+   "tools_listed_before_first": {
+    "count": 4,
+    "definitions_bytes": 1866
+   },
+   "tools_listed_after_tenth": {
+    "count": 4,
+    "definitions_bytes": 1866
+   },
+   "tool_names": [
+    "get_program",
+    "run_program",
+    "save_program",
+    "search_programs"
+   ],
+   "tool_list_unchanged": true,
+   "server_file_unchanged_sha256": true,
+   "search_programs_found": 10,
+   "survives_restart": {
+    "program": "fibonacci",
+    "ok_without_saving_again": true
+   },
+   "second_machine": "not measured: the server would have to be deployed there",
+   "summary": {
+    "correct_of_10": 10,
+    "server_edits": 0,
+    "server_restarts": 0,
+    "median_seconds_to_first_call": 0.026,
+    "repeat_calls": 10,
+    "repeat_calls_correct": 10,
+    "median_seconds_repeat_call": 0.024,
+    "seconds_first_capability_including_server_start": 0.32
+   }
+  },
+  "extella-mcp": {
+   "transport": "MCP streamable HTTP at https://api.extella.ai/mcp/ (the real Extella MCP server; official Python SDK client)",
+   "server": {
+    "name": "extella-mcp",
+    "version": "4.0.0",
+    "declares_tools_listChanged": true
+   },
+   "session_start_seconds": 2.21,
+   "tools_listed_before_first": {
+    "count": 44,
+    "definitions_bytes": 53044
+   },
+   "tools_listed_after_tenth": {
+    "count": 44,
+    "definitions_bytes": 53044
+   },
+   "tool_list_unchanged": true,
+   "tool_names": [
+    "list_rules",
+    "add_rule",
+    "delete_rule",
+    "update_rule",
+    "search_concepts",
+    "add_concept",
+    "delete_concept",
+    "update_concept",
+    "run_expert",
+    "search_experts",
+    "get_expert",
+    "save_expert",
+    "delete_expert",
+    "check_task",
+    "list_tokens",
+    "create_token",
+    "revoke_token",
+    "search_kv",
+    "get_kv",
+    "set_kv",
+    "delete_kv",
+    "search_targets",
+    "add_target",
+    "delete_target",
+    "set_default_target",
+    "get_default_target",
+    "get_current_profile_and_agent",
+    "add_agent_to_profile",
+    "export_chats",
+    "export_calls",
+    "run_agent",
+    "get_agent_run_status",
+    "list_agents",
+    "get_agent",
+    "create_agent",
+    "update_agent",
+    "delete_agent",
+    "list_profiles",
+    "create_profile",
+    "delete_profile",
+    "enable_group",
+    "disable_group",
+    "duckduckgo_search",
+    "report_issue"
+   ],
+   "largest_tool_definitions_bytes": [
+    {
+     "name": "update_agent",
+     "bytes": 8951
+    },
+    {
+     "name": "create_agent",
+     "bytes": 8850
+    },
+    {
+     "name": "run_agent",
+     "bytes": 2166
+    },
+    {
+     "name": "run_expert",
+     "bytes": 1954
+    },
+    {
+     "name": "search_concepts",
+     "bytes": 1504
+    }
+   ],
+   "expert_tools_only": {
+    "names": [
+     "run_expert",
+     "search_experts",
+     "get_expert",
+     "save_expert",
+     "check_task"
+    ],
+    "count": 5,
+    "definitions_bytes": 6611,
+    "note": "what a client would carry if it could filter the listing down to these five; the server lists all"
+   },
+   "rows": [
+    {
+     "n": 1,
+     "capability": "word_count",
+     "expert": "mcpm3_word_count",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 2.59,
+     "seconds_run": 6.06,
+     "platform_run_time_ms": 5063,
+     "seconds_to_first_call": 8.65,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 2,
+     "capability": "total",
+     "expert": "mcpm3_total",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 3.97,
+     "seconds_run": 7.1,
+     "platform_run_time_ms": 6130,
+     "seconds_to_first_call": 11.07,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 3,
+     "capability": "reverse_text",
+     "expert": "mcpm3_reverse_text",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 2.92,
+     "seconds_run": 8.57,
+     "platform_run_time_ms": 7624,
+     "seconds_to_first_call": 11.49,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 4,
+     "capability": "is_prime",
+     "expert": "mcpm3_is_prime",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 2.59,
+     "seconds_run": 8.53,
+     "platform_run_time_ms": 7564,
+     "seconds_to_first_call": 11.13,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 5,
+     "capability": "fibonacci",
+     "expert": "mcpm3_fibonacci",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 2.23,
+     "seconds_run": 8.54,
+     "platform_run_time_ms": 7558,
+     "seconds_to_first_call": 10.77,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 6,
+     "capability": "to_fahrenheit",
+     "expert": "mcpm3_to_fahrenheit",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 3.18,
+     "seconds_run": 11.0,
+     "platform_run_time_ms": 10053,
+     "seconds_to_first_call": 14.18,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 7,
+     "capability": "slug",
+     "expert": "mcpm3_slug",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 2.66,
+     "seconds_run": 7.65,
+     "platform_run_time_ms": 6698,
+     "seconds_to_first_call": 10.31,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 8,
+     "capability": "median",
+     "expert": "mcpm3_median",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 2.96,
+     "seconds_run": 7.77,
+     "platform_run_time_ms": 6672,
+     "seconds_to_first_call": 10.74,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 9,
+     "capability": "vowels",
+     "expert": "mcpm3_vowels",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 4.44,
+     "seconds_run": 6.95,
+     "platform_run_time_ms": 5934,
+     "seconds_to_first_call": 11.38,
+     "ok": true,
+     "save_is_error": false
+    },
+    {
+     "n": 10,
+     "capability": "longest_word",
+     "expert": "mcpm3_longest_word",
+     "server_edits": 0,
+     "server_restarts": 0,
+     "seconds_save": 2.13,
+     "seconds_run": 8.49,
+     "platform_run_time_ms": 7552,
+     "seconds_to_first_call": 10.62,
+     "ok": true,
+     "save_is_error": false
+    }
+   ],
+   "repeat_calls": [
+    {
+     "capability": "word_count",
+     "seconds": 10.2,
+     "platform_run_time_ms": 9188,
+     "ok": true
+    },
+    {
+     "capability": "total",
+     "seconds": 5.96,
+     "platform_run_time_ms": 5015,
+     "ok": true
+    },
+    {
+     "capability": "reverse_text",
+     "seconds": 6.01,
+     "platform_run_time_ms": 5038,
+     "ok": true
+    },
+    {
+     "capability": "is_prime",
+     "seconds": 10.76,
+     "platform_run_time_ms": 9769,
+     "ok": true
+    },
+    {
+     "capability": "fibonacci",
+     "seconds": 11.02,
+     "platform_run_time_ms": 10055,
+     "ok": true
+    },
+    {
+     "capability": "to_fahrenheit",
+     "seconds": 11.12,
+     "platform_run_time_ms": 10141,
+     "ok": true
+    },
+    {
+     "capability": "slug",
+     "seconds": 10.99,
+     "platform_run_time_ms": 10055,
+     "ok": true
+    },
+    {
+     "capability": "median",
+     "seconds": 11.05,
+     "platform_run_time_ms": 10047,
+     "ok": true
+    },
+    {
+     "capability": "vowels",
+     "seconds": 7.63,
+     "platform_run_time_ms": 6706,
+     "ok": true
+    },
+    {
+     "capability": "longest_word",
+     "seconds": 13.17,
+     "platform_run_time_ms": 12182,
+     "ok": true
+    }
+   ],
+   "second_machine": [
+    {
+     "n": 1,
+     "capability": "word_count",
+     "seconds": 6.0,
+     "platform_run_time_ms": 5005,
+     "ok": true
+    },
+    {
+     "n": 5,
+     "capability": "fibonacci",
+     "seconds": 5.95,
+     "platform_run_time_ms": 4990,
+     "ok": true
+    },
+    {
+     "n": 10,
+     "capability": "longest_word",
+     "seconds": 6.81,
+     "platform_run_time_ms": 5831,
+     "ok": true
+    }
+   ],
+   "summary": {
+    "correct_of_10": 10,
+    "server_edits": 0,
+    "server_restarts": 0,
+    "median_seconds_to_first_call": 10.92,
+    "repeat_calls": 10,
+    "repeat_calls_correct": 10,
+    "median_seconds_repeat_call": 10.875,
+    "seconds_first_capability_including_session_start": 10.86,
+    "median_seconds_save": 2.79,
+    "median_seconds_first_run": 8.13,
+    "median_platform_run_time_ms_repeat": 9908.0,
+    "second_device_correct": "3 of 3",
+    "second_device_seconds": [
+     6.0,
+     5.95,
+     6.81
+    ]
+   }
+  }
+ },
+ "what_failed": [],
+ "mcp_sdk": "1.26.0"
+}

@@ -1,0 +1,206 @@
+{
+ "area": "shifts",
+ "handler_lines": 51,
+ "tasks": {
+  "s1": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1848,
+    "chars": 6250,
+    "seconds": 11.8,
+    "errors": [
+     "day 1 at 16:00 only 0 on duty; 1 needed",
+     "day 2 at 16:00 only 0 on duty; 1 needed",
+     "day 3 at 16:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 3976,
+    "chars": 5183,
+    "seconds": 16.0,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 458,
+    "chars": 169,
+    "seconds": 13.1,
+    "errors": []
+   }
+  },
+  "s2": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 3547,
+    "chars": 10272,
+    "seconds": 23.3,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2780,
+    "chars": 7375,
+    "seconds": 17.1,
+    "errors": []
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 2331,
+    "chars": 1023,
+    "seconds": 46.2,
+    "errors": [
+     "Ana works 48.0 h in the week; the limit is 40 h",
+     "Bek works 48.0 h in the week; the limit is 40 h"
+    ]
+   }
+  },
+  "s3": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1514,
+    "chars": 5021,
+    "seconds": 11.1,
+    "errors": [
+     "day 1 at 15:00 only 0 on duty; 1 needed",
+     "day 2 at 07:00 only 0 on duty; 1 needed",
+     "day 3 at 07:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 9071,
+    "chars": 19360,
+    "seconds": 38.7,
+    "errors": [
+     "day 1 at 11:00 only 0 on duty; 1 needed",
+     "day 2 at 11:00 only 0 on duty; 1 needed",
+     "day 3 at 11:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "C": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 1382,
+    "chars": 513,
+    "seconds": 27.0,
+    "errors": [
+     "shift 1 (Ana day 1): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 2 (Bek day 2): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 3 (Cara day 3): 16.0 h; a shift must be 4 to 12 hours"
+    ]
+   }
+  },
+  "s4": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1438,
+    "chars": 2711,
+    "seconds": 8.0,
+    "errors": [
+     "Traceback (most recent call last):\n  File \"/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmp1xfohytl/m.py\", line 80, in <module>\n    assert all(hours <= weekly_limit for hours in hours_per_person.values())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 8377,
+    "chars": 12149,
+    "seconds": 32.6,
+    "errors": [
+     "day 6 at 12:00 only 1 on duty; 2 needed",
+     "day 7 at 12:00 only 1 on duty; 2 needed"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 2679,
+    "chars": 1173,
+    "seconds": 37.7,
+    "errors": [
+     "day 6 at 20:00 only 0 on duty; 1 needed",
+     "day 7 at 18:00 only 1 on duty; 2 needed"
+    ]
+   }
+  },
+  "s5": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 3080,
+    "chars": 9826,
+    "seconds": 19.2,
+    "errors": [
+     "day 1 at 10:00 only 0 on duty; 1 needed",
+     "day 2 at 10:00 only 0 on duty; 1 needed",
+     "day 3 at 10:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 9099,
+    "chars": 13836,
+    "seconds": 33.9,
+    "errors": [
+     "day 7 at 22:00 only 0 on duty; 1 needed",
+     "day 1 at 06:00 only 0 on duty; 1 needed",
+     "day 2 at 06:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 846,
+    "chars": 516,
+    "seconds": 10.5,
+    "errors": []
+   }
+  },
+  "s6": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 2050,
+    "chars": 3735,
+    "seconds": 12.8,
+    "errors": [
+     "day 4 at 09:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 11324,
+    "chars": 19382,
+    "seconds": 49.0,
+    "errors": [
+     "day 1 at 09:00 only 0 on duty; 1 needed",
+     "day 2 at 09:00 only 0 on duty; 1 needed",
+     "day 3 at 09:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 1850,
+    "chars": 654,
+    "seconds": 31.5,
+    "errors": [
+     "Cara: only 0.0 h rest between shifts 3 and 6; at least 11 h required",
+     "day 3 at 09:00 only 1 on duty; 2 needed"
+    ]
+   }
+  }
+ }
+}

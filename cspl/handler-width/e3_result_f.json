@@ -1,0 +1,202 @@
+{
+ "area": "shifts",
+ "handler_lines": 51,
+ "tasks": {
+  "s1": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1504,
+    "chars": 4356,
+    "seconds": 8.7,
+    "errors": [
+     "raceback (most recent call last):\n  File \"/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmpcjioend8/m.py\", line 75, in <module>\n    elif start2_min < end1_min and end2_min > start1_min:\n                                   ^^^^^^^^\nNameError: name 'end2_min' is not defined. Did you mean: 'end_min'?"
+    ]
+   },
+   "B": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 4122,
+    "chars": 6645,
+    "seconds": 16.7,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 373,
+    "chars": 169,
+    "seconds": 15.6,
+    "errors": []
+   }
+  },
+  "s2": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1694,
+    "chars": 5023,
+    "seconds": 9.6,
+    "errors": [
+     "day 1 at 09:00 only 1 on duty; 2 needed",
+     "day 2 at 09:00 only 0 on duty; 2 needed",
+     "day 3 at 09:00 only 0 on duty; 2 needed"
+    ]
+   },
+   "B": {
+    "ok": true,
+    "calls": 3,
+    "tokens": 10198,
+    "chars": 22768,
+    "seconds": 38.3,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 556,
+    "chars": 489,
+    "seconds": 30.4,
+    "errors": []
+   }
+  },
+  "s3": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1164,
+    "chars": 2831,
+    "seconds": 7.0,
+    "errors": [
+     "shift 1 (Ana day 1): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 2 (Bek day 2): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 3 (Cara day 3): 16.0 h; a shift must be 4 to 12 hours"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 12207,
+    "chars": 15758,
+    "seconds": 39.0,
+    "errors": [
+     "Erik: only 8.0 h rest between shifts 10 and 11; at least 11 h required"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 2139,
+    "chars": 852,
+    "seconds": 38.2,
+    "errors": [
+     "Ana: only 0.0 h rest between shifts 1 and 2; at least 11 h required",
+     "Ana: only 0.0 h rest between shifts 11 and 12; at least 11 h required",
+     "Bek: only 0.0 h rest between shifts 3 and 4; at least 11 h required"
+    ]
+   }
+  },
+  "s4": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1500,
+    "chars": 3921,
+    "seconds": 8.9,
+    "errors": [
+     "timeout"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 9352,
+    "chars": 14583,
+    "seconds": 31.3,
+    "errors": [
+     "day 5 at 10:00 only 0 on duty; 1 needed",
+     "day 6 at 10:00 only 0 on duty; 1 needed",
+     "day 7 at 10:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 1860,
+    "chars": 780,
+    "seconds": 45.8,
+    "errors": [
+     "shift 6 (Bek day 6): 2.0 h; a shift must be 4 to 12 hours",
+     "shift 8 (Cara day 7): 2.0 h; a shift must be 4 to 12 hours",
+     "Bek: only 0.0 h rest between shifts 6 and 7; at least 11 h required"
+    ]
+   }
+  },
+  "s5": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 2555,
+    "chars": 8057,
+    "seconds": 14.7,
+    "errors": [
+     "day 1 at 06:00 only 0 on duty; 1 needed",
+     "day 2 at 06:00 only 0 on duty; 1 needed",
+     "day 3 at 06:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 9878,
+    "chars": 17860,
+    "seconds": 33.7,
+    "errors": [
+     "Traceback (most recent call last):\n  File \"/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmpbc7n4cvu/m.py\", line 132, in <module>\n    raise Exception(\"Could not assign night shift\")\nException: Could not assign night shift"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 4347,
+    "chars": 2067,
+    "seconds": 35.3,
+    "errors": [
+     "shift 8 (Bek day 1): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 9 (Cara day 2): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 10 (Dana day 3): 16.0 h; a shift must be 4 to 12 hours"
+    ]
+   }
+  },
+  "s6": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1925,
+    "chars": 3235,
+    "seconds": 11.7,
+    "errors": []
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 6888,
+    "chars": 8668,
+    "seconds": 24.3,
+    "errors": [
+     "output is not the JSON asked for: list index out of range"
+    ]
+   },
+   "C": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 827,
+    "chars": 314,
+    "seconds": 19.0,
+    "errors": [
+     "day 3 at 09:00 only 1 on duty; 2 needed"
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,12 @@
+register v1 {'save': 'success', 'run': {'status': 'success', 'registered': 'report22', 'bytes': 786}, 'seconds': 8.6}
+save 40 programs {'ok': 40, 'seconds': 16.2}
+run all on v1 {'right': 40, 'of': 40, 'silently_wrong': 0, 'versions': ['1'], 'seconds': 128.7, 'formatted_example': None}
+register v2 (one action) {'save': 'success', 'run': {'status': 'success', 'registered': 'report22', 'bytes': 1012}, 'seconds': 8.5}
+run all on v2, programs not re-saved {'right': 40, 'of': 40, 'silently_wrong': 0, 'versions': ['2'], 'seconds': 148.0, 'formatted_example': '4 915.15 KZT'}
+save guard {'status': 'success'}
+guard on broken v3 {'result': {'status': 'rejected', 'checked': 40, 'failures': 35, 'first': [['opyt22_rep00', 'success', 4914.0, 4915.15], ['opyt22_rep02', 'success', 18071.0, 18072.49], ['opyt22_rep03', 'success', 5637.0, 5638.66]]}, 'seconds': 10.2}
+run all after guard refused v3 {'right': 40, 'of': 40, 'silently_wrong': 0, 'versions': ['2'], 'seconds': 156.4, 'formatted_example': '4 915.15 KZT'}
+register broken v3 without guard {'save': 'success', 'run': {'status': 'success', 'registered': 'report22', 'bytes': 1037}, 'seconds': 8.1}
+run all on broken v3 {'right': 5, 'of': 40, 'silently_wrong': 35, 'versions': ['3'], 'seconds': 155.5, 'formatted_example': '4 914.00 KZT'}
+guard on v2 (restore through guard) {'result': {'status': 'registered', 'checked': 40}, 'seconds': 10.2}
+run all after restore {'right': 40, 'of': 40, 'silently_wrong': 0, 'versions': ['2'], 'seconds': 137.9, 'formatted_example': '4 915.15 KZT'}

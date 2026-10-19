@@ -1,0 +1,166 @@
+{
+ "area": "shifts",
+ "handler_lines": 51,
+ "tasks": {
+  "s1": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1435,
+    "chars": 318,
+    "seconds": 12.0,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1362,
+    "chars": 318,
+    "seconds": 12.2,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1693,
+    "chars": 169,
+    "seconds": 36.1,
+    "errors": []
+   }
+  },
+  "s2": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1452,
+    "chars": 422,
+    "seconds": 12.0,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1852,
+    "chars": 422,
+    "seconds": 14.5,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2573,
+    "chars": 243,
+    "seconds": 37.3,
+    "errors": []
+   }
+  },
+  "s3": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2479,
+    "chars": 562,
+    "seconds": 21.4,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1828,
+    "chars": 562,
+    "seconds": 14.3,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 3445,
+    "chars": 343,
+    "seconds": 33.2,
+    "errors": []
+   }
+  },
+  "s4": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2419,
+    "chars": 371,
+    "seconds": 17.6,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2974,
+    "chars": 387,
+    "seconds": 21.9,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1805,
+    "chars": 218,
+    "seconds": 21.4,
+    "errors": []
+   }
+  },
+  "s5": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 4184,
+    "chars": 802,
+    "seconds": 31.3,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 6746,
+    "chars": 807,
+    "seconds": 51.3,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 6766,
+    "chars": 860,
+    "seconds": 67.9,
+    "errors": [
+     "shift 2 (Dana day 1): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 4 (Erik day 2): 16.0 h; a shift must be 4 to 12 hours",
+     "shift 6 (Fara day 3): 16.0 h; a shift must be 4 to 12 hours"
+    ]
+   }
+  },
+  "s6": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1606,
+    "chars": 283,
+    "seconds": 13.0,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1465,
+    "chars": 284,
+    "seconds": 11.7,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1765,
+    "chars": 144,
+    "seconds": 22.3,
+    "errors": []
+   }
+  }
+ }
+}

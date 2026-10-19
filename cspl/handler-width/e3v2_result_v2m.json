@@ -1,0 +1,162 @@
+{
+ "area": "shifts",
+ "handler_lines": 51,
+ "tasks": {
+  "s1": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1144,
+    "chars": 318,
+    "seconds": 10.1,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1174,
+    "chars": 318,
+    "seconds": 10.3,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1036,
+    "chars": 169,
+    "seconds": 20.7,
+    "errors": []
+   }
+  },
+  "s2": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1924,
+    "chars": 422,
+    "seconds": 19.1,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1920,
+    "chars": 405,
+    "seconds": 17.5,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1556,
+    "chars": 243,
+    "seconds": 19.4,
+    "errors": []
+   }
+  },
+  "s3": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2136,
+    "chars": 562,
+    "seconds": 19.2,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1865,
+    "chars": 562,
+    "seconds": 14.5,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1827,
+    "chars": 343,
+    "seconds": 25.3,
+    "errors": []
+   }
+  },
+  "s4": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2178,
+    "chars": 387,
+    "seconds": 17.5,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2012,
+    "chars": 388,
+    "seconds": 15.7,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2737,
+    "chars": 219,
+    "seconds": 30.3,
+    "errors": []
+   }
+  },
+  "s5": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 4059,
+    "chars": 902,
+    "seconds": 37.8,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 4995,
+    "chars": 378,
+    "seconds": 49.8,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 6064,
+    "chars": 516,
+    "seconds": 66.3,
+    "errors": []
+   }
+  },
+  "s6": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1437,
+    "chars": 283,
+    "seconds": 11.7,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1754,
+    "chars": 284,
+    "seconds": 15.7,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 1637,
+    "chars": 145,
+    "seconds": 30.0,
+    "errors": []
+   }
+  }
+ }
+}

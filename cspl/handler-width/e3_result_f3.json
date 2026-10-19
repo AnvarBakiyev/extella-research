@@ -1,0 +1,200 @@
+{
+ "area": "shifts",
+ "handler_lines": 51,
+ "tasks": {
+  "s1": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1684,
+    "chars": 6643,
+    "seconds": 11.0,
+    "errors": [
+     "day 1 at 12:00 only 0 on duty; 1 needed",
+     "day 2 at 08:00 only 0 on duty; 1 needed",
+     "day 3 at 08:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 2952,
+    "chars": 3479,
+    "seconds": 10.5,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 373,
+    "chars": 169,
+    "seconds": 13.6,
+    "errors": []
+   }
+  },
+  "s2": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1947,
+    "chars": 6886,
+    "seconds": 11.3,
+    "errors": [
+     "day 1 at 17:00 only 0 on duty; 2 needed",
+     "day 2 at 17:00 only 0 on duty; 2 needed",
+     "day 3 at 17:00 only 0 on duty; 2 needed"
+    ]
+   },
+   "B": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 8524,
+    "chars": 16461,
+    "seconds": 33.2,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 556,
+    "chars": 489,
+    "seconds": 12.4,
+    "errors": []
+   }
+  },
+  "s3": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1243,
+    "chars": 3717,
+    "seconds": 7.4,
+    "errors": [
+     "day 1 at 11:00 only 0 on duty; 1 needed",
+     "day 2 at 11:00 only 0 on duty; 1 needed",
+     "day 3 at 11:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 27442,
+    "chars": 32203,
+    "seconds": 91.4,
+    "errors": [
+     "day 3 at 15:00 only 0 on duty; 1 needed",
+     "day 4 at 15:00 only 0 on duty; 1 needed",
+     "day 5 at 15:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 2139,
+    "chars": 852,
+    "seconds": 29.0,
+    "errors": [
+     "Ana: only 0.0 h rest between shifts 1 and 2; at least 11 h required",
+     "Ana: only 0.0 h rest between shifts 11 and 12; at least 11 h required",
+     "Bek: only 0.0 h rest between shifts 3 and 4; at least 11 h required"
+    ]
+   }
+  },
+  "s4": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 2557,
+    "chars": 8310,
+    "seconds": 14.9,
+    "errors": [
+     "2wx8mgt40000gn/T/tmpwxlmat9y/m.py\", line 182, in <module>\n    generate_schedule()\n  File \"/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmpwxlmat9y/m.py\", line 104, in generate_schedule\n    raise Exception(\"Cannot assign base shift for day\", day)\nException: ('Cannot assign base shift for day', 5)"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 18167,
+    "chars": 42658,
+    "seconds": 67.0,
+    "errors": [
+     ", line 344, in <module>\n    result = generate_schedule()\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmpxiv7yjzm/m.py\", line 114, in generate_schedule\n    raise Exception(\"Could not assign shift for day 1-5\")\nException: Could not assign shift for day 1-5"
+    ]
+   },
+   "C": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 1180,
+    "chars": 536,
+    "seconds": 27.2,
+    "errors": [
+     "Cara: shifts 7 and 11 overlap"
+    ]
+   }
+  },
+  "s5": {
+   "A": {
+    "ok": false,
+    "calls": 1,
+    "tokens": 1676,
+    "chars": 4366,
+    "seconds": 8.5,
+    "errors": [
+     " s = time_to_hours(d, s_h)\n        ^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmp7cda12_n/m.py\", line 24, in time_to_hours\n    return (day - 1) * 24 + hour + minute / 60\n           ~~~~~~~~~~~~~~~^~~~~~\nTypeError: unsupported operand type(s) for +: 'int' and 'str'"
+    ]
+   },
+   "B": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 11440,
+    "chars": 21196,
+    "seconds": 38.0,
+    "errors": [
+     "day 7 at 22:00 only 0 on duty; 1 needed",
+     "day 1 at 06:00 only 0 on duty; 1 needed",
+     "day 2 at 06:00 only 0 on duty; 1 needed"
+    ]
+   },
+   "C": {
+    "ok": false,
+    "calls": 3,
+    "tokens": 4316,
+    "chars": 2067,
+    "seconds": 40.5,
+    "errors": [
+     "Ana: only 8.0 h rest between shifts 25 and 19; at least 11 h required",
+     "Ana: only 8.0 h rest between shifts 19 and 13; at least 11 h required",
+     "Bek: only 8.0 h rest between shifts 26 and 20; at least 11 h required"
+    ]
+   }
+  },
+  "s6": {
+   "A": {
+    "ok": true,
+    "calls": 1,
+    "tokens": 2111,
+    "chars": 3859,
+    "seconds": 12.9,
+    "errors": []
+   },
+   "B": {
+    "ok": true,
+    "calls": 3,
+    "tokens": 8488,
+    "chars": 15960,
+    "seconds": 31.3,
+    "errors": []
+   },
+   "C": {
+    "ok": true,
+    "calls": 2,
+    "tokens": 929,
+    "chars": 411,
+    "seconds": 19.4,
+    "errors": [
+     "day 3 at 09:00 only 1 on duty; 2 needed"
+    ]
+   }
+  }
+ }
+}

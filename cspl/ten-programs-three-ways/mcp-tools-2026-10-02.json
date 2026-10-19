@@ -1,0 +1,182 @@
+{
+ "read": "2026-10-02",
+ "server": "extella-mcp 4.0.0",
+ "tools": [
+  {
+   "name": "list_rules",
+   "description": "Retrieve persistent user-defined instructions that extend the system prompt.\n\nReturned rules must be inserted into the conversation context before\nprocessing user messages and treated as additional system-level instructions.\n\nShould normally be called once at conversation startup."
+  },
+  {
+   "name": "add_rule",
+   "description": "Add new rule"
+  },
+  {
+   "name": "delete_rule",
+   "description": "Delete rule"
+  },
+  {
+   "name": "update_rule",
+   "description": "Update existing rule"
+  },
+  {
+   "name": "search_concepts",
+   "description": "Semantic search for concepts by meaning (not just keywords). Returns most relevant stored knowledge"
+  },
+  {
+   "name": "add_concept",
+   "description": "Add new concept (knowledge unit) with semantic embedding for long-term memory"
+  },
+  {
+   "name": "delete_concept",
+   "description": "Delete concept"
+  },
+  {
+   "name": "update_concept",
+   "description": "Update existing concept"
+  },
+  {
+   "name": "run_expert",
+   "description": "Run expert"
+  },
+  {
+   "name": "search_experts",
+   "description": "Semantic search for experts"
+  },
+  {
+   "name": "get_expert",
+   "description": "Get expert info: description, code, parameters, creation date, update date"
+  },
+  {
+   "name": "save_expert",
+   "description": "Save expert"
+  },
+  {
+   "name": "delete_expert",
+   "description": "Delete expert"
+  },
+  {
+   "name": "check_task",
+   "description": "Check task"
+  },
+  {
+   "name": "list_tokens",
+   "description": "Get list of all unrevoked tokens"
+  },
+  {
+   "name": "create_token",
+   "description": "Create new API token for user authentication"
+  },
+  {
+   "name": "revoke_token",
+   "description": "Revoke (delete) token"
+  },
+  {
+   "name": "search_kv",
+   "description": "Semantic search across stored key-value pairs by meaning"
+  },
+  {
+   "name": "get_kv",
+   "description": "Get key-value pair by key name"
+  },
+  {
+   "name": "set_kv",
+   "description": "Create or update a key-value pair with semantic embedding"
+  },
+  {
+   "name": "delete_kv",
+   "description": "Delete key-value pair"
+  },
+  {
+   "name": "search_targets",
+   "description": "Semantic search targets by description"
+  },
+  {
+   "name": "add_target",
+   "description": "Add new target with description for semantic search"
+  },
+  {
+   "name": "delete_target",
+   "description": "Delete target"
+  },
+  {
+   "name": "set_default_target",
+   "description": "Set default target"
+  },
+  {
+   "name": "get_default_target",
+   "description": "Get default target. Returns device_id"
+  },
+  {
+   "name": "get_current_profile_and_agent",
+   "description": "Get current profile ID and agent ID"
+  },
+  {
+   "name": "add_agent_to_profile",
+   "description": "Add agent to profile"
+  },
+  {
+   "name": "export_chats",
+   "description": "Export chats"
+  },
+  {
+   "name": "export_calls",
+   "description": "Export calls"
+  },
+  {
+   "name": "run_agent",
+   "description": "Run agent"
+  },
+  {
+   "name": "get_agent_run_status",
+   "description": "Get agent run status"
+  },
+  {
+   "name": "list_agents",
+   "description": "List agents"
+  },
+  {
+   "name": "get_agent",
+   "description": "Get basic agent info"
+  },
+  {
+   "name": "create_agent",
+   "description": "Create agent\n\nAlways explicitly specify `model_parameters.maxContextTokens`"
+  },
+  {
+   "name": "update_agent",
+   "description": "Update agent"
+  },
+  {
+   "name": "delete_agent",
+   "description": "Delete agent"
+  },
+  {
+   "name": "list_profiles",
+   "description": "List profiles"
+  },
+  {
+   "name": "create_profile",
+   "description": "Create profile"
+  },
+  {
+   "name": "delete_profile",
+   "description": "Delete profile. Agents in the profile are not deleted"
+  },
+  {
+   "name": "enable_group",
+   "description": "Enable group"
+  },
+  {
+   "name": "disable_group",
+   "description": "Disable group"
+  },
+  {
+   "name": "duckduckgo_search",
+   "description": "Searches DuckDuckGo for the given query and returns the results"
+  },
+  {
+   "name": "report_issue",
+   "description": "Report a bug, limitation, missing capability, or unexpected behavior of the available tools or platform that developers should know about."
+  }
+ ]
+}

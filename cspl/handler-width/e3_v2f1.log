@@ -1,0 +1,19 @@
+register: {'save': 'success', 'run': {'status': 'success', 'registered': 'shift22', 'bytes': 3068}, 'seconds': 15.5}
+s1 A {'ok': False, 'calls': 1, 'tokens': 1510, 'chars': 4522, 'seconds': 10.1, 'errors': ['Ana works 48.0 h in the week; the limit is 40 h']}
+s1 B {'ok': True, 'calls': 1, 'tokens': 1625, 'chars': 5540, 'seconds': 11.5, 'errors': []}
+s1 C {'ok': True, 'calls': 1, 'tokens': 458, 'chars': 169, 'seconds': 18.2, 'errors': []}
+s2 A {'ok': False, 'calls': 1, 'tokens': 1752, 'chars': 5593, 'seconds': 13.1, 'errors': ['day 1 at 17:00 only 0 on duty; 2 needed', 'day 2 at 17:00 only 0 on duty; 2 needed', 'day 3 at 09:00 only 0 on duty; 2 needed']}
+s2 B {'ok': False, 'calls': 3, 'tokens': 7123, 'chars': 15003, 'seconds': 30.6, 'errors': ['^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmpiv4jf3em/m.py", line 34, in overlaps_with_existing_shift\n    if not (end <= s_start or start >= s_end):  # Overlap\n            ^^^^^^^^^^^^^^\nTypeError: \'<=\' not supported between instances of \'str\' and \'int\'']}
+s2 C {'ok': False, 'calls': 3, 'tokens': 2331, 'chars': 1023, 'seconds': 44.0, 'errors': ['Ana works 48.0 h in the week; the limit is 40 h', 'Bek works 48.0 h in the week; the limit is 40 h']}
+s3 A {'ok': False, 'calls': 1, 'tokens': 1569, 'chars': 5549, 'seconds': 11.1, 'errors': ['day 1 at 11:00 only 0 on duty; 1 needed', 'day 2 at 11:00 only 0 on duty; 1 needed', 'day 3 at 11:00 only 0 on duty; 1 needed']}
+s3 B {'ok': False, 'calls': 3, 'tokens': 5418, 'chars': 9937, 'seconds': 22.4, 'errors': ['day 1 at 15:00 only 0 on duty; 1 needed', 'day 2 at 15:00 only 0 on duty; 1 needed', 'day 3 at 15:00 only 0 on duty; 1 needed']}
+s3 C {'ok': True, 'calls': 2, 'tokens': 1382, 'chars': 513, 'seconds': 27.5, 'errors': ['shift 1 (Ana day 1): 16.0 h; a shift must be 4 to 12 hours', 'shift 2 (Bek day 2): 16.0 h; a shift must be 4 to 12 hours', 'shift 3 (Cara day 3): 16.0 h; a shift must be 4 to 12 hours']}
+s4 A {'ok': False, 'calls': 1, 'tokens': 2465, 'chars': 6466, 'seconds': 16.0, 'errors': ['timeout']}
+s4 B {'ok': False, 'calls': 3, 'tokens': 15922, 'chars': 30260, 'seconds': 64.4, 'errors': ['day 6 at 10:00 only 0 on duty; 1 needed', 'day 7 at 10:00 only 0 on duty; 1 needed']}
+s4 C {'ok': True, 'calls': 2, 'tokens': 1336, 'chars': 511, 'seconds': 23.1, 'errors': ['Cara: shifts 7 and 11 overlap']}
+s5 A {'ok': False, 'calls': 1, 'tokens': 2086, 'chars': 6100, 'seconds': 11.9, 'errors': ['File "/var/folders/rk/d86vkjj13d96ylsv2wx8mgt40000gn/T/tmp9wbk7ep0/m.py", line 128\n    for day in coverage_needed["day"]:\nIndentationError: expected an indented block after \'if\' statement on line 123']}
+s5 B {'ok': False, 'calls': 3, 'tokens': 10448, 'chars': 19394, 'seconds': 40.9, 'errors': ['Bek: only 0.0 h rest between shifts 6 and 13; at least 11 h required', 'day 7 at 22:00 only 0 on duty; 1 needed', 'day 1 at 10:00 only 0 on duty; 1 needed']}
+s5 C {'ok': True, 'calls': 1, 'tokens': 846, 'chars': 516, 'seconds': 11.0, 'errors': []}
+s6 A {'ok': False, 'calls': 1, 'tokens': 9969, 'chars': 23028, 'seconds': 66.2, 'errors': ['output is not the JSON asked for: list index out of range']}
+s6 B {'ok': False, 'calls': 3, 'tokens': 10308, 'chars': 17696, 'seconds': 54.3, 'errors': ['Ana: only 0.0 h rest between shifts 1 and 3; at least 11 h required']}
+s6 C {'ok': False, 'calls': 3, 'tokens': 1765, 'chars': 579, 'seconds': 41.6, 'errors': ['Cara: only 0.0 h rest between shifts 3 and 6; at least 11 h required', 'day 3 at 09:00 only 1 on duty; 2 needed']}

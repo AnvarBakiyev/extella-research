@@ -1,0 +1,52 @@
+{
+ "date": "2026-10-02 17:13",
+ "device": "a laptop (macOS) with Go installed and the handlers of readsql and page registered",
+ "call": "POST /api/expert/run {name, params, targets} for every step",
+ "steps": [
+  {
+   "program": "poly_open_orders",
+   "language": "readsql",
+   "seconds": 8.7,
+   "answer": {
+    "status": "success",
+    "count": 5,
+    "language": "readsql"
+   }
+  },
+  {
+   "program": "poly_order_stats",
+   "language": "Go",
+   "seconds": 16.2,
+   "answer": {
+    "status": "success",
+    "count": 5,
+    "sum": 43759.81,
+    "average": 8751.962,
+    "largest_customer": "Iris Textiles",
+    "verdict": "open orders above 30k: review before shipping"
+   }
+  },
+  {
+   "program": "poly_order_report",
+   "language": "page",
+   "seconds": 6.2,
+   "answer": {
+    "status": "success",
+    "slides": 2,
+    "bytes": 976,
+    "language": "page"
+   }
+  }
+ ],
+ "checks": {
+  "step 1 returned rows from the database": true,
+  "step 2 computed the sum of the rows of step 1": true,
+  "step 3 produced the report from the numbers of step 2": true
+ },
+ "notes": [
+  "Three separately saved programs in three languages; the result of each was passed as parameters of the next by this script.",
+  "No service was built around any program; the Extella service and the listener on the device are the network layer.",
+  "Every call takes seconds: this suits steps of a job, not calls inside a tight loop.",
+  "One device, one day."
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "date": "2026-10-01",
+ "machine": "macOS-14.7.5-arm64-arm-64bit",
+ "python": "3.12.9",
+ "listener": "extella-listener 1.2.5, Extella app 1.3.0",
+ "source_commit": "c943aba",
+ "note": "the laptop's host name and home path are replaced; agent and device ids are not recorded",
+ "runs": [
+  {
+   "step": "register tally handler",
+   "expert": "register_tally",
+   "seconds": 13.1,
+   "at": "2026-10-01T22:45:59",
+   "result": "{'status': 'success', 'registered': 'tally', 'bytes': 918}",
+   "status": "success"
+  },
+  {
+   "step": "tally program",
+   "expert": "tally_demo",
+   "seconds": 11.1,
+   "at": "2026-10-01T22:46:12",
+   "result": "{'status': 'success', 'language': 'tally', 'expert': 'tally_demo', 'total': 10, 'host': '<laptop>', 'os': 'Darwin arm64'}",
+   "status": "success"
+  },
+  {
+   "step": "program the language rejects",
+   "expert": "tally_bad",
+   "seconds": 11.1,
+   "at": "2026-10-01T22:46:26",
+   "result": "{'status': 'rejected', 'reason': 'statement 2 is not a tally statement: import os'}",
+   "status": "success"
+  },
+  {
+   "step": "same name, replaced source",
+   "expert": "tally_demo",
+   "seconds": 7.7,
+   "at": "2026-10-01T22:46:36",
+   "result": "{'status': 'success', 'language': 'tally', 'expert': 'tally_demo', 'total': 99, 'host': '<laptop>', 'os': 'Darwin arm64'}",
+   "status": "success"
+  },
+  {
+   "step": "go expert (handler already on device)",
+   "expert": "tiny_go_sum",
+   "seconds": 13.8,
+   "at": "2026-10-01T22:46:56",
+   "result": "{'status': 'success', 'stdout': '{\"language\":\"go\",\"sum\":55}', 'stderr': '', 'returncode': 0, 'go': '/opt/homebrew/bin/go'}",
+   "status": "success"
+  },
+  {
+   "step": "rust expert (handler already on device)",
+   "expert": "tiny_rust_sum",
+   "seconds": 12.9,
+   "at": "2026-10-01T22:47:12",
+   "result": "{'status': 'success', 'stdout': '{\"language\":\"rust\",\"sum\":55}\\n', 'stderr': '', 'returncode': 0, 'rustc': '~/.cargo/bin/rustc'}",
+   "status": "success"
+  },
+  {
+   "step": "register c handler",
+   "expert": "register_c",
+   "seconds": 11.1,
+   "at": "2026-10-01T22:47:25",
+   "result": "{'status': 'success', 'registered': 'c'}",
+   "status": "success"
+  },
+  {
+   "step": "c expert",
+   "expert": "tiny_c_sum",
+   "seconds": 8.6,
+   "at": "2026-10-01T22:47:36",
+   "result": "{'status': 'success', 'language': 'c', 'expert': 'tiny_c_sum', 'stdout': '{\"language\":\"c\",\"sum\":55}', 'returncode': 0, 'compiler': '/usr/bin/cc', 'host': '<laptop>', 'os': 'Darwin arm64'}",
+   "status": "success"
+  }
+ ]
+}
