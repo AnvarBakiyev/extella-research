@@ -43,3 +43,28 @@ On a strong model the accuracy argument for saved programs disappears (100 of 10
 | Opus, 12 | 3045, 52 lines, 0 | 3137, 13 lines, 0 | +92 |
 
 The grammar (~700 input tokens) pays back slowly: Python output grows about three times faster than task-language output, so the gap closes with more rules (break-even extrapolated at 15–25 rules; not measured). The program is 3.5–4× shorter at the same 0 errors. First-attempt accuracy does not diverge up to 12 rules on these models. Report: `otchet-long.md` (in Russian); raw: `results_long_{sonnet,opus}_{6,12}.json`, logs.
+
+### Accuracy: checkability of corrupted programs, and first-attempt correctness as rules grow (same day)
+
+**A. Corrupted programs** (`zamer_mutacii.py`). Every single-point corruption of the correct 12-rule programs (delete a line, flip a comparison, change a constant, swap a string, swap an identifier) and who catches it first:
+
+| Program | Corrupted versions | Caught before running | Caught by the 100-order test | Silent |
+|---|---|---|---|---|
+| `zakaz2`, Sonnet (13 lines) | 96 | 58 (60 %) | 38 | 0 |
+| Python, Sonnet (49 lines) | 186 | 70 (38 %) | 113 | 3 |
+| `zakaz2`, Opus (13 lines) | 97 | 59 (61 %) | 38 | 0 |
+| Python, Opus (52 lines) | 218 | 92 (42 %) | 121 | 5 |
+
+"Before running" is the handler's static check for `zakaz2` (parse, all fields set, names defined, field types, closed value sets declared by a human) and compile + pyflakes for Python; Python has no type or closed-set check. Flipped comparisons and changed constants are caught only by the test in both languages. Silent Python versions are dead defensive code.
+
+**B. First-attempt correctness as rules grow** (`zamer_scale.py`, generated rules with an automatic reference, 3 runs per cell, errors of 100):
+
+| Model | Rules | Python | `zakaz2` |
+|---|---|---|---|
+| Sonnet 5.5 | 12 / 24 / 48 | all 0 | all 0 |
+| Haiku 5.5 | 12 / 24 / 48 | all 0 | all 0 except one run at 24: a line of prose before the program, refused at parse |
+| Qwen3.5 9B | 12 | 0, 0, 100 | 0, 0, 100 |
+| Qwen3.5 9B | 24 | 52, 0, 24 | 100, 100, 100 |
+| Qwen3.5 9B | 48 | 0, 100, 100 | 100, 100, 100 |
+
+On strong models there is no difference up to 48 rules. On the 9B model the task language lowers the share of accepted first attempts (0 of 6 at 24–48 rules against 3 of 6 for Python), but every task-language failure is a refusal before running with an exact reason, while two Python failures ran and returned wrong answers on 52 and 24 of 100 orders. One repair attempt with the reason (`zamer_scale_repair.py`): Haiku 1 of 1, Qwen Python 2 of 5, Qwen `zakaz2` 1 of 7; the grammar in the prompt carried no example program, which is a limitation of this setup. Tokens to create stay lower for Python up to 48 rules on these one-line rules. Report: `otchet-tochnost.md` (in Russian).
