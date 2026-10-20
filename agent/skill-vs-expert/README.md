@@ -30,3 +30,16 @@ Same 100 orders, same rules, same reference. The models were called through an E
 The third variant asks the model to write the program in a small task language, `zakaz`, whose grammar (642 characters) is given in the prompt; a human-written 95-line handler runs it. Both models wrote the same three-line program on the first attempt, 0 errors. The program is shorter (3 lines against 20–25, output 81 tokens against 207–245), but the grammar in the prompt costs more than the short program saves, so creation is more expensive than Python on this three-rule task. What the task language does give here is a boundary: a `zakaz` program cannot touch files, the network or arbitrary code, because the language has none of that.
 
 On a strong model the accuracy argument for saved programs disappears (100 of 100 either way); the token argument stays and does not depend on the model: one write costs about one run, after that the saving equals the number of runs. Qwen and Claude token counts are not directly comparable (different tokenizers, the system prompt); break-even is the comparable number. Report: `otchet-claude.md` (in Russian). Files: `zamer_claude.py`, `zamer_lang.py`, `results_claude_{sonnet,opus}.json`, `results_lang_{sonnet,opus}.json`, `expert_code_claude_{sonnet,opus}.py`, logs.
+
+### Longer rules: 6 and 12 rules (same day)
+
+`zamer_long.py`: the same order task with 6 or 12 rules (discount by client category, routing, shortage, delivery, controlled goods, priority, total, prepayment), a human-written reference, 100 generated orders. The task language `zakaz2` adds lists, `in`, `count`, `max`, `any`, `round`; its handler is 130 lines. Tokens to create (input + output), lines, errors on the first attempt:
+
+| Model, rules | Python | `zakaz2` | Difference |
+|---|---|---|---|
+| Sonnet, 6 | 1820, 21 lines, 0 | 2369, 7 lines, 0 | +549 |
+| Sonnet, 12 | 2737, 49 lines, 0 | 3141, 13 lines, 0 | +404 |
+| Opus, 6 | 2145, 29 lines, 0 | 2372, 7 lines, 0 | +227 |
+| Opus, 12 | 3045, 52 lines, 0 | 3137, 13 lines, 0 | +92 |
+
+The grammar (~700 input tokens) pays back slowly: Python output grows about three times faster than task-language output, so the gap closes with more rules (break-even extrapolated at 15–25 rules; not measured). The program is 3.5–4× shorter at the same 0 errors. First-attempt accuracy does not diverge up to 12 rules on these models. Report: `otchet-long.md` (in Russian); raw: `results_long_{sonnet,opus}_{6,12}.json`, logs.
