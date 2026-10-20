@@ -14,3 +14,19 @@ What the numbers do not mean: 28 of 100 is the accuracy of a 9B model on this ta
 Files: `zamer.py` (the measurement), `dataset.json` (100 orders with reference answers), `expert_code.py` (the function the model wrote), `results.json` (raw results), `zamer.log`.
 
 The orders are synthetic. After the run the client names in `dataset.json` were replaced with neutral labels (`Клиент 01` … `Клиент 10`) and the currency word in the method was neutralised; nothing else was changed. `results.json` never contained the names.
+
+## 20 October 2026: the same measurement on Claude Sonnet 5.5 and Opus 5.5, plus a task language
+
+Same 100 orders, same rules, same reference. The models were called through an Extella agent with no tools and a four-line system prompt; token counts are Anthropic's `usage` numbers (each call carries the ~300-token system prompt, which the Qwen run did not have).
+
+| | Qwen3.5 9B (27 Sep) | Sonnet 5.5 | Opus 5.5 |
+|---|---|---|---|
+| Skill: correct of 100 | 28 | 100 | 100 |
+| Skill: tokens per run | 329 | 1061 | 1063 |
+| Python expert: tokens to create | 403 | 1123 | 1161 |
+| Task-language expert (`zakaz`): tokens to create | – | 1393 | 1393 |
+| Break-even | the second run | the second run | the second run |
+
+The third variant asks the model to write the program in a small task language, `zakaz`, whose grammar (642 characters) is given in the prompt; a human-written 95-line handler runs it. Both models wrote the same three-line program on the first attempt, 0 errors. The program is shorter (3 lines against 20–25, output 81 tokens against 207–245), but the grammar in the prompt costs more than the short program saves, so creation is more expensive than Python on this three-rule task. What the task language does give here is a boundary: a `zakaz` program cannot touch files, the network or arbitrary code, because the language has none of that.
+
+On a strong model the accuracy argument for saved programs disappears (100 of 100 either way); the token argument stays and does not depend on the model: one write costs about one run, after that the saving equals the number of runs. Qwen and Claude token counts are not directly comparable (different tokenizers, the system prompt); break-even is the comparable number. Report: `otchet-claude.md` (in Russian). Files: `zamer_claude.py`, `zamer_lang.py`, `results_claude_{sonnet,opus}.json`, `results_lang_{sonnet,opus}.json`, `expert_code_claude_{sonnet,opus}.py`, logs.
