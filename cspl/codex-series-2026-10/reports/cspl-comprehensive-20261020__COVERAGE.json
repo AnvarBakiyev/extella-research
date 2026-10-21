@@ -1,0 +1,442 @@
+{
+  "schema": "cspl-final-coverage-v1",
+  "finite_matrix_completed": true,
+  "all_possible_programs_claim": false,
+  "equal_python_control": "Same source JSON, library, algorithm, registry, cache and constraints where comparison applies; transport observation intentionally measures source normalization.",
+  "rows": [
+    {
+      "id": "M01",
+      "question": "Механизм и построение",
+      "status": "verified_with_vendor_defects",
+      "conclusion": "Метаданные выбирают установленный обработчик; old_code и отдельный function-argument отказ воспроизведены. Обход не исправляет vendor binary.",
+      "python_control": "Both hosts run current fython and custom-CSPL builder probes; private native registration uses the same Python runtime.",
+      "scope_and_limits": "Disnet1.0.1/Listener1.2.5; closed vendor implementation; workaround is not vendor repair.",
+      "source_of_benefit": "CSPL provides built-in source+handler selection; quantitative superiority over a ready dispatcher not established.",
+      "business_example": "Extella catalog entry that chooses its installed interpreter.",
+      "evidence": [
+        {
+          "path": "CONTRACT_RESULTS.json",
+          "sha256": "92ecc0e2ddbfc9acc95781b78220626abe4ea9158b8b6ae17f83258573bf195e"
+        },
+        {
+          "path": "runtime_audit/audit.json",
+          "sha256": "18cda5bc32270f63f13d2e5b1e586878cd819be61e086f9ffa83f13d7a3d8b34"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "runtime_audit/audit.json",
+          "sha256": "18cda5bc32270f63f13d2e5b1e586878cd819be61e086f9ffa83f13d7a3d8b34"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "question": "Контракт данных и ошибок",
+      "status": "verified_counterexamples",
+      "conclusion": "Внешние falsy-параметры теряются в обоих маршрутах; вложенные значения сохраняются; native обрезает внешние пробелы исходника. Строки ошибок требуют явного контракта.",
+      "python_control": "Identical data sent as top-level params, nested JSON and internal kwargs; Python defaults expose missing values.",
+      "scope_and_limits": "Observed connector/API/executor path only; exact layer dropping falsy values not isolated.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Orders where zero discount must differ from missing discount.",
+      "evidence": [
+        {
+          "path": "final_review/TYPED_TRANSPORT.json",
+          "sha256": "ea41275bc4fc56d97b86805d81be82877fcd876d753c753b3aa8ad9475169898"
+        },
+        {
+          "path": "runtime_audit/audit.json",
+          "sha256": "18cda5bc32270f63f13d2e5b1e586878cd819be61e086f9ffa83f13d7a3d8b34"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "final_review/TYPED_TRANSPORT.json",
+          "sha256": "ea41275bc4fc56d97b86805d81be82877fcd876d753c753b3aa8ad9475169898"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "question": "Цепи обработчиков и рекурсия",
+      "status": "verified_scoped",
+      "conclusion": "Свой resolver разрешает цепь метаданных; настоящие вложенные run_container работают. Автоматическое неограниченное разрешение runtime не установлено.",
+      "python_control": "Same resolver, graph and stopping rules in the ready Python implementation.",
+      "scope_and_limits": "Bounded tested recursion; no claim of automatic unbounded native metadata recursion or useful infinite model loops.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Composed validators or calculations that call bounded subordinate programs.",
+      "evidence": [
+        {
+          "path": "runtime_audit/audit.json",
+          "sha256": "18cda5bc32270f63f13d2e5b1e586878cd819be61e086f9ffa83f13d7a3d8b34"
+        },
+        {
+          "path": "CONTRACT_RESULTS.json",
+          "sha256": "92ecc0e2ddbfc9acc95781b78220626abe4ea9158b8b6ae17f83258573bf195e"
+        },
+        {
+          "path": "final_review/NATIVE_SEMANTIC_REVIEW.json",
+          "sha256": "6b6bde84ba7c26f49edaaf685c32774198d8a884c68a949a1db0dcb17b2d0441"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "runtime_audit/audit.json",
+          "sha256": "18cda5bc32270f63f13d2e5b1e586878cd819be61e086f9ffa83f13d7a3d8b34"
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "question": "Отдельные программы состава изделия",
+      "status": "verified_scoped",
+      "conclusion": "48 исполнений случаев, 50 настоящих дочерних native-вызовов; идентичные результаты/трассы Python. Независимы записи программ, не организации поставщиков.",
+      "python_control": "Exact same frozen JSON/engine/callback namespace; direct interpreter versus actual native handler per node.",
+      "scope_and_limits": "Program records within one pinned snapshot; not independent vendor organizations, ERP or signed remote supply chain.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Purchasing quantities and cost for an assembly with shared components.",
+      "evidence": [
+        {
+          "path": "supplier_programs/RESULTS.json",
+          "sha256": "fbecc9e17d709ef140f6089001b9a6fb112a2b3bb45b3d2e6ac80e488323b12b"
+        },
+        {
+          "path": "final_review/supplier_review.json",
+          "sha256": "e148e09adb65868bf6e21296685b372ee005414f2851dfbed4c072fa6d15d435"
+        },
+        {
+          "path": "final_review/NATIVE_SEMANTIC_REVIEW.json",
+          "sha256": "6b6bde84ba7c26f49edaaf685c32774198d8a884c68a949a1db0dcb17b2d0441"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "final_review/supplier_review.json",
+          "sha256": "e148e09adb65868bf6e21296685b372ee005414f2851dfbed4c072fa6d15d435"
+        },
+        {
+          "path": "final_review/NATIVE_SEMANTIC_REVIEW.json",
+          "sha256": "6b6bde84ba7c26f49edaaf685c32774198d8a884c68a949a1db0dcb17b2d0441"
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "question": "Независимые клиенты и издатели",
+      "status": "verified_parity",
+      "conclusion": "Ноль специфических адаптеров языка при обновлениях в обоих подготовленных вариантах; два новых клиента используют один общий транспорт.",
+      "python_control": "Ready generic Python registry accepts the same logical fields; shared transport, same clients.",
+      "scope_and_limits": "Two new clients share one transport; no independently measured integration labor or third-party adoption.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "One rule catalog used by CLI, editor and platform connector.",
+      "evidence": [
+        {
+          "path": "delivery_audit/audit.json",
+          "sha256": "4994fbc0175b2d1be48aa4c26f2541cff0a1a436a36b7c475b3bc142317d6fdc"
+        },
+        {
+          "path": "delivery_audit/recheck_results.json",
+          "sha256": "b4a5df6f4d537c0d9b8915b5f52642cf0c1e7e8b40ff5c0c090e78da58f11d7c"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "delivery_audit/audit.json",
+          "sha256": "4994fbc0175b2d1be48aa4c26f2541cff0a1a436a36b7c475b3bc142317d6fdc"
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "question": "Доставка, версии, сбои и откат",
+      "status": "verified_scoped_with_external_boundaries",
+      "conclusion": "Два настоящих хоста воспроизводят частичное обновление и откат; версии обеспечивает общий контроллер. Сетевой partition и автоматическая доставка неизвестного обработчика не доказаны.",
+      "python_control": "Same shared deployment controller, version records and Extella device transport.",
+      "scope_and_limits": "Partial rollout deliberately omitted; no real partition, fleet transaction or in-flight task migration.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Roll out and roll back pricing rules across branch executors.",
+      "evidence": [
+        {
+          "path": "delivery_audit/audit.json",
+          "sha256": "4994fbc0175b2d1be48aa4c26f2541cff0a1a436a36b7c475b3bc142317d6fdc"
+        },
+        {
+          "path": "delivery_audit/boundary_probe_results.json",
+          "sha256": "8a2d7ce7098c0571eb40aa05c549ef5d8345463e960526bbd7498920e67e45ec"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "delivery_audit/audit.json",
+          "sha256": "4994fbc0175b2d1be48aa4c26f2541cff0a1a436a36b7c475b3bc142317d6fdc"
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "question": "Отдельный внешний эффект и повторы",
+      "status": "verified_scoped_with_preserved_initial_failures",
+      "conclusion": "Две базы и контролируемые завершения процесса проверяют сотрудничающий приёмник. Исходные Linux timeout5 сохранены; единственная uniform timeout30 серия рассмотрена отдельно.",
+      "python_control": "Same worker, sink, journal and frozen requests; same timeout within each series; separate work directories.",
+      "scope_and_limits": "Controlled process exits, cooperating separate SQLite stores; no power-loss or generic distributed exactly-once proof. Original failures retained.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Retry inventory booking after a response is lost, using an operation id understood by the receiver.",
+      "evidence": [
+        {
+          "path": "effects/results/RESULTS.json",
+          "sha256": "ef213797fc44832d10ad4ebecfc6adadaa79a7c8c035f63ec192b7e919a90dc7"
+        },
+        {
+          "path": "model_audit/effects_review.json",
+          "sha256": "41f2872935f06f12e18e6fbe242cebeb03da69441e298510549c93b5e018e6a2"
+        },
+        {
+          "path": "final_review/EFFECTS_NATIVE_RESULTS.json",
+          "sha256": "2797f0836ba68d0be54475c80f1084cc6ab517f0faf71438af37aa8e6e635cea"
+        },
+        {
+          "path": "final_review/EFFECTS_DIAGNOSTIC.json",
+          "sha256": "7f14d0adf2947370829342b7f94e99eebff50cc6c72a39f7f21e67cd8d64e0fa"
+        },
+        {
+          "path": "final_review/EFFECTS30_REVIEW.json",
+          "sha256": "dbb3ec2fb873c1cbe82a5fa3427673426e113d2f3c7444abaed4052265bfefbf"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "model_audit/effects_review.json",
+          "sha256": "41f2872935f06f12e18e6fbe242cebeb03da69441e298510549c93b5e018e6a2"
+        },
+        {
+          "path": "final_review/EFFECTS30_REVIEW.json",
+          "sha256": "dbb3ec2fb873c1cbe82a5fa3427673426e113d2f3c7444abaed4052265bfefbf"
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "question": "Враждебные данные и границы безопасности",
+      "status": "verified_scoped_with_authorization_boundary",
+      "conclusion": "Проверенные malformed/depth/size/quantity случаи ограничены общим обработчиком. Нет OS sandbox; межпользовательская полевая ACL не проверена без доступного контракта.",
+      "python_control": "Identical hardened parser/provider/evaluator and limits behind either outer route.",
+      "scope_and_limits": "Bounded test corpus, not formal exploit absence, OS sandbox, RSS/time guarantee or cross-account ACL verification.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Reject malformed or oversized product compositions supplied by an editor/model.",
+      "evidence": [
+        {
+          "path": "security_hardening/RESULTS.json",
+          "sha256": "1f5c50f86360183c4839bf64f90c53e8ddfac7dad2a46c487573091058ab4742"
+        },
+        {
+          "path": "final_review/supplier_security_review.json",
+          "sha256": "2c1388da1bcc4f8c9c990d1e9ddf055fbcde327008c45e05a2f76e2144932cac"
+        },
+        {
+          "path": "final_review/NATIVE_SEMANTIC_REVIEW.json",
+          "sha256": "6b6bde84ba7c26f49edaaf685c32774198d8a884c68a949a1db0dcb17b2d0441"
+        },
+        {
+          "path": "../cspl-next-series-20261020/authorization/REPORT.txt",
+          "sha256": "bc2ee5fc5d9eead401e47e0a02a6fadff597785b6c1586ceb208b5e85f551bf8"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "final_review/supplier_security_review.json",
+          "sha256": "2c1388da1bcc4f8c9c990d1e9ddf055fbcde327008c45e05a2f76e2144932cac"
+        },
+        {
+          "path": "final_review/NATIVE_SEMANTIC_REVIEW.json",
+          "sha256": "6b6bde84ba7c26f49edaaf685c32774198d8a884c68a949a1db0dcb17b2d0441"
+        }
+      ]
+    },
+    {
+      "id": "M09",
+      "question": "Кеш, детерминизм и эффекты",
+      "status": "verified_counterexample_and_scoped_repair",
+      "conclusion": "Имя версии не защищает от изменения кода. Новый ключ учитывает хеш реализации/зависимостей; кеш рассчитан на чистые вычисления. Эффекты требуют отдельного протокола повторов.",
+      "python_control": "Same cache key construction, dependency snapshot and source-hash check; same sink contract.",
+      "scope_and_limits": "Trusted immutable bundle/private cache; pure-call contract and truthful callback namespace required.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Recalculate a pinned order reproducibly after handler updates.",
+      "evidence": [
+        {
+          "path": "delivery_audit/boundary_probe_results.json",
+          "sha256": "8a2d7ce7098c0571eb40aa05c549ef5d8345463e960526bbd7498920e67e45ec"
+        },
+        {
+          "path": "supplier_programs/RESULTS.json",
+          "sha256": "fbecc9e17d709ef140f6089001b9a6fb112a2b3bb45b3d2e6ac80e488323b12b"
+        },
+        {
+          "path": "model_audit/effects_review.json",
+          "sha256": "41f2872935f06f12e18e6fbe242cebeb03da69441e298510549c93b5e018e6a2"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "final_review/supplier_review.json",
+          "sha256": "e148e09adb65868bf6e21296685b372ee005414f2851dfbed4c072fa6d15d435"
+        },
+        {
+          "path": "model_audit/effects_review.json",
+          "sha256": "41f2872935f06f12e18e6fbe242cebeb03da69441e298510549c93b5e018e6a2"
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "question": "C и машинный код, полное время",
+      "status": "verified_semantics_descriptive_timing",
+      "conclusion": "104 вызова на ARM64 и x86_64 совпали с независимым Decimal; одинаковые C/ASM и корректные раздельные кеши. Измерения включают обёртки, преимущество CSPL в скорости не показано.",
+      "python_control": "Identical engine_v2/C compiler/source; separate cold/warm cache per arm; same input fixtures.",
+      "scope_and_limits": "Three warm measurements, adapter overhead and heavy Mac load; not universal speed or break-even claim. Original GCC failures retained.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Batch repeated tariff/norm calculations using a compiled backend.",
+      "evidence": [
+        {
+          "path": "CONTRACT_RESULTS.json",
+          "sha256": "92ecc0e2ddbfc9acc95781b78220626abe4ea9158b8b6ae17f83258573bf195e"
+        },
+        {
+          "path": "cpu_pipeline/NATIVE_VERIFICATION.json",
+          "sha256": "09d29f670214e6aafb144ad2fe56424c1ec614cd62e72e50dcf78043283e0444"
+        },
+        {
+          "path": "cpu_pipeline/NATIVE_REPORT.txt",
+          "sha256": "3283a7b316843ab66124f717879b21f356365a964b67561b2e5d8288a72c4987"
+        },
+        {
+          "path": "../cspl-cpu-recursion-20261020/cpu/AMENDMENT.txt",
+          "sha256": "7944a706e7d672e88f5cece808db83ed4e0210da30570258df745ae0e48677d6"
+        },
+        {
+          "path": "../cspl-cpu-recursion-20261020/REMOTE_RESULTS.json",
+          "sha256": "1a9b342eb3a34ead1a35673dde20ce97daa4f3f85e2d8b2a7fe4243e295ae847"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "cpu_pipeline/NATIVE_VERIFICATION.json",
+          "sha256": "09d29f670214e6aafb144ad2fe56424c1ec614cd62e72e50dcf78043283e0444"
+        }
+      ]
+    },
+    {
+      "id": "M11",
+      "question": "Модель: создание, ремонт, все токены",
+      "status": "verified_task_dependent_result",
+      "conclusion": "125 старых вызовов, 126337 токенов пересчитаны. Выигрыш меняет направление по задачам; формальные отказы отделены от бизнес-ошибок. Новых платных вызовов не требуется.",
+      "python_control": "Same ready library where stated; all prompts, diagnostics and repair tokens retained; corpus differences separated.",
+      "scope_and_limits": "125 heterogeneous historical calls; no pooled quality estimate. Posthoc grading explicitly labelled; actual downstream model/system configuration not fully known.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Model-assisted authoring and repair of a constrained business policy.",
+      "evidence": [
+        {
+          "path": "model_audit/audit.json",
+          "sha256": "16cfd9c37b281fea68231f1bd6bfaf9785e5724db3ae51d5c5a40b31887ba80d"
+        },
+        {
+          "path": "model_audit/REPORT.txt",
+          "sha256": "b7e6a7eacafde2fd1e08ce8305bb2aa5a345e1254b25f42b1322acaee8c55294"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "model_audit/audit.json",
+          "sha256": "16cfd9c37b281fea68231f1bd6bfaf9785e5724db3ae51d5c5a40b31887ba80d"
+        }
+      ]
+    },
+    {
+      "id": "M12",
+      "question": "Бизнес-применимость и цена внедрения",
+      "status": "verified_engineering_scope_business_roi_unmeasured",
+      "conclusion": "Сценарии и операционные единицы измерены: записи, адаптеры, компиляции и восстановление. Производственные человеко-часы, деньги и межорганизационная интеграция не измерялись.",
+      "python_control": "Compare observed adapter/record/compile/recovery counts using the same ready components.",
+      "scope_and_limits": "Synthetic business computations and operational counts; no measured production ROI, person-hours or adoption.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Decide whether a rule catalog fits an existing Extella product.",
+      "evidence": [
+        {
+          "path": "final_review/business_usecases.json",
+          "sha256": "40b627a008b4e0c097b3cbd71de0109533acfc8b0cead751ee3d37ffa0d10b80"
+        },
+        {
+          "path": "delivery_audit/audit.json",
+          "sha256": "4994fbc0175b2d1be48aa4c26f2541cff0a1a436a36b7c475b3bc142317d6fdc"
+        },
+        {
+          "path": "REPORT.txt",
+          "sha256": "1bc5ecec1115cb49838c3a417fab7b70a9a323c040e96a2fb0e93fc6274ae8d9"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "final_review/COVERAGE_REVIEW.txt",
+          "sha256": "3529da94d40aa0855fe13212525570080ac8e6b5f3cfcc7b7881826884bb09ec"
+        },
+        {
+          "path": "final_review/FINAL_SYNTHESIS_REVIEW.json",
+          "sha256": "a24714cd85e23eab2e77e82636ce0cc1df0f407b1706f56368f96ba93943895a"
+        }
+      ]
+    },
+    {
+      "id": "M13",
+      "question": "Независимый разбор и синтез",
+      "status": "verified",
+      "conclusion": "Независимые оракулы/аудиты, негативные контроли, исправления стенда и исходные неудачи сохранены. Общие преимущества библиотеки не приписаны механизму CSPL.",
+      "python_control": "Independent raw-evidence review of both arms; no added execution or preferred-winner selection.",
+      "scope_and_limits": "Finite declared M01–M13 coverage, not every possible program, platform, future version or deployment.",
+      "source_of_benefit": "Shared implementation/representation/protocol where applicable; findings do not establish a CSPL-specific comparative win.",
+      "business_example": "Avoid a migration justified by claims that actually come from a shared library.",
+      "evidence": [
+        {
+          "path": "final_review/supplier_review.json",
+          "sha256": "e148e09adb65868bf6e21296685b372ee005414f2851dfbed4c072fa6d15d435"
+        },
+        {
+          "path": "final_review/supplier_security_review.json",
+          "sha256": "2c1388da1bcc4f8c9c990d1e9ddf055fbcde327008c45e05a2f76e2144932cac"
+        },
+        {
+          "path": "final_review/NATIVE_SEMANTIC_REVIEW.json",
+          "sha256": "6b6bde84ba7c26f49edaaf685c32774198d8a884c68a949a1db0dcb17b2d0441"
+        },
+        {
+          "path": "model_audit/effects_review.json",
+          "sha256": "41f2872935f06f12e18e6fbe242cebeb03da69441e298510549c93b5e018e6a2"
+        },
+        {
+          "path": "cpu_pipeline/REVIEW_NATIVE_RESULTS.json",
+          "sha256": "f7e35de56444ad0e43b5598956965ca8f6f75398bb93074266ed82ec996f13c2"
+        },
+        {
+          "path": "cpu_pipeline/NATIVE_VERIFICATION.json",
+          "sha256": "09d29f670214e6aafb144ad2fe56424c1ec614cd62e72e50dcf78043283e0444"
+        },
+        {
+          "path": "final_review/EFFECTS30_REVIEW.json",
+          "sha256": "dbb3ec2fb873c1cbe82a5fa3427673426e113d2f3c7444abaed4052265bfefbf"
+        },
+        {
+          "path": "final_review/FINAL_SYNTHESIS_REVIEW.json",
+          "sha256": "a24714cd85e23eab2e77e82636ce0cc1df0f407b1706f56368f96ba93943895a"
+        },
+        {
+          "path": "INCIDENTS.json",
+          "sha256": "2e12db59c959769e14dd61a1a894e9fb54d7ab6f2d9b1242136b10d777e8fb87"
+        }
+      ],
+      "review_evidence": [
+        {
+          "path": "final_review/FINAL_SYNTHESIS_REVIEW.json",
+          "sha256": "a24714cd85e23eab2e77e82636ce0cc1df0f407b1706f56368f96ba93943895a"
+        }
+      ]
+    }
+  ]
+}

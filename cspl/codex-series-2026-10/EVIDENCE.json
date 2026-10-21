@@ -1,0 +1,62 @@
+{
+  "scope": "Product-oriented synthesis of verified experimental capabilities; new model and remote experimental calls: 0",
+  "sources": [
+    {
+      "path": "<codex-root>/cspl-comprehensive-20261020/REPORT.txt",
+      "sha256_of_original": "1bc5ecec1115cb49838c3a417fab7b70a9a323c040e96a2fb0e93fc6274ae8d9"
+    },
+    {
+      "path": "<codex-root>/cspl-comprehensive-20261020/COVERAGE.json",
+      "sha256_of_original": "be7567ad75a21d60b0924c1052c6de3c94206c25eb0e0ac622cb4076d3161e45"
+    },
+    {
+      "path": "<codex-root>/cspl-polyglot-nesting-20261021/REPORT.txt",
+      "sha256_of_original": "09231a0e9e641f291404eaa238959c03dea36a699b33345062362cf7c0a70d08"
+    },
+    {
+      "path": "<codex-root>/cspl-deep-lab-20261019/economics/REPORT.txt",
+      "sha256_of_original": "c938caab1bf575678ff52b7e113a52dba027b5f6379153b4391a73174c5b310d"
+    },
+    {
+      "path": "<codex-root>/cspl-comprehensive-20261020/model_audit/REPORT.txt",
+      "sha256_of_original": "b7e6a7eacafde2fd1e08ce8305bb2aa5a345e1254b25f42b1322acaee8c55294"
+    },
+    {
+      "path": "<codex-root>/cspl-comprehensive-20261020/security_hardening/REPORT.txt",
+      "sha256_of_original": "1b0d4770fc93dbbc6c3d9390a51fe586cd8befb0f76ba2ee634135ae78794fe4"
+    },
+    {
+      "path": "<codex-root>/cspl-comprehensive-20261020/supplier_programs/REPORT.txt",
+      "sha256_of_original": "85585c70746042490c6736bdd5802decb7756fbeadfe046301a3a9f0420741a9"
+    },
+    {
+      "path": "<codex-root>/cspl-clients-lab-20261019/REPORT.txt",
+      "sha256_of_original": "24981795adaad62939b7f6ab9c978692612fbbd539c125c266abf2ca8ea3358a"
+    },
+    {
+      "path": "<codex-root>/cspl-publishers-lab-20261019/REPORT.txt",
+      "sha256_of_original": "5fe1436cad246ec6850ff7ff4feb9a368e16eb9d4e0d40cb24e2d5c50167c518"
+    },
+    {
+      "path": "<codex-root>/cspl-interop-lab-20261019/REPORT.txt",
+      "sha256_of_original": "ad8b41243bf955f0308a95ea6e58d8f71eca3c61c4acb1a6f4a330ef9d8233a2"
+    },
+    {
+      "path": "<codex-root>/cspl-cpu-recursion-20261020/REPORT.txt",
+      "sha256_of_original": "f7d6b428550d0db91cf8e60a02602d4e73f2824dce0d30f82a2a5e61de19626a"
+    },
+    {
+      "path": "<codex-root>/cspl-comprehensive-20261020/cpu_pipeline/NATIVE_REPORT.txt",
+      "sha256_of_original": "3283a7b316843ab66124f717879b21f356365a964b67561b2e5d8288a72c4987"
+    },
+    {
+      "path": "<codex-root>/cspl-comprehensive-20261020/effects/REPORT.txt",
+      "sha256_of_original": "bf12c301a3b92024438e048b00ae57799952a90d8528e667339bbfd1e3273730"
+    },
+    {
+      "path": "<codex-root>/cspl-next-series-20261020/REPORT.txt",
+      "sha256_of_original": "d0ad3dd9ae0aa47a4bd677ee6ed5c65a8171ae45f2f67de5e7314e73a1757a59"
+    }
+  ],
+  "note": "SHA-256 values refer to the original files before sanitisation (paths, timezone, agent and device ids replaced); the copies here differ by those replacements only."
+}

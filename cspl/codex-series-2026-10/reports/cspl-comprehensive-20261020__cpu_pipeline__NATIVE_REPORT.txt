@@ -1,0 +1,56 @@
+M10 independent native CPU result verification
+
+Status: pass
+Verified against an independent Decimal oracle read from frozen canonical source fixtures.
+Both arms share the same engine/compiler path and the same exact program/input JSON.
+Timing covers the implemented full callback, including parsing, validation, build/cache work, marshalling and checksums.
+Native additionally includes its registered wrapper/runtime authentication and dispatch output capture.
+No language-only, kernel-only, statistically significant, production or monetary advantage is inferred.
+Cold artifact caches are independent; OS page caches/compiler startup/scheduling are not reset.
+
+mac / Darwin / arm64
+52 rows verified: 26 native, 26 Python; 4 cold plus 48 warm.
+Cache evidence: independently_compared_executor_file_hash_inventories
+Host load snapshots: {"above_one_runnable_or_waiting_task_per_cpu":true,"after":{"cpu_count":10,"load_average":[163.85888671875,192.61669921875,199.09765625],"one_minute_load_per_logical_cpu":16.385888671875},"before":{"cpu_count":10,"load_average":[165.306640625,194.80517578125,200.0],"one_minute_load_per_logical_cpu":16.5306640625},"interpretation":"Before/after snapshots only, not a synchronized per-call isolation or utilization measurement."}
+Warm whole-callback medians in milliseconds (range across three observations):
+flat_card/1 native: 153.710 [77.419, 174.785]
+flat_card/1 python: 3.788 [1.508, 7.565]
+flat_card/32 native: 121.579 [71.411, 143.715]
+flat_card/32 python: 2.480 [1.703, 34.593]
+flat_card/1000 native: 200.741 [91.546, 420.654]
+flat_card/1000 python: 2.836 [2.442, 4.032]
+flat_card/100000 native: 552.816 [266.390, 818.519]
+flat_card/100000 python: 291.787 [146.988, 374.465]
+tiered_payment/1 native: 165.588 [36.277, 251.958]
+tiered_payment/1 python: 1.963 [1.144, 3.897]
+tiered_payment/32 native: 137.674 [137.244, 161.122]
+tiered_payment/32 python: 2.660 [1.803, 3.357]
+tiered_payment/1000 native: 53.989 [51.973, 133.462]
+tiered_payment/1000 python: 4.111 [2.636, 7.757]
+tiered_payment/100000 native: 432.602 [255.263, 435.284]
+tiered_payment/100000 python: 354.652 [221.145, 428.236]
+Cold whole-callback milliseconds: [{"arm":"native","case":"flat_card/32","ms":4742.306},{"arm":"python","case":"flat_card/32","ms":1468.173},{"arm":"python","case":"tiered_payment/32","ms":1547.047},{"arm":"native","case":"tiered_payment/32","ms":1389.101}]
+
+linux / Linux / x86_64
+52 rows verified: 26 native, 26 Python; 4 cold plus 48 warm.
+Cache evidence: independently_compared_executor_file_hash_inventories
+Host load snapshots: {"above_one_runnable_or_waiting_task_per_cpu":false,"after":{"cpu_count":4,"load_average":[3.4658203125,3.43505859375,3.173828125],"one_minute_load_per_logical_cpu":0.866455078125},"before":{"cpu_count":4,"load_average":[3.4189453125,3.42529296875,3.1689453125],"one_minute_load_per_logical_cpu":0.854736328125},"interpretation":"Before/after snapshots only, not a synchronized per-call isolation or utilization measurement."}
+Warm whole-callback medians in milliseconds (range across three observations):
+flat_card/1 native: 134.309 [119.986, 135.620]
+flat_card/1 python: 1.043 [0.773, 1.130]
+flat_card/32 native: 69.113 [54.141, 75.993]
+flat_card/32 python: 0.844 [0.795, 1.257]
+flat_card/1000 native: 119.859 [109.428, 141.890]
+flat_card/1000 python: 2.037 [1.991, 2.148]
+flat_card/100000 native: 203.004 [196.026, 222.528]
+flat_card/100000 python: 145.530 [140.295, 182.089]
+tiered_payment/1 native: 62.342 [61.283, 240.480]
+tiered_payment/1 python: 0.838 [0.725, 0.947]
+tiered_payment/32 native: 110.792 [109.868, 114.389]
+tiered_payment/32 python: 0.830 [0.777, 0.968]
+tiered_payment/1000 native: 60.434 [57.882, 75.314]
+tiered_payment/1000 python: 2.211 [2.133, 2.232]
+tiered_payment/100000 native: 200.388 [198.891, 204.883]
+tiered_payment/100000 python: 153.650 [146.776, 194.692]
+Cold whole-callback milliseconds: [{"arm":"native","case":"flat_card/32","ms":251.297},{"arm":"python","case":"flat_card/32","ms":162.741},{"arm":"python","case":"tiered_payment/32","ms":176.088},{"arm":"native","case":"tiered_payment/32","ms":291.463}]
+
