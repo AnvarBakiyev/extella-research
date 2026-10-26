@@ -1,0 +1,1 @@
+SELECT region, is_wholesale, is_vip, qty, price_cents, coupon FROM orders

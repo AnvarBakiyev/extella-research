@@ -1,0 +1,22 @@
+[
+ "rate when price_cents > 18902: 2\nrate when price_cents > 22226 and is_vip: 1\nrate when is_vip and price_cents > 7176: 19\ntake: max\nextra when is_vip: 15\nextra when coupon and is_vip: 7",
+ "rate when is_wholesale: 7\ntake: max\nrate when is_wholesale and coupon: 5\nrate when is_vip: 13",
+ "rate when coupon: 13\ntake: max\nrate when coupon and price_cents > 15656: 8",
+ "rate when is_wholesale and price_cents > 37340: 17\nrate when is_vip and is_wholesale: 1\ntake: max\nextra when is_vip and coupon: 5",
+ "rate when qty >= 37 and coupon: 19\nextra when price_cents > 19469 and coupon: 12\ntake: max",
+ "take: max\nrate when qty >= 33: 15\nextra when coupon: 19",
+ "rate when is_vip: 20\ntake: sum\nrate when is_vip and coupon: 9\nrate when coupon and qty >= 28: 9",
+ "take: max\nrate when is_vip: 11",
+ "rate when coupon: 5\nrate when is_wholesale: 9\ntake: max\nrate when is_vip and is_wholesale: 17\nextra when is_wholesale: 4",
+ "rate when price_cents > 17349 and coupon: 8\nrate when is_vip: 18\nrate when price_cents > 35369 and qty >= 16: 1\ntake: sum\nextra when is_wholesale: 12",
+ "rate when is_vip and qty >= 34: 11\nextra when qty >= 26: 1\nextra when price_cents > 8085: 11\ntake: sum",
+ "rate when qty >= 18 and coupon: 16\ntake: max\nrate when qty >= 37: 4",
+ "rate when is_wholesale: 13\ntake: sum",
+ "take: sum\nrate when is_wholesale: 2\nrate when price_cents > 17515 and is_vip: 10\nextra when coupon and qty >= 33: 20",
+ "rate when price_cents > 15695 and is_wholesale: 12\ntake: sum\nrate when qty >= 20 and coupon: 7\nextra when coupon and is_vip: 18",
+ "rate when coupon and price_cents > 19765: 5\nextra when price_cents > 27932 and is_wholesale: 5\ntake: max",
+ "rate when qty >= 30 and is_wholesale: 10\nrate when is_vip and is_wholesale: 12\ntake: sum\nrate when price_cents > 32097: 17\nextra when qty >= 39: 8",
+ "rate when is_wholesale and qty >= 32: 18\nrate when coupon: 1\nextra when coupon and is_wholesale: 13\nextra when is_wholesale and coupon: 19\ntake: max",
+ "rate when coupon: 8\nrate when qty >= 39: 18\nextra when qty >= 36: 19\ntake: max",
+ "take: max\nrate when qty >= 15 and coupon: 16"
+]

@@ -1,0 +1,8 @@
+gross = qty * price_cents
+base = 10 if is_wholesale * qty >= 20 else 0
+vipd = 5 if is_vip > 0 else 0
+rate = max(base, vipd) + 3 * coupon
+discount = round(gross * rate / 100)
+net = gross - discount
+tax = round(net * 12 / 100)
+total = net + tax

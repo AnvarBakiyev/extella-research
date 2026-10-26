@@ -1,0 +1,5 @@
+title: Orders by region
+group: region
+count: orders
+sum: gross discount tax total
+money: gross discount tax total

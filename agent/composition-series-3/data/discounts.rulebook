@@ -1,0 +1,4 @@
+rate when is_wholesale and qty >= 20: 10
+rate when is_vip: 5
+take: max
+extra when coupon: 3

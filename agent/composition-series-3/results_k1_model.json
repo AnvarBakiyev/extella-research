@@ -1,0 +1,47 @@
+[
+ {
+  "request": "Report orders by customer_type: number of orders, sum of gross and total, money format for gross and total. Title: By customer type",
+  "program": "title: By customer type group: customer_type count: order_num sum: gross total money: gross total",
+  "python": "refused",
+  "extella": "refused",
+  "same": true,
+  "reason": "a card program needs 'group: <field>'",
+  "extella_sec": 15.1
+ },
+ {
+  "request": "Report by region with the count of orders called n and the sum of discount in money format. Title: Discounts",
+  "program": "title: Discounts group: region count: n sum: discount money: discount",
+  "python": "refused",
+  "extella": "refused",
+  "same": true,
+  "reason": "a card program needs 'group: <field>'",
+  "extella_sec": 10.7
+ },
+ {
+  "request": "Group by coupon; show orders count and sum of tax; tax is money. Title: Coupons",
+  "program": "title: Coupons group: coupon count: qty sum: tax money: tax",
+  "python": "refused",
+  "extella": "refused",
+  "same": true,
+  "reason": "a card program needs 'group: <field>'",
+  "extella_sec": 13.8
+ },
+ {
+  "request": "One card per region with total in money format and no count. Title: Totals",
+  "program": "title: Totals group: region sum: total money: total",
+  "python": "refused",
+  "extella": "refused",
+  "same": true,
+  "reason": "a card program needs 'group: <field>'",
+  "extella_sec": 12.9
+ },
+ {
+  "request": "By is_vip: count of orders, sums of gross, discount, tax, total, all money. Title: VIP split",
+  "program": "title: VIP split group: is_vip count: order_id sum: gross discount tax total money: price_cents coupon qty region customer_type is_wholesale",
+  "python": "refused",
+  "extella": "refused",
+  "same": true,
+  "reason": "a card program needs 'group: <field>'",
+  "extella_sec": 12.4
+ }
+]

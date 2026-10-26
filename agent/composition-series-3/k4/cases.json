@@ -1,0 +1,702 @@
+[
+ {
+  "plan": "c1_1 = 1 if price_cents > 18902 else 0\nr1 = 2 * c1_1\nc2_1 = 1 if price_cents > 22226 else 0\nc2_2 = 1 if is_vip > 0 else 0\nr2 = 1 * c2_1 * c2_2\nc3_1 = 1 if is_vip > 0 else 0\nc3_2 = 1 if price_cents > 7176 else 0\nr3 = 19 * c3_1 * c3_2\nc5_1 = 1 if is_vip > 0 else 0\nr5 = 15 * c5_1\nc6_1 = 1 if coupon > 0 else 0\nc6_2 = 1 if is_vip > 0 else 0\nr6 = 7 * c6_1 * c6_2\nrate = max(r1, r2, r3) + r5 + r6",
+  "status": "success",
+  "sha": "1a340dc1f9b21e20",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "c1_1 = 1 if is_wholesale > 0 else 0\nr1 = 7 * c1_1\nc3_1 = 1 if is_wholesale > 0 else 0\nc3_2 = 1 if coupon > 0 else 0\nr3 = 5 * c3_1 * c3_2\nc4_1 = 1 if is_vip > 0 else 0\nr4 = 13 * c4_1\nrate = max(r1, r3, r4)",
+  "status": "success",
+  "sha": "38f8c6921013dce3",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if coupon > 0 else 0\nr1 = 13 * c1_1\nc3_1 = 1 if coupon > 0 else 0\nc3_2 = 1 if price_cents > 15656 else 0\nr3 = 8 * c3_1 * c3_2\nrate = max(r1, r3)",
+  "status": "success",
+  "sha": "ab5c992e52beeeb7",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if is_wholesale > 0 else 0\nc1_2 = 1 if price_cents > 37340 else 0\nr1 = 17 * c1_1 * c1_2\nc2_1 = 1 if is_vip > 0 else 0\nc2_2 = 1 if is_wholesale > 0 else 0\nr2 = 1 * c2_1 * c2_2\nc4_1 = 1 if is_vip > 0 else 0\nc4_2 = 1 if coupon > 0 else 0\nr4 = 5 * c4_1 * c4_2\nrate = max(r1, r2) + r4",
+  "status": "success",
+  "sha": "5dbf7b752c8bec2a",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if qty >= 37 else 0\nc1_2 = 1 if coupon > 0 else 0\nr1 = 19 * c1_1 * c1_2\nc2_1 = 1 if price_cents > 19469 else 0\nc2_2 = 1 if coupon > 0 else 0\nr2 = 12 * c2_1 * c2_2\nrate = r1 + r2",
+  "status": "success",
+  "sha": "df18b40788f104fe",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "c2_1 = 1 if qty >= 33 else 0\nr2 = 15 * c2_1\nc3_1 = 1 if coupon > 0 else 0\nr3 = 19 * c3_1\nrate = r2 + r3",
+  "status": "success",
+  "sha": "616f82cbe837194b",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "c1_1 = 1 if is_vip > 0 else 0\nr1 = 20 * c1_1\nc3_1 = 1 if is_vip > 0 else 0\nc3_2 = 1 if coupon > 0 else 0\nr3 = 9 * c3_1 * c3_2\nc4_1 = 1 if coupon > 0 else 0\nc4_2 = 1 if qty >= 28 else 0\nr4 = 9 * c4_1 * c4_2\nrate = r1 + r3 + r4",
+  "status": "success",
+  "sha": "55d6a35659550a9a",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "c2_1 = 1 if is_vip > 0 else 0\nr2 = 11 * c2_1\nrate = r2",
+  "status": "success",
+  "sha": "7c9cdf9637cf41b7",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if coupon > 0 else 0\nr1 = 5 * c1_1\nc2_1 = 1 if is_wholesale > 0 else 0\nr2 = 9 * c2_1\nc4_1 = 1 if is_vip > 0 else 0\nc4_2 = 1 if is_wholesale > 0 else 0\nr4 = 17 * c4_1 * c4_2\nc5_1 = 1 if is_wholesale > 0 else 0\nr5 = 4 * c5_1\nrate = max(r1, r2, r4) + r5",
+  "status": "success",
+  "sha": "ce6f77b15eecaeaf",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if price_cents > 17349 else 0\nc1_2 = 1 if coupon > 0 else 0\nr1 = 8 * c1_1 * c1_2\nc2_1 = 1 if is_vip > 0 else 0\nr2 = 18 * c2_1\nc3_1 = 1 if price_cents > 35369 else 0\nc3_2 = 1 if qty >= 16 else 0\nr3 = 1 * c3_1 * c3_2\nc5_1 = 1 if is_wholesale > 0 else 0\nr5 = 12 * c5_1\nrate = r1 + r2 + r3 + r5",
+  "status": "success",
+  "sha": "c1d8209a9d5db8c5",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if is_vip > 0 else 0\nc1_2 = 1 if qty >= 34 else 0\nr1 = 11 * c1_1 * c1_2\nc2_1 = 1 if qty >= 26 else 0\nr2 = 1 * c2_1\nc3_1 = 1 if price_cents > 8085 else 0\nr3 = 11 * c3_1\nrate = r1 + r2 + r3",
+  "status": "success",
+  "sha": "e989d9cf932353a8",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if qty >= 18 else 0\nc1_2 = 1 if coupon > 0 else 0\nr1 = 16 * c1_1 * c1_2\nc3_1 = 1 if qty >= 37 else 0\nr3 = 4 * c3_1\nrate = max(r1, r3)",
+  "status": "success",
+  "sha": "f8a94cdbb2b77025",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if is_wholesale > 0 else 0\nr1 = 13 * c1_1\nrate = r1",
+  "status": "success",
+  "sha": "4cb91ffb25f0da97",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c2_1 = 1 if is_wholesale > 0 else 0\nr2 = 2 * c2_1\nc3_1 = 1 if price_cents > 17515 else 0\nc3_2 = 1 if is_vip > 0 else 0\nr3 = 10 * c3_1 * c3_2\nc4_1 = 1 if coupon > 0 else 0\nc4_2 = 1 if qty >= 33 else 0\nr4 = 20 * c4_1 * c4_2\nrate = r2 + r3 + r4",
+  "status": "success",
+  "sha": "43d1469a317bbf87",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if price_cents > 15695 else 0\nc1_2 = 1 if is_wholesale > 0 else 0\nr1 = 12 * c1_1 * c1_2\nc3_1 = 1 if qty >= 20 else 0\nc3_2 = 1 if coupon > 0 else 0\nr3 = 7 * c3_1 * c3_2\nc4_1 = 1 if coupon > 0 else 0\nc4_2 = 1 if is_vip > 0 else 0\nr4 = 18 * c4_1 * c4_2\nrate = r1 + r3 + r4",
+  "status": "success",
+  "sha": "bcfd43b34ebce406",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if coupon > 0 else 0\nc1_2 = 1 if price_cents > 19765 else 0\nr1 = 5 * c1_1 * c1_2\nc2_1 = 1 if price_cents > 27932 else 0\nc2_2 = 1 if is_wholesale > 0 else 0\nr2 = 5 * c2_1 * c2_2\nrate = r1 + r2",
+  "status": "success",
+  "sha": "e3243fa70da1c15b",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "c1_1 = 1 if qty >= 30 else 0\nc1_2 = 1 if is_wholesale > 0 else 0\nr1 = 10 * c1_1 * c1_2\nc2_1 = 1 if is_vip > 0 else 0\nc2_2 = 1 if is_wholesale > 0 else 0\nr2 = 12 * c2_1 * c2_2\nc4_1 = 1 if price_cents > 32097 else 0\nr4 = 17 * c4_1\nc5_1 = 1 if qty >= 39 else 0\nr5 = 8 * c5_1\nrate = r1 + r2 + r4 + r5",
+  "status": "success",
+  "sha": "c8de6d8ec6b08db4",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "c1_1 = 1 if is_wholesale > 0 else 0\nc1_2 = 1 if qty >= 32 else 0\nr1 = 18 * c1_1 * c1_2\nc2_1 = 1 if coupon > 0 else 0\nr2 = 1 * c2_1\nc3_1 = 1 if coupon > 0 else 0\nc3_2 = 1 if is_wholesale > 0 else 0\nr3 = 13 * c3_1 * c3_2\nc4_1 = 1 if is_wholesale > 0 else 0\nc4_2 = 1 if coupon > 0 else 0\nr4 = 19 * c4_1 * c4_2\nrate = max(r1, r2) + r3 + r4",
+  "status": "success",
+  "sha": "c63775a7d44d1640",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "c1_1 = 1 if coupon > 0 else 0\nr1 = 8 * c1_1\nc2_1 = 1 if qty >= 39 else 0\nr2 = 18 * c2_1\nc3_1 = 1 if qty >= 36 else 0\nr3 = 19 * c3_1\nrate = max(r1, r2) + r3",
+  "status": "success",
+  "sha": "93d02152461e3e45",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "c2_1 = 1 if qty >= 15 else 0\nc2_2 = 1 if coupon > 0 else 0\nr2 = 16 * c2_1 * c2_2\nrate = r2",
+  "status": "success",
+  "sha": "4d991d3da753743c",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 17 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 11 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "a768b2a8530091b6",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 14 if is_wholesale * qty >= 15 else 0\nvipd = 14 if is_vip > 0 else 0\nrate = max(base, vipd) + 14 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "0027e5011d5ecd2c",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 35 else 0\nvipd = 7 if is_vip > 0 else 0\nrate = max(base, vipd) + 8 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "a4c13b2aca704cd5",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 18 if is_wholesale * qty >= 39 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 7 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "005cdd0903d3a759",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 13 if is_wholesale * qty >= 21 else 0\nvipd = 12 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "3e29ad9050e7b075",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 20 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 8 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "606ddc176e2bb540",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 22 else 0\nvipd = 6 if is_vip > 0 else 0\nrate = max(base, vipd) + 6 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "3b7efab66923d139",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 8 if is_wholesale * qty >= 15 else 0\nvipd = 7 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "3be33cc0320d68a9",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 20 if is_wholesale * qty >= 19 else 0\nvipd = 9 if is_vip > 0 else 0\nrate = max(base, vipd) + 4 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "8a129ae94ab60ace",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 18 if is_wholesale * qty >= 37 else 0\nvipd = 12 if is_vip > 0 else 0\nrate = max(base, vipd) + 14 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "20d48bc3e842aa49",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 17 if is_wholesale * qty >= 23 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 0 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "6b2bb2b498be92c1",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 6 if is_wholesale * qty >= 39 else 0\nvipd = 11 if is_vip > 0 else 0\nrate = max(base, vipd) + 9 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "ee6b9237066177d7",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 20 else 0\nvipd = 5 if is_vip > 0 else 0\nrate = max(base, vipd) + 14 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "6d4878e86ce2bf64",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 14 if is_wholesale * qty >= 33 else 0\nvipd = 5 if is_vip > 0 else 0\nrate = max(base, vipd) + 11 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "776da792e9ebfd05",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 16 if is_wholesale * qty >= 20 else 0\nvipd = 7 if is_vip > 0 else 0\nrate = max(base, vipd) + 14 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "ce7bfe42ee20dea3",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 18 if is_wholesale * qty >= 34 else 0\nvipd = 12 if is_vip > 0 else 0\nrate = max(base, vipd) + 13 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "5501bd55701ead4e",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 26 else 0\nvipd = 7 if is_vip > 0 else 0\nrate = max(base, vipd) + 5 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "6552f85a0c342709",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 18 if is_wholesale * qty >= 17 else 0\nvipd = 12 if is_vip > 0 else 0\nrate = max(base, vipd) + 15 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "b9d92105421c9bf3",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 15 if is_wholesale * qty >= 20 else 0\nvipd = 5 if is_vip > 0 else 0\nrate = max(base, vipd) + 8 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "31950c455d42b908",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 12 if is_wholesale * qty >= 26 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 13 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "bc6f1393fde0ae57",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 12 if is_wholesale * qty >= 25 else 0\nvipd = 8 if is_vip > 0 else 0\nrate = max(base, vipd) + 1 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "8b078371b1dcb486",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 16 if is_wholesale * qty >= 31 else 0\nvipd = 14 if is_vip > 0 else 0\nrate = max(base, vipd) + 2 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "660b935372585b6c",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 8 if is_wholesale * qty >= 10 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 6 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "3410849671661ffe",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 12 else 0\nvipd = 8 if is_vip > 0 else 0\nrate = max(base, vipd) + 13 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "6bed620bacddc666",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 38 else 0\nvipd = 14 if is_vip > 0 else 0\nrate = max(base, vipd) + 9 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "b52831ffbe17efe9",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 9 if is_wholesale * qty >= 22 else 0\nvipd = 7 if is_vip > 0 else 0\nrate = max(base, vipd) + 9 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "3324464737f07071",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 16 if is_wholesale * qty >= 10 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 0 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "6784518b1692575d",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 12 if is_wholesale * qty >= 39 else 0\nvipd = 11 if is_vip > 0 else 0\nrate = max(base, vipd) + 7 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "aa41c2155d694b23",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 39 else 0\nvipd = 8 if is_vip > 0 else 0\nrate = max(base, vipd) + 9 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "e9d22ae8dca9283c",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 37 else 0\nvipd = 14 if is_vip > 0 else 0\nrate = max(base, vipd) + 8 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "04a6c2a27c3bc5f9",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 16 else 0\nvipd = 3 if is_vip > 0 else 0\nrate = max(base, vipd) + 14 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "3f7b082a0680d435",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 10 if is_wholesale * qty >= 24 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "aa5a2fc77e02d84c",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 11 if is_wholesale * qty >= 13 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 2 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "7031ad9fdeea3106",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 18 if is_wholesale * qty >= 24 else 0\nvipd = 5 if is_vip > 0 else 0\nrate = max(base, vipd) + 9 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "389bbfdcd6268a2e",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 6 if is_wholesale * qty >= 14 else 0\nvipd = 11 if is_vip > 0 else 0\nrate = max(base, vipd) + 6 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "448ab023feae5b59",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 13 if is_wholesale * qty >= 30 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 5 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "cafd18b9b74e7bc2",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 11 if is_wholesale * qty >= 15 else 0\nvipd = 5 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "bf0a4bf868706fc9",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 20 if is_wholesale * qty >= 30 else 0\nvipd = 3 if is_vip > 0 else 0\nrate = max(base, vipd) + 10 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "9c31819f97e8bae7",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 6 if is_wholesale * qty >= 30 else 0\nvipd = 11 if is_vip > 0 else 0\nrate = max(base, vipd) + 0 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "3fb838e2f2e02af7",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 6 if is_wholesale * qty >= 12 else 0\nvipd = 14 if is_vip > 0 else 0\nrate = max(base, vipd) + 1 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "e7962f422f1bf53b",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 13 if is_wholesale * qty >= 32 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 5 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "0317dca6f00ef8fe",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 14 if is_wholesale * qty >= 11 else 0\nvipd = 8 if is_vip > 0 else 0\nrate = max(base, vipd) + 6 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "974a8bb4f9bcc4f3",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 8 if is_wholesale * qty >= 29 else 0\nvipd = 6 if is_vip > 0 else 0\nrate = max(base, vipd) + 0 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "15480f0257eb1e1c",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 6 if is_wholesale * qty >= 16 else 0\nvipd = 9 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "997c9ed8ece2debe",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 5 if is_wholesale * qty >= 32 else 0\nvipd = 4 if is_vip > 0 else 0\nrate = max(base, vipd) + 4 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "e2a3551a0d1b9d07",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 20 else 0\nvipd = 9 if is_vip > 0 else 0\nrate = max(base, vipd) + 12 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "171c7882cb4d6fae",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 8 if is_wholesale * qty >= 31 else 0\nvipd = 12 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "aa1d90d536e029ea",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 14 if is_wholesale * qty >= 28 else 0\nvipd = 4 if is_vip > 0 else 0\nrate = max(base, vipd) + 5 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "8d945e5ba0e7f8aa",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 12 if is_wholesale * qty >= 38 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 14 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "85fd3daa47d85eac",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 18 if is_wholesale * qty >= 34 else 0\nvipd = 11 if is_vip > 0 else 0\nrate = max(base, vipd) + 14 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "ac3940b64e04399b",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 20 if is_wholesale * qty >= 18 else 0\nvipd = 11 if is_vip > 0 else 0\nrate = max(base, vipd) + 4 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "a5c0e0cbdaa9708a",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 20 else 0\nvipd = 12 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "5adf595030855a80",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 17 if is_wholesale * qty >= 25 else 0\nvipd = 10 if is_vip > 0 else 0\nrate = max(base, vipd) + 11 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "31c218aadd077e07",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 17 if is_wholesale * qty >= 26 else 0\nvipd = 6 if is_vip > 0 else 0\nrate = max(base, vipd) + 6 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "f4dc2905959974ee",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 8 if is_wholesale * qty >= 27 else 0\nvipd = 9 if is_vip > 0 else 0\nrate = max(base, vipd) + 1 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "8de8d68e65857cd9",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 13 if is_wholesale * qty >= 23 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 5 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "2b178e94d7e49871",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 6 if is_wholesale * qty >= 34 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 0 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "adc46e912f8ba7f6",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 8 if is_wholesale * qty >= 35 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 11 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "f7dc09d8c920c8c4",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 16 if is_wholesale * qty >= 34 else 0\nvipd = 11 if is_vip > 0 else 0\nrate = max(base, vipd) + 15 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "f3b6e2f4d375ad05",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 12 if is_wholesale * qty >= 17 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 15 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "64baf27953332abf",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 17 if is_wholesale * qty >= 16 else 0\nvipd = 11 if is_vip > 0 else 0\nrate = max(base, vipd) + 10 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "8f834931807cfbf7",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 9 if is_wholesale * qty >= 15 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 13 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "183ed7e3071b3aa7",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 27 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 2 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "0cccbd17ef928f85",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 17 else 0\nvipd = 14 if is_vip > 0 else 0\nrate = max(base, vipd) + 12 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "8873d157fa5f1c92",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 15 if is_wholesale * qty >= 32 else 0\nvipd = 6 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "394c26d1f775cc7a",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 15 if is_wholesale * qty >= 28 else 0\nvipd = 4 if is_vip > 0 else 0\nrate = max(base, vipd) + 7 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "3f68db9924bcd382",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 25 else 0\nvipd = 5 if is_vip > 0 else 0\nrate = max(base, vipd) + 7 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "6a80a9d17a449d39",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 19 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 13 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "d7f49596a5db727a",
+  "reason": "",
+  "over30": true
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 24 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 10 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "054bac777cedb459",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 11 if is_wholesale * qty >= 23 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 8 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "577f60ff8c778a1e",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 7 if is_wholesale * qty >= 10 else 0\nvipd = 7 if is_vip > 0 else 0\nrate = max(base, vipd) + 15 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "fe1670a4aa9bcaa1",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 8 if is_wholesale * qty >= 36 else 0\nvipd = 15 if is_vip > 0 else 0\nrate = max(base, vipd) + 4 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "150e76fee929c833",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 11 if is_wholesale * qty >= 13 else 0\nvipd = 5 if is_vip > 0 else 0\nrate = max(base, vipd) + 12 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 20 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "66bf075b6ff7c249",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 15 if is_wholesale * qty >= 17 else 0\nvipd = 8 if is_vip > 0 else 0\nrate = max(base, vipd) + 0 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "487a6b35226d8307",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 12 if is_wholesale * qty >= 39 else 0\nvipd = 12 if is_vip > 0 else 0\nrate = max(base, vipd) + 9 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "6f71d68822b1d7da",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 17 if is_wholesale * qty >= 18 else 0\nvipd = 4 if is_vip > 0 else 0\nrate = max(base, vipd) + 13 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "f90bdca6ffd38c09",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 19 if is_wholesale * qty >= 26 else 0\nvipd = 8 if is_vip > 0 else 0\nrate = max(base, vipd) + 11 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 5 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "51c6374dda627eeb",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 20 if is_wholesale * qty >= 29 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 0 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 0 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "cd851a7a1e101db6",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 6 if is_wholesale * qty >= 17 else 0\nvipd = 8 if is_vip > 0 else 0\nrate = max(base, vipd) + 5 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "4692d8405f27df15",
+  "reason": "",
+  "over30": false
+ },
+ {
+  "plan": "gross = qty * price_cents\nbase = 6 if is_wholesale * qty >= 37 else 0\nvipd = 13 if is_vip > 0 else 0\nrate = max(base, vipd) + 4 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "status": "success",
+  "sha": "03cdaabb2f6ca2d6",
+  "reason": "",
+  "over30": false
+ }
+]
