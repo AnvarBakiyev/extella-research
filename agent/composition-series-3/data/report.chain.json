@@ -1,0 +1,24 @@
+[
+ {
+  "lang": "k3_readsql",
+  "code": "SELECT region, is_wholesale, is_vip, qty, price_cents, coupon FROM orders"
+ },
+ {
+  "lang": "k3_steps",
+  "code": "gross = qty * price_cents\nbase = 10 if is_wholesale * qty >= 20 else 0\nvipd = 5 if is_vip > 0 else 0\nrate = max(base, vipd) + 3 * coupon\ndiscount = round(gross * rate / 100)\nnet = gross - discount\ntax = round(net * 12 / 100)\ntotal = net + tax",
+  "params": {
+   "mode": "map",
+   "outputs": [
+    "gross",
+    "discount",
+    "tax",
+    "total"
+   ]
+  },
+  "merge": true
+ },
+ {
+  "lang": "k3_card",
+  "code": "title: Orders by region\ngroup: region\ncount: orders\nsum: gross discount tax total\nmoney: gross discount tax total"
+ }
+]

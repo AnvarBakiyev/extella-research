@@ -1,0 +1,30 @@
+{
+ "east": {
+  "orders": 493,
+  "gross": 297107713,
+  "discount": 12184046,
+  "tax": 34190835,
+  "total": 319114502
+ },
+ "north": {
+  "orders": 532,
+  "gross": 347638715,
+  "discount": 13540164,
+  "tax": 40091831,
+  "total": 374190382
+ },
+ "south": {
+  "orders": 480,
+  "gross": 290053672,
+  "discount": 12612082,
+  "tax": 33292988,
+  "total": 310734578
+ },
+ "west": {
+  "orders": 495,
+  "gross": 294339293,
+  "discount": 13359172,
+  "tax": 33717613,
+  "total": 314697734
+ }
+}
