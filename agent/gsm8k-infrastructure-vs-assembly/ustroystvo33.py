@@ -1,0 +1,259 @@
+#!/usr/bin/env python3
+"""Устройство v3.3 (v3.2 + хранилище концептов, числа словами, арбитр с переводом рассуждения в план). Прежнее описание v3: рассуждение + план + исполнитель с проверками + сверка + обратная связь.
+
+Запуск:  python3 ustroystvo3.py dev            # 100 случайных задач train (seed 20261025), настройка
+         python3 ustroystvo3.py test 101 400   # задачи теста GSM8K с 101 по 400, финальный прогон (после заморозки)
+
+Цепочка на одну задачу:
+ 1. Модель рассуждает словами и даёт ответ R (как A2).
+ 2. Модель пишет план на языке plan3; верхний обработчик разбирает строки, нижний исполняет каждую операцию
+    с проверками (имена, деление на ноль, единицы при сложении и вычитании) и даёт P.
+ 3. Правила обработчика: каждое число из условия использовано в плане или отмечено строкой «# unused N: причина»;
+    ответ конечный; если вопрос спрашивает «сколько» предметов или людей, ответ целый и не отрицательный.
+ 4. Если P == R — принимаем. Иначе обратная связь: модели показываются оба числа и план, она пишет исправленный план;
+    до 3 раундов. После них, если согласия нет, принимаем последний план, прошедший проверки (и помечаем «без согласия»).
+"""
+import ast, json, math, os, random, re, sys, time, urllib.request
+
+ЗДЕСЬ = os.path.dirname(os.path.abspath(__file__))
+МОДЕЛЬ = "qwen3.5:9b"
+
+def вызов(промпт, max_out=1500):
+    t0 = time.time()
+    req = urllib.request.Request("http://localhost:11434/api/generate", data=json.dumps({"model": МОДЕЛЬ, "prompt": промпт, "stream": False,
+        "think": False, "options": {"temperature": 0, "num_predict": max_out, "num_ctx": 6144}}).encode(), headers={"Content-Type": "application/json"})
+    r = json.load(urllib.request.urlopen(req, timeout=1800))
+    return r.get("response", ""), r.get("prompt_eval_count", 0), r.get("eval_count", 0), time.time() - t0
+
+def вызов_т(промпт, max_out, t, seed):
+    t0 = time.time()
+    req = urllib.request.Request("http://localhost:11434/api/generate", data=json.dumps({"model": МОДЕЛЬ, "prompt": промпт, "stream": False,
+        "think": False, "options": {"temperature": t, "seed": seed, "num_predict": max_out, "num_ctx": 6144}}).encode(), headers={"Content-Type": "application/json"})
+    r = json.load(urllib.request.urlopen(req, timeout=1800))
+    return r.get("response", ""), r.get("prompt_eval_count", 0), r.get("eval_count", 0), time.time() - t0
+
+class Отказ(Exception): pass
+
+# ---------- нижний обработчик: одна операция ----------
+def нижний(оп, a, b=None, где=""):
+    (va, ua) = a; (vb, ub) = b if b is not None else (None, None)
+    if оп in ("+", "-"):
+        if ua and ub and ua != ub: raise Отказ(f"{где}: cannot {'add' if оп=='+' else 'subtract'} {ub} {'to' if оп=='+' else 'from'} {ua}; convert to the same unit first")
+        return (va + vb if оп == "+" else va - vb, ua or ub)
+    if оп == "*": return (va * vb, ua or ub if not (ua and ub) else "")
+    if оп == "/":
+        if vb == 0: raise Отказ(f"{где}: division by zero")
+        return (va / vb, "" if (ua and ub and ua == ub) else (ua or ""))
+    if оп == "**":
+        if abs(vb) > 64: raise Отказ(f"{где}: exponent too large")
+        return (va ** vb, ua)
+    if оп in ("//", "%"):
+        if vb == 0: raise Отказ(f"{где}: division by zero")
+        return (va // vb if оп == "//" else va % vb, ua)
+    raise Отказ(f"{где}: unknown operation {оп}")
+
+ФУНКЦИИ = {"max": max, "min": min, "round": lambda x, n=0: round(x, int(n)) if n else math.floor(x + 0.5), "floor": math.floor, "ceil": math.ceil, "abs": abs, "sqrt": math.sqrt, "log": math.log, "sum": lambda *a: sum(a)}
+ОПЫ = {ast.Add: "+", ast.Sub: "-", ast.Mult: "*", ast.Div: "/", ast.Pow: "**", ast.FloorDiv: "//", ast.Mod: "%"}
+СРАВН = {ast.Gt: lambda a, b: a > b, ast.Lt: lambda a, b: a < b, ast.GtE: lambda a, b: a >= b, ast.LtE: lambda a, b: a <= b, ast.Eq: lambda a, b: a == b, ast.NotEq: lambda a, b: a != b}
+
+def вычислить(у, имена, где):
+    if isinstance(у, ast.Constant) and isinstance(у.value, (int, float)) and not isinstance(у.value, bool): return (у.value, "")
+    if isinstance(у, ast.Name):
+        if у.id not in имена: raise Отказ(f"{где}: name '{у.id}' is not defined above")
+        return имена[у.id]
+    if isinstance(у, ast.UnaryOp) and isinstance(у.op, ast.USub):
+        v, u = вычислить(у.operand, имена, где); return (-v, u)
+    if isinstance(у, ast.BinOp) and type(у.op) in ОПЫ:
+        return нижний(ОПЫ[type(у.op)], вычислить(у.left, имена, где), вычислить(у.right, имена, где), где)
+    if isinstance(у, ast.Call) and isinstance(у.func, ast.Name) and у.func.id in ФУНКЦИИ:
+        арг = [вычислить(x, имена, где) for x in у.args]
+        if not арг: raise Отказ(f"{где}: {у.func.id}() needs arguments")
+        v = ФУНКЦИИ[у.func.id](*[a[0] for a in арг]); return (v, арг[0][1])
+    if isinstance(у, ast.Compare) and len(у.ops) == 1 and type(у.ops[0]) in СРАВН:
+        return (1 if СРАВН[type(у.ops[0])](вычислить(у.left, имена, где)[0], вычислить(у.comparators[0], имена, где)[0]) else 0, "")
+    if isinstance(у, ast.IfExp):
+        c = у.test
+        if isinstance(c, ast.Compare) and len(c.ops) == 1 and type(c.ops[0]) in СРАВН:
+            ok = СРАВН[type(c.ops[0])](вычислить(c.left, имена, где)[0], вычислить(c.comparators[0], имена, где)[0])
+            return вычислить(у.body if ok else у.orelse, имена, где)
+        raise Отказ(f"{где}: the condition must be one comparison like a > b")
+    raise Отказ(f"{где}: allowed are numbers, names, + - * / ** // %, parentheses, max min round floor ceil abs sqrt log sum, comparisons, and 'x if a > b else y'. There are no unknowns, loops or equations: compute each value directly from known ones")
+
+СТРОКА = re.compile(r"^\s*([A-Za-z_]\w*)\s*(?:\[\s*([^\]]+?)\s*\])?\s*=\s*(.+?)\s*$")
+def верхний(план):
+    имена = {}; отмечены = set(); исп_числа = []
+    for н, с in enumerate([с for с in план.strip().splitlines() if с.strip()], 1):
+        с = с.strip()
+        if re.match(r"#?\s*unused", с, re.I) or (с.startswith("#") and "unused" in с.lower()):
+            for ч in re.findall(r"\d[\d,]*(?:\.\d+)?", с.split(":")[0]): отмечены.add(float(ч.replace(",", "")))
+            continue
+        if с.startswith("#"): continue
+        с = с.split("#")[0].replace("×", "*").replace("−", "-").replace("÷", "/").replace("$", "")
+        m = СТРОКА.match(с)
+        if not m: raise Отказ(f"line {н} '{с}': use the form name = expression  or  name [unit] = expression")
+        имя, ед, выр = m.group(1), (m.group(2) or "").strip().lower().rstrip("s"), m.group(3)
+        if "/" in ед or " per " in ед: ед = ""
+        выр = re.sub(r"\s*\[[^\]]*\]\s*$", "", выр)  # единица после выражения
+        выр = re.sub(r"(?<=\d),(?=\d{3}\b)", "", выр)
+        выр = re.sub(r"(\d+(?:\.\d+)?)\s*%", r"(\1/100)", выр)
+        for ч in re.findall(r"(?<![\w.])\d+(?:\.\d+)?", выр): исп_числа.append(float(ч))
+        try: дерево = ast.parse(выр, mode="eval").body
+        except SyntaxError: raise Отказ(f"line {н} '{с.strip()}': cannot parse the expression")
+        v, u = вычислить(дерево, имена, f"line {н} '{с.strip()}'")
+        имена[имя] = (v, ед or u)
+    if "answer" not in имена: raise Отказ("no line 'answer = ...'")
+    return имена["answer"][0], исп_числа, отмечены
+
+СЛОВА_СЧЁТ = re.compile(r"\bhow many\b", re.I)
+
+# Хранилище концептов: слово в условии → неявная величина и факт для модели
+КОНЦЕПТЫ = [
+    (r"\bweek(?:s)?\b|\bweekly\b", 7, "a week has 7 days"),
+    (r"\bfortnight", 14, "a fortnight has 14 days"),
+    (r"\bweekend", 2, "a weekend has 2 days"),
+    (r"\bdozen", 12, "a dozen is 12"),
+    (r"\bhours?\b", 60, "an hour has 60 minutes"),
+    (r"\bminutes?\b", 60, "a minute has 60 seconds"),
+    (r"\bday(?:s)?\b|\bdaily\b", 24, "a day has 24 hours"),
+    (r"\byear(?:s)?\b|\byearly\b|\bannual", 12, "a year has 12 months, 52 weeks, 365 days"),
+    (r"\bquarters?\b", 25, "a quarter coin is 25 cents; a quarter is 1/4"),
+    (r"\bdimes?\b", 10, "a dime is 10 cents"),
+    (r"\bnickels?\b", 5, "a nickel is 5 cents"),
+    (r"\bdollars?\b|\$", 100, "a dollar is 100 cents"),
+    (r"\bdecade", 10, "a decade is 10 years"),
+    (r"\bcentury", 100, "a century is 100 years"),
+    (r"\bfeet\b|\bfoot\b", 12, "a foot is 12 inches; a yard is 3 feet"),
+    (r"\bpounds?\b", 16, "a pound is 16 ounces"),
+    (r"\bgallons?\b", 4, "a gallon is 4 quarts, 128 fluid ounces"),
+]
+СЛОВА_ЧИСЛА = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10,
+               "eleven": 11, "twelve": 12, "fifteen": 15, "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50, "hundred": 100,
+               "twice": 2, "double": 2, "triple": 3, "half": 0.5, "third": 3, "quarter": 4}
+def факты(текст):
+    return [ф for рег, _, ф in КОНЦЕПТЫ if re.search(рег, текст, re.I)]
+def числа_словами(текст):
+    out = []
+    for w in re.findall(r"[A-Za-z]+", текст.lower()):
+        if w in СЛОВА_ЧИСЛА: out.append(СЛОВА_ЧИСЛА[w])
+    return out
+def числа_условия(текст):
+    out = []
+    for ч in re.findall(r"(?<![\w.])\d[\d,]*(?:\.\d+)?", текст):
+        try: out.append(float(ч.replace(",", "")))
+        except ValueError: pass
+    return out
+
+def правила(задача, рез, исп, отмечены):
+    if not math.isfinite(рез): raise Отказ("the answer is not a finite number")
+    вопрос = задача.split("?")[-2] if "?" in задача else задача
+    if СЛОВА_СЧЁТ.search(вопрос) and (рез < 0 or abs(рез - round(рез)) > 1e-9):
+        raise Отказ(f"the question asks 'how many', so the answer must be a whole non-negative number, but the plan gives {рез}")
+    if рез < 0: raise Отказ(f"the answer {рез} is negative; check the plan")
+    исп_мн = set(исп)
+    пропущены = [ч for ч in числа_условия(задача) if ч not in исп_мн and ч not in отмечены]
+    for ч in set(числа_словами(задача)):
+        if ч not in исп_мн and ч not in отмечены and not (ч == 0.5 and 2.0 in исп_мн) and not (ч in (3, 4) and ч in исп_мн):
+            if ч in (2, 3, 4) and (1/ч) in исп_мн: continue
+            пропущены.append(float(ч))
+    if пропущены:
+        п = ", ".join(str(int(x)) if x == int(x) else str(x) for x in sorted(set(пропущены)))
+        raise Отказ(f"these numbers from the problem are not used in the plan: {п}. Use each one, or add a line '# unused N: reason' if it is really not needed")
+
+ЯЗЫК = """Write the solution as a plan. Each line: name = expression, or name [unit] = expression (unit is optional, e.g. [dollars], [eggs], [hours]).
+In expressions use numbers from the problem, names defined above, + - * /, parentheses, max(), min(), round(), floor(), ceil(), and 'x if a > b else y'. Percent may be written as 20%.
+Every number in the problem, including numbers written as words (three, twice, half), must be used, or listed on a line '# unused N: reason'. There are no unknowns, loops or equations: compute every value directly. The last line must be: answer = ... . Output only the plan.
+Example:
+eggs_per_day [eggs] = 16
+eaten [eggs] = 3 + 4
+sold [eggs] = eggs_per_day - eaten
+answer [dollars] = sold * 2"""
+
+def число_из_текста(т):
+    m = re.findall(r"-?\d[\d,]*\.?\d*", т)
+    if not m: return None
+    try: return float(m[-1].replace(",", "").rstrip("."))
+    except ValueError: return None
+
+def решить(задача, журнал):
+    фк = факты(задача)
+    подсказка = ("\n\nFacts that may be needed (use only those the problem actually requires): " + "; ".join(фк) + ".") if фк else ""
+    журнал["факты"] = фк
+    т, вх, вых, _ = вызов(задача + подсказка + "\n\nSolve step by step, calculating carefully. Numbers may be written as words (three, twice, half) or be implied (every day of a week). On the last line write only the final answer as a number.", 1500)
+    журнал["вызовов"] += 1; журнал["токены"] += вх + вых
+    R = число_из_текста(т); журнал["R"] = R; журнал["R_текст"] = т
+    промпт = задача + подсказка + "\n\n" + ЯЗЫК; последний_принятый = None
+    for раунд in range(4):
+        т, вх, вых, _ = вызов(промпт, 1500); журнал["вызовов"] += 1; журнал["токены"] += вх + вых
+        план = re.sub(r"^```\w*|```$", "", т.strip(), flags=re.M).strip()
+        try:
+            P, исп, отм = верхний(план); правила(задача, P, исп, отм)
+        except Отказ as e:
+            журнал["события"].append(f"отказ: {str(e)[:160]}")
+            промпт = задача + подсказка + "\n\n" + ЯЗЫК + "\n\nYour plan:\n" + план + f"\n\nThe executor refused: {e}. Fix the plan and return it in full."
+            continue
+        последний_принятый = P; журнал["P"] = P
+        if R is not None and abs(P - R) < 1e-6:
+            журнал["согласие"] = True; return P
+        журнал["события"].append(f"расхождение: план {P}, рассуждение {R}")
+        промпт = (задача + подсказка + "\n\n" + ЯЗЫК + "\n\nYour plan:\n" + план + f"\n\nThe executor computed this plan exactly and got {P}. A separate step-by-step solution got {R}. "
+                  "They disagree, so at least one of them misreads the problem. Re-read the problem sentence by sentence, decide which quantity the question asks for, and return a corrected plan in full.")
+    журнал["согласие"] = False
+    # нет согласия: арбитр. Каждое рассуждение (исходное и два новых) переводится моделью в план и исполняется;
+    # голос засчитывается ответу, только если рассуждение и его план совпали (счёт рассуждения подтверждён исполнителем).
+    подтверждённые = []
+    if последний_принятый is not None: подтверждённые.append(round(последний_принятый, 6))
+    тексты = [журнал.get("R_текст", "")]
+    for k in range(2):
+        т2, вх, вых, _ = вызов_т(задача + подсказка + "\n\nRead the problem carefully, sentence by sentence. Solve step by step, then check your answer against every sentence. On the last line write only the final answer as a number.", 1500, 0.7, 100 + k)
+        журнал["вызовов"] += 1; журнал["токены"] += вх + вых; тексты.append(т2)
+    for т2 in тексты:
+        if not т2: continue
+        r2 = число_из_текста(т2)
+        if r2 is None: continue
+        т3, вх, вых, _ = вызов(задача + подсказка + "\n\nHere is a step-by-step solution:\n" + т2[-2500:] + "\n\n" + ЯЗЫК + "\nTranslate exactly this solution into the plan, step by step.", 1500)
+        журнал["вызовов"] += 1; журнал["токены"] += вх + вых
+        план3 = re.sub(r"^```\w*|```$", "", т3.strip(), flags=re.M).strip()
+        try:
+            p3, _, _ = верхний(план3)
+            if abs(p3 - r2) < 1e-6: подтверждённые.append(round(r2, 6))
+        except Отказ:
+            pass
+    журнал["подтверждённые"] = подтверждённые
+    from collections import Counter
+    if подтверждённые:
+        c = Counter(подтверждённые).most_common(); лучшие = [v for v, k in c if k == c[0][1]]
+        журнал["решение"] = "арбитр"
+        if последний_принятый is not None and round(последний_принятый, 6) in лучшие: return последний_принятый
+        return лучшие[0]
+    журнал["решение"] = "рассуждение"
+    return R
+
+def задачи(режим, a=None, b=None):
+    if режим == "dev":
+        строки = open(os.path.join(ЗДЕСЬ, "data", "gsm8k_train.jsonl"), encoding="utf-8").read().splitlines()
+        выбор = random.Random(20261026).sample(range(len(строки)), 100)  # новая выборка для v3.3
+        return [(f"train{i}", json.loads(строки[i])) for i in выбор]
+    строки = open(os.path.join(ЗДЕСЬ, "data", "gsm8k_test.jsonl"), encoding="utf-8").read().splitlines()
+    return [(f"test{i}", json.loads(строки[i - 1])) for i in range(a, b + 1)]
+
+if __name__ == "__main__":
+    режим = sys.argv[1]; a = int(sys.argv[2]) if len(sys.argv) > 2 else None; b = int(sys.argv[3]) if len(sys.argv) > 3 else None
+    выход = os.path.join(ЗДЕСЬ, f"results_v33_{режим}" + (f"_{a}_{b}" if a else "") + ".json")
+    рез = []
+    for k, (ид, d) in enumerate(задачи(режим, a, b), 1):
+        эталон = float(d["answer"].split("####")[-1].strip().replace(",", ""))
+        ж = {"id": ид, "вызовов": 0, "токены": 0, "события": [], "согласие": None, "R": None, "P": None}
+        ответ = решить(d["question"], ж)
+        ж.pop("R_текст", None); ж["ответ"] = ответ; ж["эталон"] = эталон; ж["верно"] = ответ is not None and abs(ответ - эталон) < 1e-6
+        ж["R_верно"] = ж["R"] is not None and abs(ж["R"] - эталон) < 1e-6
+        рез.append(ж)
+        if k % 10 == 0:
+            print(k, "верных", sum(x["верно"] for x in рез), "| рассуждение", sum(x["R_верно"] for x in рез), "| согласие", sum(bool(x["согласие"]) for x in рез),
+                  "| неверных при согласии", sum(1 for x in рез if x["согласие"] and not x["верно"]), flush=True)
+            json.dump(рез, open(выход, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(рез, open(выход, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    n = len(рез)
+    print("ИТОГ", режим, "задач", n, "| верных", sum(x["verно"] if False else x["верно"] for x in рез), "| рассуждение само", sum(x["R_верно"] for x in рез),
+          "| с согласием", sum(bool(x["согласие"]) for x in рез), "| неверных при согласии", sum(1 for x in рез if x["согласие"] and not x["верно"]),
+          "| без согласия верных", sum(1 for x in рез if not x["согласие"] and x["верно"]), "из", sum(1 for x in рез if not x["согласие"]),
+          "| вызовов", sum(x["вызовов"] for x in рез))

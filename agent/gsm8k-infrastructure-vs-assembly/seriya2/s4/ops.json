@@ -1,0 +1,10 @@
+[
+ {"name": "op_percent_of", "cat": "percent", "description": "Percent of a quantity: part equals whole times percent (discount, tax, tip, share of a total, interest for one period).", "snippet": "part = whole * p%"},
+ {"name": "op_percent_change", "cat": "percent", "description": "Increase or decrease by a percent: new value equals old value times (1 plus or minus percent); markup, raise, price drop.", "snippet": "new = old * (1 + p%)"},
+ {"name": "op_rate_time", "cat": "rate_time", "description": "Rate per unit of time multiplied by time: earnings per hour, distance per hour, items made per day, pay per week.", "snippet": "total = rate * time"},
+ {"name": "op_time_convert", "cat": "rate_time", "description": "Convert time units before using a rate: minutes to hours, days to weeks, hours per day times days.", "snippet": "hours = minutes / 60"},
+ {"name": "op_unit_convert", "cat": "units", "description": "Convert units of measure or count: dozens to items, feet to inches, pounds to ounces, gallons to quarts, dollars to cents.", "snippet": "items = dozens * 12"},
+ {"name": "op_each_count", "cat": "each", "description": "Each item has the same amount: total equals count times amount each (each box holds, each person gets, each costs).", "snippet": "total = count * each"},
+ {"name": "op_split_equally", "cat": "each", "description": "Split a total equally among a number of people or groups: each share equals total divided by count.", "snippet": "share = total / count"},
+ {"name": "op_total_cost", "cat": "cost", "description": "Total cost of a purchase: price per item times quantity, summed over several kinds of items.", "snippet": "cost = price * quantity"}
+]

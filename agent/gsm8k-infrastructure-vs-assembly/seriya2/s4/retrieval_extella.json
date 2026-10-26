@@ -1,0 +1,278 @@
+[
+ {
+  "task": 130,
+  "want": "each",
+  "top2": [
+   "op_rate_time",
+   "op_time_convert"
+  ],
+  "hit": false,
+  "sec": 2.755,
+  "raw_top2": [
+   "op_rate_time",
+   "op_time_convert"
+  ]
+ },
+ {
+  "task": 141,
+  "want": "percent",
+  "top2": [
+   "op_percent_of",
+   "op_percent_change"
+  ],
+  "hit": true,
+  "sec": 2.668,
+  "raw_top2": [
+   "op_percent_of",
+   "speed_converter"
+  ]
+ },
+ {
+  "task": 230,
+  "want": "percent",
+  "top2": [
+   "op_split_equally"
+  ],
+  "hit": false,
+  "sec": 2.348,
+  "raw_top2": [
+   "text_analyzer",
+   "weekly_report_generator"
+  ]
+ },
+ {
+  "task": 336,
+  "want": "units",
+  "top2": [
+   "op_each_count",
+   "op_unit_convert"
+  ],
+  "hit": true,
+  "sec": 2.574,
+  "raw_top2": [
+   "op_each_count",
+   "op_unit_convert"
+  ]
+ },
+ {
+  "task": 342,
+  "want": "each",
+  "top2": [
+   "op_each_count",
+   "op_total_cost"
+  ],
+  "hit": true,
+  "sec": 1.93,
+  "raw_top2": [
+   "op_each_count",
+   "weight_converter"
+  ]
+ },
+ {
+  "task": 356,
+  "want": "units",
+  "top2": [
+   "op_each_count",
+   "op_split_equally"
+  ],
+  "hit": false,
+  "sec": 2.42,
+  "raw_top2": [
+   "find_large_files",
+   "mac_disk_usage_analysis"
+  ]
+ },
+ {
+  "task": 410,
+  "want": "rate_time",
+  "top2": [
+   "op_rate_time",
+   "op_total_cost"
+  ],
+  "hit": true,
+  "sec": 2.538,
+  "raw_top2": [
+   "op_rate_time",
+   "loan_calculator"
+  ]
+ },
+ {
+  "task": 431,
+  "want": "each",
+  "top2": [
+   "op_total_cost",
+   "op_each_count"
+  ],
+  "hit": true,
+  "sec": 2.067,
+  "raw_top2": [
+   "op_total_cost",
+   "op_each_count"
+  ]
+ },
+ {
+  "task": 435,
+  "want": "units",
+  "top2": [
+   "op_percent_of",
+   "op_each_count"
+  ],
+  "hit": false,
+  "sec": 2.291,
+  "raw_top2": [
+   "op_percent_of",
+   "op_each_count"
+  ]
+ },
+ {
+  "task": 442,
+  "want": "each",
+  "top2": [
+   "op_each_count",
+   "op_split_equally"
+  ],
+  "hit": true,
+  "sec": 2.366,
+  "raw_top2": [
+   "op_each_count",
+   "op_split_equally"
+  ]
+ },
+ {
+  "task": 460,
+  "want": "units",
+  "top2": [
+   "op_each_count",
+   "op_unit_convert"
+  ],
+  "hit": true,
+  "sec": 2.605,
+  "raw_top2": [
+   "op_each_count",
+   "op_unit_convert"
+  ]
+ },
+ {
+  "task": 523,
+  "want": "rate_time",
+  "top2": [
+   "op_each_count",
+   "op_split_equally"
+  ],
+  "hit": false,
+  "sec": 2.234,
+  "raw_top2": [
+   "op_each_count",
+   "op_split_equally"
+  ]
+ },
+ {
+  "task": 549,
+  "want": "rate_time",
+  "top2": [
+   "op_percent_change",
+   "op_percent_of"
+  ],
+  "hit": false,
+  "sec": 2.014,
+  "raw_top2": [
+   "op_percent_change",
+   "weight_converter"
+  ]
+ },
+ {
+  "task": 551,
+  "want": "each",
+  "top2": [
+   "op_total_cost",
+   "op_each_count"
+  ],
+  "hit": true,
+  "sec": 2.179,
+  "raw_top2": [
+   "op_total_cost",
+   "op_each_count"
+  ]
+ },
+ {
+  "task": 601,
+  "want": "percent",
+  "top2": [
+   "op_percent_change",
+   "op_percent_of"
+  ],
+  "hit": true,
+  "sec": 2.405,
+  "raw_top2": [
+   "weight_converter",
+   "op_percent_change"
+  ]
+ },
+ {
+  "task": 612,
+  "want": "percent",
+  "top2": [
+   "op_total_cost",
+   "op_each_count"
+  ],
+  "hit": false,
+  "sec": 1.924,
+  "raw_top2": [
+   "investment_calculator",
+   "op_total_cost"
+  ]
+ },
+ {
+  "task": 629,
+  "want": "units",
+  "top2": [],
+  "hit": false,
+  "sec": 2.664,
+  "raw_top2": [
+   "age_calculator",
+   "investment_calculator"
+  ]
+ },
+ {
+  "task": 662,
+  "want": "rate_time",
+  "top2": [
+   "op_total_cost",
+   "op_each_count"
+  ],
+  "hit": false,
+  "sec": 1.891,
+  "raw_top2": [
+   "op_total_cost",
+   "op_each_count"
+  ]
+ },
+ {
+  "task": 669,
+  "want": "percent",
+  "top2": [
+   "op_percent_of",
+   "op_split_equally"
+  ],
+  "hit": true,
+  "sec": 2.215,
+  "raw_top2": [
+   "op_percent_of",
+   "op_split_equally"
+  ]
+ },
+ {
+  "task": 679,
+  "want": "rate_time",
+  "top2": [
+   "op_rate_time",
+   "op_each_count"
+  ],
+  "hit": true,
+  "sec": 1.942,
+  "raw_top2": [
+   "op_rate_time",
+   "op_each_count"
+  ]
+ }
+]

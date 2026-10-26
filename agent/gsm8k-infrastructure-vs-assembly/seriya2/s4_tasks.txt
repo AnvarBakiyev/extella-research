@@ -1,0 +1,21 @@
+# S4: 20 задач теста GSM8K (номер строки, вид операции), seed по имени вида, без задач выборки части 2
+130	each
+141	percent
+230	percent
+336	units
+342	each
+356	units
+410	rate_time
+431	each
+435	units
+442	each
+460	units
+523	rate_time
+549	rate_time
+551	each
+601	percent
+612	percent
+629	units
+662	rate_time
+669	percent
+679	rate_time
