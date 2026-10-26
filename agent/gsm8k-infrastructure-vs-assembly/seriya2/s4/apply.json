@@ -1,0 +1,542 @@
+[
+ {
+  "task": 130,
+  "var": "none",
+  "tokens_in": 281,
+  "tokens_out": 118,
+  "status": "success",
+  "answer": 4000.0,
+  "correct": false
+ },
+ {
+  "task": 130,
+  "var": "python",
+  "tokens_in": 358,
+  "tokens_out": 135,
+  "status": "success",
+  "answer": 10000.0,
+  "correct": true
+ },
+ {
+  "task": 130,
+  "var": "extella",
+  "tokens_in": 358,
+  "tokens_out": 135,
+  "status": "success",
+  "answer": 10000.0,
+  "correct": true
+ },
+ {
+  "task": 141,
+  "var": "none",
+  "tokens_in": 257,
+  "tokens_out": 118,
+  "status": "success",
+  "answer": 0.2,
+  "correct": false
+ },
+ {
+  "task": 141,
+  "var": "python",
+  "tokens_in": 323,
+  "tokens_out": 72,
+  "status": "success",
+  "answer": 0.2,
+  "correct": false
+ },
+ {
+  "task": 141,
+  "var": "extella",
+  "tokens_in": 343,
+  "tokens_out": 68,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 230,
+  "var": "none",
+  "tokens_in": 305,
+  "tokens_out": 92,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 230,
+  "var": "python",
+  "tokens_in": 375,
+  "tokens_out": 96,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 230,
+  "var": "extella",
+  "tokens_in": 343,
+  "tokens_out": 96,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 336,
+  "var": "none",
+  "tokens_in": 271,
+  "tokens_out": 96,
+  "status": "success",
+  "answer": 310,
+  "correct": true
+ },
+ {
+  "task": 336,
+  "var": "python",
+  "tokens_in": 347,
+  "tokens_out": 57,
+  "status": "success",
+  "answer": 310,
+  "correct": true
+ },
+ {
+  "task": 336,
+  "var": "extella",
+  "tokens_in": 353,
+  "tokens_out": 114,
+  "status": "success",
+  "answer": 310,
+  "correct": true
+ },
+ {
+  "task": 342,
+  "var": "none",
+  "tokens_in": 290,
+  "tokens_out": 158,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 342,
+  "var": "python",
+  "tokens_in": 367,
+  "tokens_out": 112,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 342,
+  "var": "extella",
+  "tokens_in": 361,
+  "tokens_out": 125,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 356,
+  "var": "none",
+  "tokens_in": 279,
+  "tokens_out": 73,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 356,
+  "var": "python",
+  "tokens_in": 355,
+  "tokens_out": 64,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 356,
+  "var": "extella",
+  "tokens_in": 351,
+  "tokens_out": 64,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 410,
+  "var": "none",
+  "tokens_in": 291,
+  "tokens_out": 151,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 410,
+  "var": "python",
+  "tokens_in": 364,
+  "tokens_out": 194,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 410,
+  "var": "extella",
+  "tokens_in": 363,
+  "tokens_out": 207,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 431,
+  "var": "none",
+  "tokens_in": 293,
+  "tokens_out": 112,
+  "status": "success",
+  "answer": 132.0,
+  "correct": true
+ },
+ {
+  "task": 431,
+  "var": "python",
+  "tokens_in": 359,
+  "tokens_out": 126,
+  "status": "success",
+  "answer": 132.0,
+  "correct": true
+ },
+ {
+  "task": 431,
+  "var": "extella",
+  "tokens_in": 364,
+  "tokens_out": 89,
+  "status": "success",
+  "answer": 132.0,
+  "correct": true
+ },
+ {
+  "task": 435,
+  "var": "none",
+  "tokens_in": 266,
+  "tokens_out": 143,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 435,
+  "var": "python",
+  "tokens_in": 342,
+  "tokens_out": 138,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 435,
+  "var": "extella",
+  "tokens_in": 346,
+  "tokens_out": 137,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 442,
+  "var": "none",
+  "tokens_in": 286,
+  "tokens_out": 181,
+  "status": "success",
+  "answer": 80,
+  "correct": true
+ },
+ {
+  "task": 442,
+  "var": "python",
+  "tokens_in": 352,
+  "tokens_out": 142,
+  "status": "success",
+  "answer": 80,
+  "correct": true
+ },
+ {
+  "task": 442,
+  "var": "extella",
+  "tokens_in": 358,
+  "tokens_out": 220,
+  "status": "success",
+  "answer": 80,
+  "correct": true
+ },
+ {
+  "task": 460,
+  "var": "none",
+  "tokens_in": 359,
+  "tokens_out": 101,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 460,
+  "var": "python",
+  "tokens_in": 442,
+  "tokens_out": 109,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 460,
+  "var": "extella",
+  "tokens_in": 441,
+  "tokens_out": 105,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 523,
+  "var": "none",
+  "tokens_in": 314,
+  "tokens_out": 100,
+  "status": "success",
+  "answer": 29,
+  "correct": true
+ },
+ {
+  "task": 523,
+  "var": "python",
+  "tokens_in": 397,
+  "tokens_out": 100,
+  "status": "success",
+  "answer": 29,
+  "correct": true
+ },
+ {
+  "task": 523,
+  "var": "extella",
+  "tokens_in": 386,
+  "tokens_out": 100,
+  "status": "success",
+  "answer": 29,
+  "correct": true
+ },
+ {
+  "task": 549,
+  "var": "none",
+  "tokens_in": 254,
+  "tokens_out": 57,
+  "status": "success",
+  "answer": 100,
+  "correct": true
+ },
+ {
+  "task": 549,
+  "var": "python",
+  "tokens_in": 330,
+  "tokens_out": 49,
+  "status": "success",
+  "answer": 100,
+  "correct": true
+ },
+ {
+  "task": 549,
+  "var": "extella",
+  "tokens_in": 340,
+  "tokens_out": 49,
+  "status": "success",
+  "answer": 100,
+  "correct": true
+ },
+ {
+  "task": 551,
+  "var": "none",
+  "tokens_in": 319,
+  "tokens_out": 175,
+  "status": "success",
+  "answer": 27.0,
+  "correct": true
+ },
+ {
+  "task": 551,
+  "var": "python",
+  "tokens_in": 393,
+  "tokens_out": 200,
+  "status": "success",
+  "answer": 27.0,
+  "correct": true
+ },
+ {
+  "task": 551,
+  "var": "extella",
+  "tokens_in": 390,
+  "tokens_out": 196,
+  "status": "success",
+  "answer": 27.0,
+  "correct": true
+ },
+ {
+  "task": 601,
+  "var": "none",
+  "tokens_in": 280,
+  "tokens_out": 51,
+  "status": "success",
+  "answer": 10.0,
+  "correct": true
+ },
+ {
+  "task": 601,
+  "var": "python",
+  "tokens_in": 361,
+  "tokens_out": 51,
+  "status": "success",
+  "answer": 10.0,
+  "correct": true
+ },
+ {
+  "task": 601,
+  "var": "extella",
+  "tokens_in": 366,
+  "tokens_out": 51,
+  "status": "success",
+  "answer": 10.0,
+  "correct": true
+ },
+ {
+  "task": 612,
+  "var": "none",
+  "tokens_in": 291,
+  "tokens_out": 147,
+  "status": "success",
+  "answer": 6650000.0,
+  "correct": false
+ },
+ {
+  "task": 612,
+  "var": "python",
+  "tokens_in": 362,
+  "tokens_out": 111,
+  "status": "success",
+  "answer": 7250000.0,
+  "correct": false
+ },
+ {
+  "task": 612,
+  "var": "extella",
+  "tokens_in": 362,
+  "tokens_out": 587,
+  "status": "success",
+  "answer": 25189985393641.465,
+  "correct": false
+ },
+ {
+  "task": 629,
+  "var": "none",
+  "tokens_in": 272,
+  "tokens_out": 78,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 629,
+  "var": "python",
+  "tokens_in": 348,
+  "tokens_out": 57,
+  "status": "success",
+  "answer": 4,
+  "correct": true
+ },
+ {
+  "task": 629,
+  "var": "extella",
+  "tokens_in": 281,
+  "tokens_out": 76,
+  "status": "refused",
+  "answer": null,
+  "correct": false
+ },
+ {
+  "task": 662,
+  "var": "none",
+  "tokens_in": 309,
+  "tokens_out": 100,
+  "status": "success",
+  "answer": 44.0,
+  "correct": true
+ },
+ {
+  "task": 662,
+  "var": "python",
+  "tokens_in": 381,
+  "tokens_out": 123,
+  "status": "success",
+  "answer": 44.0,
+  "correct": true
+ },
+ {
+  "task": 662,
+  "var": "extella",
+  "tokens_in": 380,
+  "tokens_out": 118,
+  "status": "success",
+  "answer": 44.0,
+  "correct": true
+ },
+ {
+  "task": 669,
+  "var": "none",
+  "tokens_in": 263,
+  "tokens_out": 86,
+  "status": "success",
+  "answer": 3.0,
+  "correct": true
+ },
+ {
+  "task": 669,
+  "var": "python",
+  "tokens_in": 329,
+  "tokens_out": 50,
+  "status": "success",
+  "answer": 3.0,
+  "correct": true
+ },
+ {
+  "task": 669,
+  "var": "extella",
+  "tokens_in": 338,
+  "tokens_out": 50,
+  "status": "success",
+  "answer": 3.0,
+  "correct": true
+ },
+ {
+  "task": 679,
+  "var": "none",
+  "tokens_in": 252,
+  "tokens_out": 86,
+  "status": "success",
+  "answer": 120,
+  "correct": true
+ },
+ {
+  "task": 679,
+  "var": "python",
+  "tokens_in": 329,
+  "tokens_out": 83,
+  "status": "success",
+  "answer": 120,
+  "correct": true
+ },
+ {
+  "task": 679,
+  "var": "extella",
+  "tokens_in": 330,
+  "tokens_out": 92,
+  "status": "success",
+  "answer": 120,
+  "correct": true
+ }
+]

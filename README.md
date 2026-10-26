@@ -5,7 +5,7 @@ Open experiments, measurements and materials about [Extella](https://extella.dev
 | Folder | What it holds |
 |---|---|
 | [`cspl/`](cspl/) | Materials behind the article [CSPL: a program is stored separately from the way it is executed](https://extella.dev/articles/cspl/) ([на русском](https://extella.dev/ru/articles/cspl/)) |
-| [`agent/`](agent/) | Measurements about the agent: [`skill-vs-expert/`](agent/skill-vs-expert/), when a saved program pays for itself (27 Sep 2026) |
+| [`agent/`](agent/) | Measurements about the agent: [`skill-vs-expert/`](agent/skill-vs-expert/), when a saved program pays for itself (27 Sep 2026); [`gsm8k-infrastructure-vs-assembly/`](agent/gsm8k-infrastructure-vs-assembly/), what is lost without Extella when the model and logic stay the same (26 Oct 2026) |
 
 More topics will be added as separate top-level folders.
 
