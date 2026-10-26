@@ -28,7 +28,7 @@ The two paths agreed on 477 problems (77.1%), and 465 of those answers were corr
 | S2. A new rule on two machines, checked on 40 saved plans before replacing the old one | 9 lines + 16 shared; a worker on each machine, Redis, a tunnel | 31 lines + 16 shared; nothing to run | 2 s vs 25 s |
 | S3. Execution on a machine with no inbound ports | 19 lines; system Redis on a server, an ssh tunnel, a worker | 0 lines; the listener was already installed | 0.21 s vs 7–12 s |
 | S4. Find and apply a reusable operation (8 operations, 20 problems) | found 12, solved 12 | found 11, solved 11 | search: 0.002 s vs 2.3 s |
-| S5. Three agents share 17 facts; add an 18th | one Redis write, all three see it | an agent's concept is visible only to that agent; sharing needs global concepts | |
+| S5. Three agents share 17 facts; add an 18th | one Redis write, all three see it | one global concept; reading agents ask with `global=true` (visible to the agents of the profile, per the official guide) | |
 
 The broken rule changed 7 of the 40 outcomes. Both sides stopped it on the first machine and installed the correct one on both machines. Each side needed 7 manual fixes. On the Extella side all 7 came from platform rules the documentation does not state, for example that the first function in an expert's code is the one called.
 
@@ -36,7 +36,7 @@ What the scenarios show:
 
 - **The platform saves work** on reaching many consumers and on executing on machines without inbound ports: almost no code and no services to keep running.
 - **It costs speed**, 10–100× per call.
-- **The hand-built stack is simpler** for a checked handler replacement (S2) and for knowledge shared across agents (S5).
+- **The hand-built stack is simpler** for a checked handler replacement (S2). Shared knowledge (S5) is equal: one write on both sides.
 - **Composition was barely tested here.** It is the subject of a next series.
 
 ## What can and cannot be said
