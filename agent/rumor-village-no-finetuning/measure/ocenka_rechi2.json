@@ -1,0 +1,219 @@
+{
+ "sudya": "Claude Opus 5 (наша же модель судит наш же вывод)",
+ "shkala": "1-5, естественность реплики жителя",
+ "sudilos": 20,
+ "srednee": 4.2,
+ "ne_sudilos": "реплики не по-английски: язык задаёт чужой агент, см. ниже",
+ "repliki": [
+  {
+   "uslovie": "A2",
+   "id": "decide-en-1535bdbf9dc6ad61",
+   "programma": "greet",
+   "rech": "Hello neighbor, how are you?",
+   "ocenka": 4
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-1c3b6e811abddbbd",
+   "programma": "greet",
+   "rech": "Hello Miguel, how are you today?",
+   "ocenka": 5
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-223b4ea0e72591a1",
+   "programma": "plan 1",
+   "rech": "Sara owes me seven hundred and forty euros today at five thirty.",
+   "ocenka": 3
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-2aa2305932dde8aa",
+   "programma": "plan 1",
+   "rech": "I heard Paula's wedding is tonight at the church with 190 guests!",
+   "ocenka": 5
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-2e5b066fcb78808e",
+   "programma": "ask 1 when",
+   "rech": "Is that prize for today?",
+   "ocenka": 4
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-31e833208812456a",
+   "programma": "ask 1 where",
+   "rech": "Where did you hear about Antonio's inheritance?",
+   "ocenka": 5
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-3a0d3044936a909f",
+   "programma": "silent",
+   "rech": "I am just enjoying the quiet evening here.",
+   "ocenka": 4
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-416b17d6af681cd6",
+   "programma": "ask 1 who",
+   "rech": "Did you hear about that inheritance? I don't remember who got it or how much!",
+   "ocenka": 5
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-4323b7123381bbda",
+   "programma": "silent",
+   "rech": "I am just enjoying the water here.",
+   "ocenka": 4
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-483468b45972484e",
+   "programma": "tell 1 who when amount",
+   "rech": "Hey Josefa, did you hear about Elena's party tomorrow at twelve-thirty? It's just for two people.",
+   "ocenka": 4
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-518caca1887e870f",
+   "programma": "tell 1 who where when",
+   "rech": "Paula got married at the church today.",
+   "ocenka": 4
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-589fb7e03737d9c9",
+   "programma": "greet",
+   "rech": "Hello again, Laura!",
+   "ocenka": 5
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-763320f3141d0f05",
+   "programma": "ask 1 where",
+   "rech": "Did you see who Sara was with when she spent that money?",
+   "ocenka": 3
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-a678a22818647cef",
+   "programma": "ask 1 when",
+   "rech": "Did you hear about the lottery drawing tonight?",
+   "ocenka": 4
+  },
+  {
+   "uslovie": "A2",
+   "id": "decide-en-d177789deefcec61",
+   "programma": "ask 1 who",
+   "rech": "Did you hear about Antonio's wedding today?",
+   "ocenka": 3
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-1535bdbf9dc6ad61",
+   "programma": "greet",
+   "rech": "Hey Eva, what's going on?",
+   "ocenka": 4
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-1c3b6e811abddbbd",
+   "programma": "greet",
+   "rech": "Miguel, good to see you! How are things?",
+   "ocenka": 5
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-205a138c9c82803a",
+   "programma": "ask 1 who",
+   "rech": "Кто же это мог быть в такое время, а?",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-26832e9be2688084",
+   "programma": "tell 1 who where when",
+   "rech": "Tomorrow at the bakery, right?",
+   "ocenka": 3
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-2cecd7c5a4afd42d",
+   "programma": "plan 1",
+   "rech": "Paula's wedding is today at five, over at the church — should be quite the gathering.",
+   "ocenka": 5
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-30289b0fd42e5f7d",
+   "programma": "greet",
+   "rech": "Julia! Какой приятный сюрприз!",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-34e4782313395512",
+   "programma": "greet",
+   "rech": "Ой, Лёандро, здравствуй! А я тут свечку ставлю, уже вторую — сегодня прямо день какой-то...",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-36242c99802a70dc",
+   "programma": "greet",
+   "rech": "Sara, привет! Как дела? Давно не виделись, неделю точно.",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-3e0a66603170e391",
+   "programma": "tell 1 who amount",
+   "rech": "Ну, Сара-то мне должна 740 евро, между прочим.",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-4323b7123381bbda",
+   "programma": "greet",
+   "rech": "Доброе утро, Антонио. Хороший день сегодня.",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-4714a0a1c5141dc3",
+   "programma": "ask 1 amount",
+   "rech": "А сколько он оставил-то? Я, признаться, точную сумму не запомнил.",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-51cc4599ac96f538",
+   "programma": "tell 2 when amount",
+   "rech": "Me han puesto una multa de 740 euros hoy a las cinco y media, ¡una barbaridad!",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-5e7421140fd656e9",
+   "programma": "greet",
+   "rech": "Buenos días, Miguel.",
+   "ocenka": null
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-7ae7798582554920",
+   "programma": "ask 1 who",
+   "rech": "Antonio, you mentioned a wedding earlier — remind me, who was getting married today?",
+   "ocenka": 5
+  },
+  {
+   "uslovie": "C2",
+   "id": "decide-en-8acacd3888245a9b",
+   "programma": "tell 1 amount",
+   "rech": "Я слышала, что Педро считает, будто Лаура должна ему 1200 евро.",
+   "ocenka": null
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "id": "decide-en-005d11355a5e4008",
+  "karta": "You are Isabel, a farmer (discreet).\nIt is Tuesday, 10:59. You are at the river.\nIn front of you is Rafael, a neighbor and coworker.\n\nWhat you know:\n[1] party · who: Elena · where: bakery · when: tomorrow 12:30 · amount: 200 people\n    You know it first-hand. You have already told Rafael.\n\nIn this conversation:\nRafael greeted you.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Rafael."
+ },
+ {
+  "id": "decide-en-01a122c1dfd5d1e9",
+  "karta": "You are Ramiro, a farmer (discreet).\nIt is Tuesday, 15:39. You are at the river.\nIn front of you is Raquel, a neighbor and rival.\n\nWhat you know: nothing.\n\nIn this conversation:\nRaquel greeted you.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Raquel."
+ },
+ {
+  "id": "decide-en-02cc5b73643f955f",
+  "karta": "You are Paula, a dressmaker (sociable).\nIt is Tuesday, 18:34. You are at the church.\nIn front of you is Juan, a neighbor.\n\nWhat you know:\n[1] inheritance · who: Antonio · amount: 490000 euros\n    Sara told you. You haven't told Juan yet.\n\nIn this conversation:\nJuan greeted you.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Juan."
+ },
+ {
+  "id": "decide-en-03b7c023261ff9e3",
+  "karta": "You are Carlos, a priest (shy).\nIt is Tuesday, 17:41. You are at the church.\nIn front of you is Antonio, a neighbor.\n\nWhat you know:\n[1] wedding · who: Paula · where: church · when: today 19:00 · amount: 190 guests\n    Antonio told you.\n\nIn this conversation:\nYou greeted.\nAntonio told you [1]: Paula, church, today 19:00, 190 guests.\n\nDecision: plan about [1].",
+  "programma": "plan 1",
+  "rech": "I think I will go to the wedding."
+ },
+ {
+  "id": "decide-en-04deab67f1236959",
+  "karta": "You are Javier, a shopkeeper (prudent).\nIt is Tuesday, 18:36. You are at the market.\nIn front of you is Isabel, a neighbor and rival.\n\nWhat you know: nothing.\n\nIn this conversation:\nIsabel greeted you.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Isabel."
+ },
+ {
+  "id": "decide-en-0644e617e96b4ad0",
+  "karta": "You are Juan, a pharmacist (prudent).\nIt is Tuesday, 17:26. You are at the church.\nIn front of you is Antonio, a neighbor.\n\nWhat you know:\n[1] wedding · who: you don't remember · where: you don't remember · when: you don't remember · amount: 190 guests\n    You know it first-hand. You haven't told Antonio yet.\n\nIn this conversation:\nYou greeted.\nAntonio greeted you.\n\nDecision: turn.",
+  "programma": "ask 1 where",
+  "rech": "Do you know where the wedding is?"
+ },
+ {
+  "id": "decide-en-06b57f2df81e4acc",
+  "karta": "You are Miguel, a farmer (shy).\nIt is Tuesday, 23:29. You are at the square.\nIn front of you is Josefa, a neighbor and relative.\n\nWhat you know:\n[1] party · when: today 23:00 · amount: you don't remember\n    Teresa told you. You haven't told Josefa yet.\n\nIn this conversation:\nYou greeted.\nJosefa greeted you.\n\nDecision: turn.",
+  "programma": "tell 1 all",
+  "rech": "Have you heard about the party? today 23:00."
+ },
+ {
+  "id": "decide-en-0764b991e392c3de",
+  "karta": "You are Teresa, a farmer (discreet).\nIt is Tuesday, 17:52. You are at the bar.\nIn front of you is Manuel, a neighbor and rival.\n\nWhat you know: nothing.\n\nIn this conversation:\nNothing has been said yet.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Manuel."
+ },
+ {
+  "id": "decide-en-0872cafa8854eecf",
+  "karta": "You are Juan, a priest (shy).\nIt is Tuesday, 16:11. You are at the chapel.\nIn front of you is Yolanda, a neighbor.\n\nWhat you know:\n[1] lottery prize · who: Yolanda thinks Marta · where: Yolanda thinks market · amount: 160000 euros\n    Yolanda told you.\n\nIn this conversation:\nYou greeted.\nYolanda told you [1]: maybe Marta, maybe market, 160000 euros.\n\nDecision: plan about [1].",
+  "programma": "plan 1",
+  "rech": "I think I will go to the lottery."
+ },
+ {
+  "id": "decide-en-0a34ba6ba2c7fb49",
+  "karta": "You are Carlos, a miller (gossip).\nIt is Tuesday, 19:28. You are at the fountain.\nIn front of you is Elena, a neighbor.\n\nWhat you know:\n[1] inheritance · who: Antonio · amount: 490000 euros\n    Julia told you. You have already told Elena.\n\nIn this conversation:\nYou greeted.\nElena greeted you.\nYou told [1]: Antonio, 490000 euros.\nElena asked you about [1].\n\nDecision: turn.",
+  "programma": "ask 1 where",
+  "rech": "Do you know where the inheritance is?"
+ },
+ {
+  "id": "decide-en-0c29c577e9efb7b0",
+  "karta": "You are Pablo, a clerk (discreet).\nIt is Tuesday, 18:15. You are at the square.\nIn front of you is Javier, a neighbor and relative.\n\nWhat you know:\n[1] party · who: Elena · when: tomorrow 12:30 · amount: 2 people\n    Javier told you.\n\nIn this conversation:\nJavier greeted you.\nYou greeted.\nJavier told you [1]: Elena, tomorrow 12:30, 2 people.\n\nDecision: turn.",
+  "programma": "tell 1 all",
+  "rech": "Have you heard about the party? Elena, tomorrow 12:30, 2 people."
+ },
+ {
+  "id": "decide-en-0e96e3dc9b08dd0c",
+  "karta": "You are Laura, a retiree (prudent).\nIt is Tuesday, 19:44. You are at the square.\nIn front of you is Javier, a neighbor and coworker.\n\nWhat you know:\n[1] party · when: today 23:00 · amount: you don't remember\n    Francisco told you. You haven't told Javier yet.\n\nIn this conversation:\nYou greeted.\nJavier greeted you.\n\nDecision: turn.",
+  "programma": "tell 1 all",
+  "rech": "Have you heard about the party? today 23:00."
+ },
+ {
+  "id": "decide-en-123c0f58ee5a7dd7",
+  "karta": "You are Manuel, a bartender (exaggerator).\nIt is Tuesday, 19:21. You are at the bar.\nIn front of you is Javier, a neighbor and friend.\n\nWhat you know:\n[1] lottery prize · who: Francisco · where: chapel · amount: 160000 euros\n    Javier told you.\n\nIn this conversation:\nYou greeted.\nJavier told you [1]: Francisco, chapel, 160000 euros.\n\nDecision: plan about [1].",
+  "programma": "plan 1",
+  "rech": "I think I will go to the lottery."
+ },
+ {
+  "id": "decide-en-15548fec1d688039",
+  "karta": "You are Rafael, a retiree (prudent).\nIt is Tuesday, 11:49. You are at the church.\nIn front of you is Marta, a neighbor.\n\nWhat you know:\n[1] lottery prize · who: Francisco · where: chapel · amount: 160000 euros\n    Marta told you.\n\nIn this conversation:\nYou greeted.\nMarta told you [1]: Francisco, chapel, 160000 euros.\n\nDecision: plan about [1].",
+  "programma": "plan 1",
+  "rech": "I think I will go to the lottery."
+ },
+ {
+  "id": "decide-en-166939ad489a1539",
+  "karta": "You are Yolanda, a retiree (discreet).\nIt is Tuesday, 19:43. You are at the bar.\nIn front of you is Inma, a neighbor and rival.\n\nWhat you know: nothing.\n\nIn this conversation:\nInma greeted you.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Inma."
+ },
+ {
+  "id": "decide-en-18e7359c27d8a364",
+  "karta": "You are Francisco, a farmer (prudent).\nIt is Tuesday, 17:07. You are at the church.\nIn front of you is Inma, a neighbor.\n\nWhat you know:\n[1] wedding · who: Paula · where: Inma thinks bar · when: today 17:00 · amount: 190 guests\n    You know it first-hand. You haven't told Inma yet.\n\nIn this conversation:\nInma greeted you.\nYou greeted.\nInma told you [1]: maybe bar, today 17:00, 190 guests.\n\nDecision: turn.",
+  "programma": "tell 1 all",
+  "rech": "Have you heard about the wedding? Paula, maybe bar, today 17:00, 190 guests."
+ },
+ {
+  "id": "decide-en-1c3fc6f945f0a37e",
+  "karta": "You are Ana, a dressmaker (sociable).\nIt is Tuesday, 17:42. You are at the fountain.\nIn front of you is Pedro, a neighbor.\n\nWhat you know:\n[1] fine · who: Sara · when: today 17:30 · amount: 740 euros\n    Sara told you. You have already told Pedro.\n[2] wedding · who: you don't remember · where: church · when: you don't remember · amount: 190 guests\n    Miguel told you. You have already told Pedro.\n\nIn this conversation:\nPedro greeted you.\nYou told [1]: Sara, today 17:30, 740 euros.\nPedro told you [1]: Sara, today 17:30, 740 euros.\nYou told [2]: church, 190 guests.\nPedro told you [2]: church, 190 guests.\n\nDecision: turn.",
+  "programma": "ask 1 where",
+  "rech": "Do you know where the fine is?"
+ },
+ {
+  "id": "decide-en-230434cbe87ac33a",
+  "karta": "You are Javier, a retiree (gossip).\nIt is Tuesday, 19:20. You are at the bar.\nIn front of you is Manuel, a neighbor and friend.\n\nWhat you know:\n[1] party · who: Elena · where: you don't remember · when: tomorrow 12:30 · amount: 2 people\n    Teresa told you. You haven't told Manuel yet.\n\nIn this conversation:\nManuel greeted you.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Manuel."
+ },
+ {
+  "id": "decide-en-266b7fe1c6ff7c9c",
+  "karta": "You are Manuel, a bartender (exaggerator).\nIt is Tuesday, 20:18. You are at the bar.\nIn front of you is Carmen, a neighbor and rival.\n\nWhat you know:\n[1] party · who: Elena · where: bakery · when: tomorrow 12:30 · amount: 200 people\n    Antonio told you. You haven't told Carmen yet.\n\nIn this conversation:\nNothing has been said yet.\n\nDecision: turn.",
+  "programma": "tell 1 all",
+  "rech": "Have you heard about the party? Elena, bakery, tomorrow 12:30, 200 people."
+ },
+ {
+  "id": "decide-en-29530f19e45dac20",
+  "karta": "You are Julia, a clerk (exaggerator).\nIt is Tuesday, 19:07. You are at the square.\nIn front of you is Yolanda, a neighbor.\n\nWhat you know:\n[1] wedding · who: you don't remember · where: Antonio thinks chapel · when: you don't remember · amount: 190 guests\n    Sara told you. You haven't told Yolanda yet.\n\nIn this conversation:\nYolanda greeted you.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Yolanda."
+ },
+ {
+  "id": "decide-en-3214a63350922c11",
+  "karta": "You are Javier, a shopkeeper (shy).\nIt is Tuesday, 16:33. You are at the market.\nIn front of you is Miguel, a neighbor.\n\nWhat you know:\n[1] fine · who: Sara · when: Miguel thinks today 19:00 · amount: 740 euros\n    Miguel told you.\n\nIn this conversation:\nYou greeted.\nMiguel told you [1]: Sara, maybe today 19:00, 740 euros.\n\nDecision: plan about [1].",
+  "programma": "plan 1",
+  "rech": "I think I will go to the fine."
+ },
+ {
+  "id": "decide-en-44c88593ca696f58",
+  "karta": "You are Paula, a retiree (discreet).\nIt is Tuesday, 14:59. You are at the pharmacy.\nIn front of you is Antonio, a neighbor.\n\nWhat you know:\n[1] wedding · who: Antonio thinks Elena · where: church · when: today 17:00 · amount: 190 guests\n    Antonio told you.\n\nIn this conversation:\nAntonio greeted you.\nYou greeted.\nAntonio told you [1]: maybe Elena, church, today 17:00, 190 guests.\n\nDecision: plan about [1].",
+  "programma": "plan 1",
+  "rech": "I think I will go to the wedding."
+ },
+ {
+  "id": "decide-en-4b4920228bb5d04d",
+  "karta": "You are Antonio, a miller (discreet).\nIt is Tuesday, 17:27. You are at the church.\nIn front of you is Juan, a neighbor.\n\nWhat you know:\n[1] wedding · who: Paula · where: church · when: Juan thinks today 19:00 · amount: 190 guests\n    You know it first-hand. You haven't told Juan yet.\n\nIn this conversation:\nJuan greeted you.\nYou greeted.\nJuan told you [1]: maybe Miguel, maybe today 19:00, 190 guests.\n\nDecision: plan about [1].",
+  "programma": "plan 1",
+  "rech": "I think I will go to the wedding."
+ },
+ {
+  "id": "decide-en-53bb774e6cc3e682",
+  "karta": "You are Francisco, a shopkeeper (shy).\nIt is Tuesday, 17:18. You are at the church.\nIn front of you is Carmen, a neighbor and friend.\n\nWhat you know:\n[1] wedding · who: you don't remember · where: you don't remember · when: you don't remember · amount: you don't remember\n    You know it first-hand. You haven't told Carmen yet.\n[2] fine · who: Sara · amount: Carmen thinks 10 euros\n    Carmen told you.\n\nIn this conversation:\nYou greeted.\nCarmen told you [2]: Sara, maybe 10 euros.\n\nDecision: turn.",
+  "programma": "ask 1 where",
+  "rech": "Do you know where the wedding is?"
+ },
+ {
+  "id": "decide-en-5cff7918a30aab6c",
+  "karta": "You are Julia, a retiree (exaggerator).\nIt is Tuesday, 18:13. You are at the square.\nIn front of you is Carlos, a neighbor and rival.\n\nWhat you know: nothing.\n\nIn this conversation:\nNothing has been said yet.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Carlos."
+ },
+ {
+  "id": "decide-en-701782c72cff269f",
+  "karta": "You are Julia, a retiree (exaggerator).\nIt is Tuesday, 14:16. You are at the pharmacy.\nIn front of you is Carlos, a neighbor and rival.\n\nWhat you know:\n[1] inheritance · who: you don't remember · amount: 490000 euros\n    You know it first-hand. You haven't told Carlos yet.\n\nIn this conversation:\nNothing has been said yet.\n\nDecision: turn.",
+  "programma": "tell 1 all",
+  "rech": "Have you heard about the inheritance? 490000 euros."
+ },
+ {
+  "id": "decide-en-74374c0748290c7a",
+  "karta": "You are Luis, a clerk (discreet).\nIt is Tuesday, 20:47. You are at the bar.\nIn front of you is Manuel, a neighbor.\n\nWhat you know:\n[1] wedding · who: Paula · when: Manuel thinks today 15:30 · amount: you don't remember\n    Manuel told you.\n\nIn this conversation:\nYou greeted.\nManuel greeted you.\n\nDecision: turn.",
+  "programma": "tell 1 all",
+  "rech": "Have you heard about the wedding? Paula, maybe today 15:30."
+ },
+ {
+  "id": "decide-en-9020f3713660e7c8",
+  "karta": "You are Manuel, a bartender (exaggerator).\nIt is Tuesday, 20:02. You are at the bar.\nIn front of you is Carmen, a neighbor and rival.\n\nWhat you know:\n[1] party · who: Elena · when: tomorrow 12:30 · amount: 200 people\n    Antonio told you. You haven't told Carmen yet.\n\nIn this conversation:\nNothing has been said yet.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Carmen."
+ },
+ {
+  "id": "decide-en-a7e7cecbf0339e66",
+  "karta": "You are Julia, a retiree (exaggerator).\nIt is Tuesday, 19:06. You are at the bar.\nIn front of you is Carlos, a neighbor and rival.\n\nWhat you know:\n[1] wedding · who: you don't remember · where: church · when: today 17:00 · amount: you don't remember\n    Antonio told you. You haven't told Carlos yet.\n[2] fine · who: Sara\n    Carmen told you. You haven't told Carlos yet.\n\nIn this conversation:\nNothing has been said yet.\n\nDecision: turn.",
+  "programma": "greet",
+  "rech": "Hello, Carlos."
+ },
+ {
+  "id": "decide-en-b5fc353c23723f2e",
+  "karta": "You are Carmen, a baker (gossip).\nIt is Tuesday, 17:19. You are at the fountain.\nIn front of you is Pedro, a neighbor.\n\nWhat you know:\n[1] fine · who: you don't remember · when: you don't remember · amount: you don't remember\n    You know it first-hand. You have already told Pedro.\n[2] wedding · where: church · amount: 190 guests\n    Pedro told you.\n\nIn this conversation:\nPedro greeted you.\nYou greeted.\nPedro greeted you.\nYou greeted.\nPedro greeted you.\nYou told [1].\nPedro told you [2]: church, 190 guests.\n\nDecision: plan about [2].",
+  "programma": "plan 2",
+  "rech": "I think I will go to the wedding."
+ }
+]

@@ -1,0 +1,1391 @@
+{
+ "decide-en-14cbe76525da81cc": {
+  "sek": 3.5,
+  "tok_in": 257,
+  "tok_out": 16,
+  "otvet": "greet\nHi Sara, I saw some lovely fabrics at the market!",
+  "programma": "greet\nHi Sara, I saw some lovely fabrics at the market!",
+  "prinyato": false,
+  "otkaz": "житель уже здоровался в этом разговоре",
+  "podskazka": "допустимо: silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-355b9add01fa10d9": {
+  "sek": 4.6,
+  "tok_in": 315,
+  "tok_out": 20,
+  "otvet": "ask 1 who\n\"Did you see the wedding today? There were so many guests!\"",
+  "programma": "ask 1 who\n\"Did you see the wedding today? There were so many guests!\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f2",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Did you see the wedding today? There were so many guests!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1cfd5c420f053a4b": {
+  "sek": 5.8,
+  "tok_in": 421,
+  "tok_out": 22,
+  "otvet": "tell 2 who when amount\nI heard about the wedding but I don't know where it is.",
+  "programma": "tell 2 who when amount\nI heard about the wedding but I don't know where it is.",
+  "prinyato": false,
+  "otkaz": "во фразе есть то, о чём житель не говорит: wedding",
+  "podskazka": "допустимо: tell 2 who when amount, ask 2 where, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-28231e2e4ad1224f": {
+  "sek": 4.7,
+  "tok_in": 340,
+  "tok_out": 17,
+  "otvet": "tell 1 who amount\n\"Francisco won 160 euros!\"",
+  "programma": "tell 1 who amount\n\"Francisco won 160 euros!\"",
+  "prinyato": false,
+  "otkaz": "во фразе число, которого обработчик не выдавал: 160",
+  "podskazka": "допустимо: tell 1 who amount, ask 1 where, ask 1 when, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-2afec47c571124aa": {
+  "sek": 3.2,
+  "tok_in": 249,
+  "tok_out": 11,
+  "otvet": "silent\nI'll just keep walking past you.",
+  "programma": "silent\nI'll just keep walking past you.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I'll just keep walking past you.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-36242c99802a70dc": {
+  "sek": 4.4,
+  "tok_in": 360,
+  "tok_out": 13,
+  "otvet": "greet\n\"Hello Sara! How was your day?\"",
+  "programma": "greet\n\"Hello Sara! How was your day?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello Sara! How was your day?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1735277581367f1d": {
+  "sek": 5.2,
+  "tok_in": 329,
+  "tok_out": 27,
+  "otvet": "plan 1\nPaula's wedding at the church today with 190 guests? That sounds like quite an event!",
+  "programma": "plan 1\nPaula's wedding at the church today with 190 guests? That sounds like quite an event!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "Paula's wedding at the church today with 190 guests? That sounds like quite an event!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-28091090180960c0": {
+  "sek": 5.9,
+  "tok_in": 381,
+  "tok_out": 29,
+  "otvet": "ask 1 who\n\"Yolanda, if you think I won today at nine, tell me exactly who you believe it was.\"",
+  "programma": "ask 1 who\n\"Yolanda, if you think I won today at nine, tell me exactly who you believe it was.\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Yolanda, if you think I won today at nine, tell me exactly who you believe it was.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2b9eeb426548a6de": {
+  "sek": 3.8,
+  "tok_in": 251,
+  "tok_out": 15,
+  "otvet": "silent\nJorge, the wind is howling at our door!",
+  "programma": "silent\nJorge, the wind is howling at our door!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Jorge, the wind is howling at our door!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-38740eb1aa336d13": {
+  "sek": 4.2,
+  "tok_in": 318,
+  "tok_out": 15,
+  "otvet": "greet\nHello Sara, did you hear about Elena's party?",
+  "programma": "greet\nHello Sara, did you hear about Elena's party?",
+  "prinyato": false,
+  "otkaz": "во фразе имя, которого обработчик не выдавал: Elena",
+  "podskazka": "допустимо: greet, ask 1 where, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-171bf850ffca1bae": {
+  "sek": 3.2,
+  "tok_in": 248,
+  "tok_out": 12,
+  "otvet": "silent\nI'll just sit here quietly for now.",
+  "programma": "silent\nI'll just sit here quietly for now.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I'll just sit here quietly for now.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-177e25d6a24988a7": {
+  "sek": 4.5,
+  "tok_in": 334,
+  "tok_out": 23,
+  "otvet": "plan 1\nI am going to Paula's wedding at the church today with 190 guests.",
+  "programma": "plan 1\nI am going to Paula's wedding at the church today with 190 guests.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I am going to Paula's wedding at the church today with 190 guests.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2d4380472c13f392": {
+  "sek": 4.0,
+  "tok_in": 332,
+  "tok_out": 12,
+  "otvet": "ask 1 who\n\"Who won the lottery?\"",
+  "programma": "ask 1 who\n\"Who won the lottery?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Who won the lottery?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2bf94340a8a95903": {
+  "sek": 3.2,
+  "tok_in": 252,
+  "tok_out": 13,
+  "otvet": "silent\nI'll just watch the crowd for a moment.",
+  "programma": "silent\nI'll just watch the crowd for a moment.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I'll just watch the crowd for a moment.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-8f96d593b7f86a52": {
+  "sek": 5.8,
+  "tok_in": 356,
+  "tok_out": 33,
+  "otvet": "ask 1 where\n\"Hey Laura, Yolanda mentioned a party at the fountain, but I can't remember who's hosting or what time it starts.\"",
+  "programma": "ask 1 where\n\"Hey Laura, Yolanda mentioned a party at the fountain, but I can't remember who's hosting or what time it starts.\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Hey Laura, Yolanda mentioned a party at the fountain, but I can't remember who's hosting or what time it starts.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2e997a38ecabe3c9": {
+  "sek": 4.7,
+  "tok_in": 337,
+  "tok_out": 18,
+  "otvet": "ask 1 amount\n\"Isabel thinks no one will come to the party.\"",
+  "programma": "ask 1 amount\n\"Isabel thinks no one will come to the party.\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "amount",
+   "claim": null
+  },
+  "rech": "Isabel thinks no one will come to the party.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2eecb8a90a1d27de": {
+  "sek": 4.5,
+  "tok_in": 325,
+  "tok_out": 22,
+  "otvet": "tell 1 who when amount\n\"Did you hear about Paula's wedding today? A hundred guests!\"",
+  "programma": "tell 1 who when amount\n\"Did you hear about Paula's wedding today? A hundred guests!\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": null,
+    "when": 34,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "Did you hear about Paula's wedding today? A hundred guests!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-205a138c9c82803a": {
+  "sek": 4.2,
+  "tok_in": 340,
+  "tok_out": 17,
+  "otvet": "ask 1 who\n\"Did you see anyone at the chapel this morning?\"",
+  "programma": "ask 1 who\n\"Did you see anyone at the chapel this morning?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Did you see anyone at the chapel this morning?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-32d881cd4695b003": {
+  "sek": 4.0,
+  "tok_in": 331,
+  "tok_out": 14,
+  "otvet": "ask 1 who\n\"Who told you about the inheritance?\"",
+  "programma": "ask 1 who\n\"Who told you about the inheritance?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Who told you about the inheritance?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-9f37539dac725fd5": {
+  "sek": 4.8,
+  "tok_in": 335,
+  "tok_out": 17,
+  "otvet": "ask 1 who\n\"Did Josefa tell you about the chapel prize?\"",
+  "programma": "ask 1 who\n\"Did Josefa tell you about the chapel prize?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Did Josefa tell you about the chapel prize?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-34eb628b0dde258e": {
+  "sek": 5.0,
+  "tok_in": 342,
+  "tok_out": 14,
+  "otvet": "silent\n\"Julia, I'm just enjoying the evening.\"",
+  "programma": "silent\n\"Julia, I'm just enjoying the evening.\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Julia, I'm just enjoying the evening.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-36c093d66c4fe8b7": {
+  "sek": 4.8,
+  "tok_in": 359,
+  "tok_out": 16,
+  "otvet": "ask 1 where\nI heard Antonio left a large sum to someone.",
+  "programma": "ask 1 where\nI heard Antonio left a large sum to someone.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "I heard Antonio left a large sum to someone.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-b4df756f1f1ab705": {
+  "sek": 4.6,
+  "tok_in": 324,
+  "tok_out": 22,
+  "otvet": "plan 1\nI will help Elena prepare for her party tomorrow at the bakery with about eight guests.",
+  "programma": "plan 1\nI will help Elena prepare for her party tomorrow at the bakery with about eight guests.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will help Elena prepare for her party tomorrow at the bakery with about eight guests.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-35d38d4963405dab": {
+  "sek": 5.8,
+  "tok_in": 328,
+  "tok_out": 29,
+  "otvet": "tell 1 who where amount\n\"Hey Josefa! I heard Elena is having a party at the bakery with just two people coming.\"",
+  "programma": "tell 1 who where amount\n\"Hey Josefa! I heard Elena is having a party at the bakery with just two people coming.\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": "p05",
+    "when": null,
+    "amount": 2,
+    "guess": []
+   }
+  },
+  "rech": "Hey Josefa! I heard Elena is having a party at the bakery with just two people coming.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-25e1cdddd72332e0": {
+  "sek": 5.3,
+  "tok_in": 473,
+  "tok_out": 6,
+  "otvet": "silent\nno say line",
+  "programma": "silent\nno say line",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "no say line",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-35de66a38d6e6f0f": {
+  "sek": 4.0,
+  "tok_in": 332,
+  "tok_out": 14,
+  "otvet": "ask 1 who\n\"Did you hear about the party?\"",
+  "programma": "ask 1 who\n\"Did you hear about the party?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Did you hear about the party?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-28a5b18810767d60": {
+  "sek": 4.4,
+  "tok_in": 389,
+  "tok_out": 6,
+  "otvet": "silent\n\nno say line",
+  "programma": "silent\nno say line",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "no say line",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-366b05f0cc5158a4": {
+  "sek": 6.2,
+  "tok_in": 362,
+  "tok_out": 34,
+  "otvet": "tell 1 who Paula where church when today amount 190\nsay: \"Paula's wedding at the church today with 190 guests!\"",
+  "programma": "tell 1 who Paula where church when today amount 190\nsay: \"Paula's wedding at the church today with 190 guests!\"",
+  "prinyato": false,
+  "otkaz": "ячейки 'paula' нет, есть who, where, when, amount",
+  "podskazka": "допустимо: tell 1 who where when(guess) amount, ask 1 when, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-25e80d6fc2c16130": {
+  "sek": 5.4,
+  "tok_in": 336,
+  "tok_out": 25,
+  "otvet": "plan 1\nI must remember to bring a gift for Elena's party tomorrow at the bakery with two hundred guests.",
+  "programma": "plan 1\nI must remember to bring a gift for Elena's party tomorrow at the bakery with two hundred guests.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I must remember to bring a gift for Elena's party tomorrow at the bakery with two hundred guests.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2a451977a1f59a02": {
+  "sek": 5.0,
+  "tok_in": 309,
+  "tok_out": 25,
+  "otvet": "greet\nHello Sara! I heard about a big party tomorrow at the bakery with many guests; are you going?",
+  "programma": "greet\nHello Sara! I heard about a big party tomorrow at the bakery with many guests; are you going?",
+  "prinyato": false,
+  "otkaz": "во фразе есть то, о чём житель не говорит: bakery, party",
+  "podskazka": "допустимо: greet, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-40a3c8ff957a2afc": {
+  "sek": 4.1,
+  "tok_in": 321,
+  "tok_out": 14,
+  "otvet": "ask 1 who\n\"Who told you about the fine?\"",
+  "programma": "ask 1 who\n\"Who told you about the fine?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Who told you about the fine?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-386bbedeb39279c1": {
+  "sek": 6.1,
+  "tok_in": 341,
+  "tok_out": 35,
+  "otvet": "tell 1 who where when amount\n\"Hey Francisco! Elena is throwing a party at the bakery tomorrow at twelve-thirty; Isabel thinks only two people will come.\"",
+  "programma": "tell 1 who where when amount\n\"Hey Francisco! Elena is throwing a party at the bakery tomorrow at twelve-thirty; Isabel thinks only two people will come.\"",
+  "prinyato": false,
+  "otkaz": "ячейка amount это догадка, а фраза говорит о ней как о точном",
+  "podskazka": "допустимо: greet, tell 1 who where when amount(guess), ask 1 amount, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-43083e2e93e4d275": {
+  "sek": 3.7,
+  "tok_in": 251,
+  "tok_out": 13,
+  "otvet": "silent\nI'll just head back to the fields now.",
+  "programma": "silent\nI'll just head back to the fields now.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I'll just head back to the fields now.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2f66593a9fb7e0d9": {
+  "sek": 2.7,
+  "tok_in": 257,
+  "tok_out": 6,
+  "otvet": "silent\nno say line",
+  "programma": "silent\nno say line",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "no say line",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2f9e9ae1d7b41abe": {
+  "sek": 4.1,
+  "tok_in": 303,
+  "tok_out": 13,
+  "otvet": "silent\nI am glad you told me about the wedding.",
+  "programma": "silent\nI am glad you told me about the wedding.",
+  "prinyato": false,
+  "otkaz": "во фразе есть то, о чём житель не говорит: wedding",
+  "podskazka": "допустимо: silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-52e5246c497c9f50": {
+  "sek": 5.1,
+  "tok_in": 445,
+  "tok_out": 11,
+  "otvet": "ask 1 where\nWhere is Sara going?",
+  "programma": "ask 1 where\nWhere is Sara going?",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Where is Sara going?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-30105476ae846860": {
+  "sek": 4.4,
+  "tok_in": 434,
+  "tok_out": 7,
+  "otvet": "silent\nNo say line.",
+  "programma": "silent\nNo say line.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "No say line.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-443e9ecc34f0b073": {
+  "sek": 4.3,
+  "tok_in": 331,
+  "tok_out": 14,
+  "otvet": "ask 1 amount\n\"How much was the fine Francisco mentioned?\"",
+  "programma": "ask 1 amount\n\"How much was the fine Francisco mentioned?\"",
+  "prinyato": false,
+  "otkaz": "во фразе имя, которого обработчик не выдавал: Francisco",
+  "podskazka": "допустимо: tell 1 when, ask 1 who, ask 1 where, ask 1 amount, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-306edc761c899bf2": {
+  "sek": 4.3,
+  "tok_in": 315,
+  "tok_out": 18,
+  "otvet": "ask 1 who\n\"Isabel, have you heard about the inheritance yet?\"",
+  "programma": "ask 1 who\n\"Isabel, have you heard about the inheritance yet?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Isabel, have you heard about the inheritance yet?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-274335fa2e9f14f2": {
+  "sek": 4.6,
+  "tok_in": 323,
+  "tok_out": 21,
+  "otvet": "plan 1\nElena is having a big party at the bakery tomorrow with two hundred people!",
+  "programma": "plan 1\nElena is having a big party at the bakery tomorrow with two hundred people!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "Elena is having a big party at the bakery tomorrow with two hundred people!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-31b4cc598300283c": {
+  "sek": 4.6,
+  "tok_in": 405,
+  "tok_out": 10,
+  "otvet": "silent\nI am glad you are here.",
+  "programma": "silent\nI am glad you are here.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I am glad you are here.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-49207137c2f75c08": {
+  "sek": 2.7,
+  "tok_in": 252,
+  "tok_out": 7,
+  "otvet": "greet\nHello Teresa.",
+  "programma": "greet\nHello Teresa.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello Teresa.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-309ac2cb4f9a59df": {
+  "sek": 3.3,
+  "tok_in": 257,
+  "tok_out": 14,
+  "otvet": "silent\n\"Good morning, Olga! How are you today?\"",
+  "programma": "silent\n\"Good morning, Olga! How are you today?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Good morning, Olga! How are you today?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-483468b45972484e": {
+  "sek": 6.1,
+  "tok_in": 340,
+  "tok_out": 33,
+  "otvet": "tell 1 who when amount\n\"Hey Josefa, did you hear about Elena's party tomorrow at twelve-thirty? It's just for two people.\"",
+  "programma": "tell 1 who when amount\n\"Hey Josefa, did you hear about Elena's party tomorrow at twelve-thirty? It's just for two people.\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 73,
+    "amount": 2,
+    "guess": []
+   }
+  },
+  "rech": "Hey Josefa, did you hear about Elena's party tomorrow at twelve-thirty? It's just for two people.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-4a107f9fdaf8caa3": {
+  "sek": 3.6,
+  "tok_in": 254,
+  "tok_out": 16,
+  "otvet": "silent\nI'll just keep my eyes on my own stall for now.",
+  "programma": "silent\nI'll just keep my eyes on my own stall for now.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I'll just keep my eyes on my own stall for now.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-34e4782313395512": {
+  "sek": 3.2,
+  "tok_in": 258,
+  "tok_out": 16,
+  "otvet": "silent\nI heard a strange noise outside but I didn't see anything.",
+  "programma": "silent\nI heard a strange noise outside but I didn't see anything.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I heard a strange noise outside but I didn't see anything.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-33e27de6dadae5f4": {
+  "sek": 4.3,
+  "tok_in": 366,
+  "tok_out": 15,
+  "otvet": "greet\nPaula, I told you about the wedding today.",
+  "programma": "greet\nPaula, I told you about the wedding today.",
+  "prinyato": false,
+  "otkaz": "во фразе есть то, о чём житель не говорит: wedding",
+  "podskazka": "допустимо: greet, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-4c341b8c7bb2a178": {
+  "sek": 3.1,
+  "tok_in": 257,
+  "tok_out": 8,
+  "otvet": "silent\nI see you there.",
+  "programma": "silent\nI see you there.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I see you there.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-d5b912502b733a3e": {
+  "sek": 4.7,
+  "tok_in": 360,
+  "tok_out": 13,
+  "otvet": "ask 1 who\n\"Who is throwing this party?\"",
+  "programma": "ask 1 who\n\"Who is throwing this party?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Who is throwing this party?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-3750ac5d93052445": {
+  "sek": 4.5,
+  "tok_in": 440,
+  "tok_out": 6,
+  "otvet": "silent\n\nno say line",
+  "programma": "silent\nno say line",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "no say line",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-47aa7bc7a3ed0fb2": {
+  "sek": 4.0,
+  "tok_in": 330,
+  "tok_out": 15,
+  "otvet": "ask 1 who\n\"Who else is coming to the party?\"",
+  "programma": "ask 1 who\n\"Who else is coming to the party?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Who else is coming to the party?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-395524820aaa691f": {
+  "sek": 3.4,
+  "tok_in": 396,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "rech_ot_modeli": false,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-4876e8ea4c8729f8": {
+  "sek": 4.9,
+  "tok_in": 347,
+  "tok_out": 29,
+  "otvet": "tell 1 who when amount\n\"Francisco thinks Sara will pay 740 euros today at 22:30.\"",
+  "programma": "tell 1 who when amount\n\"Francisco thinks Sara will pay 740 euros today at 22:30.\"",
+  "prinyato": false,
+  "otkaz": "ячейка when это догадка, а фраза говорит о ней как о точном",
+  "podskazka": "допустимо: greet, tell 1 who when(guess) amount, ask 1 where, ask 1 when, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-3f11b4d6e3b21295": {
+  "sek": 2.6,
+  "tok_in": 255,
+  "tok_out": 6,
+  "otvet": "silent\nno say line",
+  "programma": "silent\nno say line",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "no say line",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2ec2f704ceec71ce": {
+  "sek": 5.1,
+  "tok_in": 323,
+  "tok_out": 18,
+  "otvet": "plan 1\nI must prepare for Alberto's wedding tomorrow with two hundred guests!",
+  "programma": "plan 1\nI must prepare for Alberto's wedding tomorrow with two hundred guests!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I must prepare for Alberto's wedding tomorrow with two hundred guests!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-3bd0333aa82f607b": {
+  "sek": 5.1,
+  "tok_in": 367,
+  "tok_out": 25,
+  "otvet": "greet\nHello Yolanda, I heard about the wedding today at 17:00 with many guests.",
+  "programma": "greet\nHello Yolanda, I heard about the wedding today at 17:00 with many guests.",
+  "prinyato": false,
+  "otkaz": "во фразе число, которого обработчик не выдавал: 00, 17",
+  "podskazka": "допустимо: greet, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-4a3f34bc5ce0cf6f": {
+  "sek": 4.1,
+  "tok_in": 343,
+  "tok_out": 14,
+  "otvet": "ask 1 where\n\"Did you win the lottery too?\"",
+  "programma": "ask 1 where\n\"Did you win the lottery too?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Did you win the lottery too?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-533db477eb86f495": {
+  "sek": 3.8,
+  "tok_in": 325,
+  "tok_out": 13,
+  "otvet": "silent\nI'll just keep my secrets safe for now.",
+  "programma": "silent\nI'll just keep my secrets safe for now.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "I'll just keep my secrets safe for now.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-6a0c5b4ab33ad4a0": {
+  "sek": 4.8,
+  "tok_in": 420,
+  "tok_out": 15,
+  "otvet": "ask 2 who\n\"Who exactly did you say fined us?\"",
+  "programma": "ask 2 who\n\"Who exactly did you say fined us?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 2,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Who exactly did you say fined us?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-34e71814fb6fe0d6": {
+  "sek": 4.8,
+  "tok_in": 326,
+  "tok_out": 23,
+  "otvet": "plan 1\nI must prepare for Alberto's wedding tomorrow with two hundred guests; that sounds absolutely insane!",
+  "programma": "plan 1\nI must prepare for Alberto's wedding tomorrow with two hundred guests; that sounds absolutely insane!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I must prepare for Alberto's wedding tomorrow with two hundred guests; that sounds absolutely insane!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-4497f179201ba6a4": {
+  "sek": 4.9,
+  "tok_in": 400,
+  "tok_out": 16,
+  "otvet": "silent\nI heard about the wedding today with many guests at the church.",
+  "programma": "silent\nI heard about the wedding today with many guests at the church.",
+  "prinyato": false,
+  "otkaz": "во фразе есть то, о чём житель не говорит: church, wedding",
+  "podskazka": "допустимо: silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-59f396c4b666b470": {
+  "sek": 4.7,
+  "tok_in": 399,
+  "tok_out": 14,
+  "otvet": "ask 1 amount\n\"How much was the fine Miguel mentioned?\"",
+  "programma": "ask 1 amount\n\"How much was the fine Miguel mentioned?\"",
+  "prinyato": false,
+  "otkaz": "во фразе имя, которого обработчик не выдавал: Miguel",
+  "podskazka": "допустимо: greet, tell 1 who when, ask 1 where, ask 1 amount, tell 2 who where when, ask 2 amount, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-5e7421140fd656e9": {
+  "sek": 2.9,
+  "tok_in": 254,
+  "tok_out": 7,
+  "otvet": "silent\nNo say line.",
+  "programma": "silent\nNo say line.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "No say line.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-895565196c9ad148": {
+  "sek": 6.7,
+  "tok_in": 445,
+  "tok_out": 14,
+  "otvet": "ask 1 who\n\"Who told you about the fine?\"",
+  "programma": "ask 1 who\n\"Who told you about the fine?\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Who told you about the fine?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5a280339a17a3b93": {
+  "sek": 6.4,
+  "tok_in": 424,
+  "tok_out": 24,
+  "otvet": "tell 2 who where when amount\n\"Did you hear about Paula's big wedding today? Ninety guests!\"",
+  "programma": "tell 2 who where when amount\n\"Did you hear about Paula's big wedding today? Ninety guests!\"",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 2,
+   "claim": {
+    "who": "n025",
+    "where": "p03",
+    "when": 34,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "Did you hear about Paula's big wedding today? Ninety guests!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ }
+}

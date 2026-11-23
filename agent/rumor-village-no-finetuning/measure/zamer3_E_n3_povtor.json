@@ -1,0 +1,711 @@
+{
+ "decide-en-3799384efd8ab239": {
+  "sek": 2.0,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\nplan 1\nsay: I'll make sure the pharmacy closes early so I can attend Paula's wedding at the church.",
+  "programma": "plan 1\nsay: I'll make sure the pharmacy closes early so I can attend Paula's wedding at the church.",
+  "prinyato": false,
+  "otkaz": "во фразе есть то, о чём житель не говорит: pharmacy",
+  "podskazka": "допустимо: plan 1, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-93dfbb85d6bc3c11": {
+  "sek": 2.4,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ngreet\nsay: Good afternoon, Yolanda.",
+  "programma": "greet\nsay: Good afternoon, Yolanda.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Good afternoon, Yolanda.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-3898afc198e1ed5c": {
+  "sek": 1.8,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "plan 1\nsay: I heard Elena's party is at the bakery tomorrow at 12:30, but I was told many more people.",
+  "programma": "plan 1\nsay: I heard Elena's party is at the bakery tomorrow at 12:30, but I was told many more people.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I heard Elena's party is at the bakery tomorrow at 12:30, but I was told many more people.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5ae45bccc6560fe4": {
+  "sek": 2.9,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 amount\nsay: I heard about an inheritance of four hundred ninety thousand euros.",
+  "programma": "tell 1 amount\nsay: I heard about an inheritance of four hundred ninety thousand euros.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": null,
+    "amount": 490000,
+    "guess": []
+   }
+  },
+  "rech": "I heard about an inheritance of four hundred ninety thousand euros.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5c57092f68b3e303": {
+  "sek": 2.0,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\nask 1 amount\nsay: Do you know how many people Javier thinks are coming to the party?",
+  "programma": "ask 1 amount\nsay: Do you know how many people Javier thinks are coming to the party?",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "amount",
+   "claim": null
+  },
+  "rech": "Do you know how many people Javier thinks are coming to the party?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5f08f6ce7647f5f8": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 who where when amount\nsay: Paula got married at the church at midnight with 190 guests, I heard.",
+  "programma": "tell 1 who where when amount\nsay: Paula got married at the church at midnight with 190 guests, I heard.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p03",
+    "when": 0,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "Paula got married at the church at midnight with 190 guests, I heard.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-6099afdb6fff4936": {
+  "sek": 1.6,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 who where when\nsay: Elena is having a party at the bakery tomorrow at half past twelve.",
+  "programma": "tell 1 who where when\nsay: Elena is having a party at the bakery tomorrow at half past twelve.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": "p05",
+    "when": 73,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "Elena is having a party at the bakery tomorrow at half past twelve.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5162bf64663b6750": {
+  "sek": 5.0,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "I need to tell about [2] (fine: Sara, today 17:30, 740 euros) but I cannot mention Miguel's name since the engine says it's not allowed. I'll just tell the facts without naming the source.\n\ntell 2 who when amount\nsay: Sara got a huge fine today at 17:30, 740 euros!",
+  "programma": "tell 2 who when amount\nsay: Sara got a huge fine today at 17:30, 740 euros!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 2,
+   "claim": {
+    "who": "n023",
+    "where": null,
+    "when": 35,
+    "amount": 740,
+    "guess": []
+   }
+  },
+  "rech": "Sara got a huge fine today at 17:30, 740 euros!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-6653959f56e744e1": {
+  "sek": 1.7,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 who where when amount\nsay: Paula's wedding at the church had 190 guests at midnight, I heard from someone!",
+  "programma": "tell 1 who where when amount\nsay: Paula's wedding at the church had 190 guests at midnight, I heard from someone!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p03",
+    "when": 0,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "Paula's wedding at the church had 190 guests at midnight, I heard from someone!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-532099530259e507": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 who where amount\nsay: Rafael, I heard Francisco won a big prize at the chapel.",
+  "programma": "tell 1 who where amount\nsay: Rafael, I heard Francisco won a big prize at the chapel.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n012",
+    "where": "p11",
+    "when": null,
+    "amount": 160000,
+    "guess": []
+   }
+  },
+  "rech": "Rafael, I heard Francisco won a big prize at the chapel.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-7b475b31f789838e": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 who where amount\nsay: I heard Francisco won a huge lottery prize at the chapel!",
+  "programma": "tell 1 who where amount\nsay: I heard Francisco won a huge lottery prize at the chapel!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n012",
+    "where": "p11",
+    "when": null,
+    "amount": 160000,
+    "guess": []
+   }
+  },
+  "rech": "I heard Francisco won a huge lottery prize at the chapel!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-6eec50b3b707896a": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\nI need to tell the fact without mentioning Antonio's name, since the engine says \"Antonio\" is not allowed.\n\ntell 1 who where amount\nsay: Paula had her wedding at the church with 190 guests, apparently.",
+  "programma": "tell 1 who where amount\nsay: Paula had her wedding at the church with 190 guests, apparently.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p03",
+    "when": null,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "Paula had her wedding at the church with 190 guests, apparently.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-b162974061b94e8d": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\nask 1 amount\nsay: I don't remember how much it was, do you know?",
+  "programma": "ask 1 amount\nsay: I don't remember how much it was, do you know?",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f2",
+   "nomer": 1,
+   "slot": "amount",
+   "claim": null
+  },
+  "rech": "I don't remember how much it was, do you know?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-73950bf2af6d3018": {
+  "sek": 2.1,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\nI need to understand the refusal. The number \"110,000\" contains \"000\" and \"110\" which the engine didn't recognize. Let me try a different format.\n\ntell 1 amount\nsay: I heard something about an inheritance of one hundred ten thousand euros.",
+  "programma": "tell 1 amount\nsay: I heard something about an inheritance of one hundred ten thousand euros.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": null,
+    "amount": 110000,
+    "guess": []
+   }
+  },
+  "rech": "I heard something about an inheritance of one hundred ten thousand euros.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-78c8400d0a24d373": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ngreet\nsay: Good evening Laura, nice to see you.",
+  "programma": "greet\nsay: Good evening Laura, nice to see you.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Good evening Laura, nice to see you.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-686560e0223275c0": {
+  "sek": 3.8,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ngreet\nsay: Good afternoon, Josefa. Lovely to see you today.",
+  "programma": "greet\nsay: Good afternoon, Josefa. Lovely to see you today.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Good afternoon, Josefa. Lovely to see you today.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-71cecec1906955ec": {
+  "sek": 1.7,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 when amount(guess)\nsay: I think the fine tonight at 23:00 is maybe 0 euros.",
+  "programma": "tell 1 when amount(guess)\nsay: I think the fine tonight at 23:00 is maybe 0 euros.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": 46,
+    "amount": 0,
+    "guess": [
+     "amount"
+    ]
+   }
+  },
+  "rech": "I think the fine tonight at 23:00 is maybe 0 euros.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-72345572559aacea": {
+  "sek": 4.4,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\nThe engine refused because I included the name \"Paula\" directly instead of using the slot \"who\". Let me check the move format again.\n\nThe move `tell 1 who where(guess) when amount` means I need to fill the slots: who, where (as a guess), when, amount. But the card says I know the wedding is Paula's, and I know it first-hand. So \"who\" is Paula - but the engine says \"paula\" is not a slot name. Let me re-read.\n\nActually, looking at the error: \"ячейки 'paula' нет, есть who, where, when, amount\" - this means the slot names are \"who\", \"where\", \"when\", \"amount\", not the values. So I need to provide values for those slots.\n\nLet me try again with proper slot values.\n\ntell 1 who Paula where Inma thinks bar when today 17:00 amount 190\nsay: I heard Paula's wedding is at the bar today at five, with 190 guests.\n\nWait, the error says \"ячейки 'paula' нет\" - cells 'paula' doesn't exist. So maybe the format is different. Let me look at the accepted moves again.\n\nThe move is: `tell 1 who where(guess) when amount`\n\nThis means the slots are: who, where (guess), when, amount. I need to provide values for these slots. But the engine says 'paula' is not a cell. Perhaps the format should be:\n\ntell 1 who=Paula where=\"Inma thinks bar\" when=\"today 17:00\" amount=190\n\nOr maybe just space-separated values in order?\n\nLet me try:\n\ntell 1 Paula \"Inma thinks bar\" \"today 17:00\" 190\n\nHmm, but the error said \"ячейки 'paula' нет\" - maybe it's interpreting \"who Paula\" as a slot \"who\" with value \"Paula\"? Let me try differently.\n\nActually, looking at the move format more carefully: `tell 1 who where(guess) when amount` - these are the slot names. So I should write:\n\ntell 1 who Paula where \"Inma thinks bar\" when \"today 17:00\" amount 190\n\nBut the engine said 'paula' is not a cell. Maybe the issue is that \"Paula\" is a name and rule 5 says \"The sentence must contain no name and no number that is not on the card.\" But Paula IS on the card (in fact [1]).\n\nLet me try a different approach - maybe I should ask som",
+  "programma": "tell 1 who Paula where \"Inma thinks bar\" when \"today 17:00\" amount 190\nBut the engine said 'paula' is not a cell. Maybe the issue is that \"Paula\" is a name and rule 5 says \"The sentence must contain no name and no number that is not on the card.\" But Paula IS on the card (in fact [1]).",
+  "prinyato": false,
+  "otkaz": "ячейки 'paula' нет, есть who, where, when, amount",
+  "podskazka": "допустимо: tell 1 who where(guess) when amount, ask 1 where, tell 2 who(guess) when(guess) amount(guess), ask 2 who, ask 2 where, ask 2 when, ask 2 amount, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-6510b9c0a2f6063b": {
+  "sek": 1.6,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "plan 1\nsay: I already knew about Elena's party, someone told me earlier.",
+  "programma": "plan 1\nsay: I already knew about Elena's party, someone told me earlier.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I already knew about Elena's party, someone told me earlier.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5e60fa459c36a58b": {
+  "sek": 17.6,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 who where when amount\nsay: Teresa, Paula's wedding is at the church today at five with 190 guests, right?",
+  "programma": "tell 1 who where when amount\nsay: Teresa, Paula's wedding is at the church today at five with 190 guests, right?",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p03",
+    "when": 34,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "Teresa, Paula's wedding is at the church today at five with 190 guests, right?",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-78af044ee0890b9d": {
+  "sek": 1.8,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 who where(guess) amount\nsay: I think Francisco won 6 euros at the town hall, but I'm not sure.",
+  "programma": "tell 1 who where(guess) amount\nsay: I think Francisco won 6 euros at the town hall, but I'm not sure.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n012",
+    "where": "p07",
+    "when": null,
+    "amount": 6,
+    "guess": [
+     "where"
+    ]
+   }
+  },
+  "rech": "I think Francisco won 6 euros at the town hall, but I'm not sure.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-7b0014b7322f5cf4": {
+  "sek": 2.0,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 when amount(guess)\nsay: Yolanda, I think the party is tonight at 11 with maybe 7 people, right?",
+  "programma": "tell 1 when amount(guess)\nsay: Yolanda, I think the party is tonight at 11 with maybe 7 people, right?",
+  "prinyato": false,
+  "otkaz": "во фразе число, которого обработчик не выдавал: 11",
+  "podskazka": "допустимо: tell 1 when amount(guess), ask 1 who, ask 1 where, ask 1 amount, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-607f59f777cdfd51": {
+  "sek": 2.3,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "rech_ot_modeli": false,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-79f764831ee84f44": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "plan 1\nsay: Teresa, I already knew about Paula's wedding at the church today.",
+  "programma": "plan 1\nsay: Teresa, I already knew about Paula's wedding at the church today.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "Teresa, I already knew about Paula's wedding at the church today.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-85058af20b77503c": {
+  "sek": 2.6,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\ntell 1 who(guess) where church when today 23:00 amount 63 people\nsay: Luis told me there's a party at the church tonight at 11 with 63 people, and I think Rafael might be behind it.",
+  "programma": "tell 1 who(guess) where church when today 23:00 amount 63 people\nsay: Luis told me there's a party at the church tonight at 11 with 63 people, and I think Rafael might be behind it.",
+  "prinyato": false,
+  "otkaz": "ячейки 'church' нет, есть who, where, when, amount",
+  "podskazka": "допустимо: tell 1 who(guess) where when amount, ask 1 who, silent",
+  "deystvie": null,
+  "rech": null,
+  "rech_ot_modeli": false,
+  "bedy": null
+ },
+ "decide-en-8234f8efdb9d9e55": {
+  "sek": 1.8,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "greet\nsay: Good morning, Yolanda!",
+  "programma": "greet\nsay: Good morning, Yolanda!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Good morning, Yolanda!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-8e0f71090324a161": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\ngreet\nsay: Good afternoon, Miguel!",
+  "programma": "greet\nsay: Good afternoon, Miguel!",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Good afternoon, Miguel!",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-7dd60a2739ae5791": {
+  "sek": 3.0,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "plan 1\nsay: I think I'll go pay that fine before 17:30.",
+  "programma": "plan 1\nsay: I think I'll go pay that fine before 17:30.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I think I'll go pay that fine before 17:30.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-94b36f527ff44bf8": {
+  "sek": 3.6,
+  "tok_in": 0,
+  "tok_out": 0,
+  "otvet": "\n\nI need to check what I know and what Ana already knows. Ana just told me about Sara's fine (740 euros, today 17:30). So I know that fact from Ana now. But I also know it from Carmen - however, I cannot mention Carmen's name because the engine says it's not allowed (the name wasn't on the card as known to me... wait, Carmen is on my card - \"Carmen told you\"). Let me re-read.\n\nActually, the card says: [2] fine · who: Sara · when: today 17:30 · amount: 740 euros. Carmen told you. You haven't told Ana yet.\n\nSo I know Carmen told me, but the engine refused because \"Carmen\" is a name the handler didn't issue? Let me check - the card says \"Carmen told you\" so Carmen is known to me. But the engine says \"во фразе имя, которого обработчик не выдавал: Carmen\" - meaning the name Carmen wasn't in the allowed output. \n\nLooking at the allowed moves: tell 2 who when amount - this would be telling Ana about Sara's fine (who: Sara, when: today 17:30, amount: 740 euros). But Ana just told me this! So I can't tell her what she just told me (law 3: A fact already told to this listener cannot be told again).\n\nSo I cannot tell 2 because Ana just told me that fact.\n\nLet me try tell 1 where amount - wedding at church, 190 guests. I know this from Antonio. I haven't told Ana yet.\n\ntell 1 where amount\nsay: I heard there was a wedding at the church with 190 guests.\n\nLet me check: the slots are \"where\" (church) and \"amount\" (190 guests). No names mentioned. That should work.\n\nask 1 who - I don't remember who, so I can ask.\nask 1 when - I don't remember when, so I can ask.\nask 2 where - I know the fine is about Sara, today 17:30, 740 euros, but I don't know where. So I can ask.\n\nLet me go with tell 1 where amount.\n\ntell 1 where amount\nsay: I heard there was a wedding at the church with 190 guests.",
+  "programma": "tell 1 where amount\nsay: I heard there was a wedding at the church with 190 guests.",
+  "prinyato": true,
+  "otkaz": null,
+  "podskazka": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p03",
+    "when": null,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "I heard there was a wedding at the church with 190 guests.",
+  "rech_ot_modeli": true,
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ }
+}

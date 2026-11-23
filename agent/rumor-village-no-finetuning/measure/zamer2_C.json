@@ -1,0 +1,1017 @@
+{
+ "decide-en-0104ae4ade5170f9": {
+  "sek": 2.2,
+  "tok_in": 0,
+  "otvet": "\n\nask 1 who",
+  "programma": "ask 1 who",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Do you know who the fine is about?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-017e542500330094": {
+  "sek": 3.0,
+  "tok_in": 0,
+  "otvet": "\n\ntell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": "p05",
+    "when": 73,
+    "amount": 2,
+    "guess": []
+   }
+  },
+  "rech": "Have you heard about the party? Elena, bakery, tomorrow 12:30, 2 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-13f9a4b7a03edb5a": {
+  "sek": 2.9,
+  "tok_in": 0,
+  "otvet": "ask 1 who",
+  "programma": "ask 1 who",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Do you know who the fine is about?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-19c79e47f5844e78": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "otvet": "\n\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the party is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-7513a36ed4b6357a": {
+  "sek": 2.3,
+  "tok_in": 0,
+  "otvet": "tell 1 who where",
+  "programma": "tell 1 who where",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-007d0da4a311e152": {
+  "sek": 2.8,
+  "tok_in": 0,
+  "otvet": "ask 1 who",
+  "programma": "ask 1 who",
+  "prinyato": false,
+  "otkaz": "житель и так знает who наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-11007d150afcdbea": {
+  "sek": 2.7,
+  "tok_in": 0,
+  "otvet": "\n\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f2",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the wedding is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-01b6df4b09a611d7": {
+  "sek": 2.8,
+  "tok_in": 0,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0730a1e0a34881b6": {
+  "sek": 2.1,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the fine is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-02755219a5ffd2fc": {
+  "sek": 2.0,
+  "tok_in": 0,
+  "otvet": "\n\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-b7b1d37f7e9b0f96": {
+  "sek": 2.1,
+  "tok_in": 0,
+  "otvet": "\n\nask 2 where",
+  "programma": "ask 2 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-009d49d870043caa": {
+  "sek": 1.8,
+  "tok_in": 0,
+  "otvet": "\ntell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0212d1ab55572b18": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "otvet": "tell 1 who where",
+  "programma": "tell 1 who where",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-08705e74b4c78ed7": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "otvet": "\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the fine is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0d45d7a6184d8bf2": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I think I will go to the party.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-c49b835fa0c9ad90": {
+  "sek": 2.2,
+  "tok_in": 0,
+  "otvet": "\n\nsilent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0ba59afa1e2b9766": {
+  "sek": 2.1,
+  "tok_in": 0,
+  "otvet": "\n\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-3a9fd61a244fa553": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "otvet": "\ntell 1 who where",
+  "programma": "tell 1 who where",
+  "prinyato": false,
+  "otkaz": "житель забыл who у факта [1]",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-05d28f3cdb3ae5cf": {
+  "sek": 2.4,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0b92f2532cb484c5": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "otvet": "\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the party is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-037e3ffbc8e9afff": {
+  "sek": 19.1,
+  "tok_in": 0,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-441a79b2aa45435c": {
+  "sek": 2.0,
+  "tok_in": 0,
+  "otvet": "\nsilent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-892024d26c49f301": {
+  "sek": 2.1,
+  "tok_in": 0,
+  "otvet": "\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the inheritance is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5ca6807af302d755": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "otvet": "\nsilent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-178ba8271a8d8738": {
+  "sek": 2.4,
+  "tok_in": 0,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0d706a8357b3d115": {
+  "sek": 2.6,
+  "tok_in": 0,
+  "otvet": "\n\ntell 1 who",
+  "programma": "tell 1 who",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0bac99cb4fb93656": {
+  "sek": 2.4,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-127f4d0ac6c64e2a": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "otvet": "\ntell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n016",
+    "where": "p06",
+    "when": 46,
+    "amount": 1200,
+    "guess": [
+     "who",
+     "where"
+    ]
+   }
+  },
+  "rech": "Have you heard about the fine? maybe Carlos, maybe school, today 23:00, 1200 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-14ae98763e31d290": {
+  "sek": 2.0,
+  "tok_in": 0,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": false,
+  "otkaz": "житель уже здоровался в этом разговоре",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-909628dd2b84c858": {
+  "sek": 2.6,
+  "tok_in": 0,
+  "otvet": "\ntell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0e25afb4204ea661": {
+  "sek": 2.0,
+  "tok_in": 0,
+  "otvet": "\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-220c6bae168346d9": {
+  "sek": 2.4,
+  "tok_in": 0,
+  "otvet": "ask 1 amount",
+  "programma": "ask 1 amount",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "amount",
+   "claim": null
+  },
+  "rech": "Do you know how much the party is about?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-9dcfc7d584ef5028": {
+  "sek": 3.5,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the inheritance is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-22914792feb8e7af": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the fine is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0f0ea69db291f5d3": {
+  "sek": 2.9,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f2",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the wedding is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0a324a41ede8ec89": {
+  "sek": 2.6,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f2",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the wedding is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-ad57d41171da52fb": {
+  "sek": 3.2,
+  "tok_in": 0,
+  "otvet": "\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f2",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the wedding is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-23c1cc5f21a9b037": {
+  "sek": 3.0,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the fine is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0bf2ae7f4c6ff156": {
+  "sek": 3.2,
+  "tok_in": 0,
+  "otvet": "\n\ngreet",
+  "programma": "greet",
+  "prinyato": false,
+  "otkaz": "житель уже здоровался в этом разговоре",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-272c462b4ec25ee8": {
+  "sek": 2.7,
+  "tok_in": 0,
+  "otvet": "ask 2 who",
+  "programma": "ask 2 who",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 2,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Do you know who the fine is about?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2819609325c46f60": {
+  "sek": 18.6,
+  "tok_in": 0,
+  "otvet": "ask 2 when",
+  "programma": "ask 2 when",
+  "prinyato": false,
+  "otkaz": "житель и так знает when наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-22d7cec36fd3b3d7": {
+  "sek": 2.9,
+  "tok_in": 0,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the inheritance is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-f0ca56ee9641b595": {
+  "sek": 2.0,
+  "tok_in": 0,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-153e1bdd3a72d30e": {
+  "sek": 2.7,
+  "tok_in": 0,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": false,
+  "otkaz": "план в этом ходе не запрашивался",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-1ae6bc9a25b9dca5": {
+  "sek": 2.2,
+  "tok_in": 0,
+  "otvet": "ask 1 who",
+  "programma": "ask 1 who",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "who",
+   "claim": null
+  },
+  "rech": "Do you know who the party is about?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-d5b038b69c8ecfe2": {
+  "sek": 2.4,
+  "tok_in": 0,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Carlos.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-655b70a6df863aef": {
+  "sek": 2.3,
+  "tok_in": 0,
+  "otvet": "\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f2",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the wedding is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0d5f675b90e364a0": {
+  "sek": 2.7,
+  "tok_in": 0,
+  "otvet": "\n\ngreet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Javier.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2eee2e1eeb189aa8": {
+  "sek": 4.5,
+  "tok_in": 0,
+  "otvet": "\n\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-1f4c061412584ec3": {
+  "sek": 2.6,
+  "tok_in": 0,
+  "otvet": "\ntell 1 who where",
+  "programma": "tell 1 who where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p03",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "Have you heard about the wedding? Paula, church.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2152d02be9f72d63": {
+  "sek": 3.2,
+  "tok_in": 0,
+  "otvet": "\ntell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p03",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "Have you heard about the wedding? church.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-f0b2e3781c3cf594": {
+  "sek": 2.5,
+  "tok_in": 0,
+  "otvet": "\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the inheritance is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-309eb611f73affcb": {
+  "sek": 2.9,
+  "tok_in": 0,
+  "otvet": "\ntell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-2014e0d1a922709e": {
+  "sek": 2.3,
+  "tok_in": 0,
+  "otvet": "\n\nask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where the inheritance is?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0da5bc8f10d5366f": {
+  "sek": 1.9,
+  "tok_in": 0,
+  "otvet": "\n\nplan 1",
+  "programma": "plan 1",
+  "prinyato": false,
+  "otkaz": "план в этом ходе не запрашивался",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-34be96066fcb8425": {
+  "sek": 2.1,
+  "tok_in": 0,
+  "otvet": "ask 2 where",
+  "programma": "ask 2 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-21b7b9a1331c44de": {
+  "sek": 2.7,
+  "tok_in": 0,
+  "otvet": "tell 1 who where",
+  "programma": "tell 1 who where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": "p05",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "Have you heard about the party? Elena, bakery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-149721f9d303ff55": {
+  "sek": 2.3,
+  "tok_in": 0,
+  "otvet": "\nsilent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ }
+}

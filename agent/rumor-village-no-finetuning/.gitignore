@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/en.jsonl
+data/es.jsonl

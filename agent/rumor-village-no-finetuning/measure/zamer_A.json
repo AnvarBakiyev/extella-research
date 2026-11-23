@@ -1,0 +1,3974 @@
+{
+ "decide-en-005d11355a5e4008": {
+  "sek": 3.0,
+  "tok_in": 208,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-00b88d72821b12bc": {
+  "sek": 1.1,
+  "tok_in": 210,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n013",
+    "where": null,
+    "when": null,
+    "amount": 1200,
+    "guess": [
+     "who"
+    ]
+   }
+  },
+  "rech": "About the fine: maybe Laura, 1200 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0104ae4ade5170f9": {
+  "sek": 1.0,
+  "tok_in": 196,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p11",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: chapel.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0115c82dcc1c5430": {
+  "sek": 1.9,
+  "tok_in": 200,
+  "tok_out": 25,
+  "otvet": "Carmen, did you hear that Francisco just won 160,000 euros at the chapel?",
+  "programma": "Carmen, did you hear that Francisco just won 160,000 euros at the chapel?",
+  "prinyato": false,
+  "otkaz": "строка 1 не на языке village: Carmen, did you hear that Francisco just won 160,000 euros at the chapel?",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0145b6135ab98071": {
+  "sek": 1.2,
+  "tok_in": 208,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 34,
+    "amount": 190,
+    "guess": [
+     "who"
+    ]
+   }
+  },
+  "rech": "About the wedding: maybe Elena, today 17:00, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-017e542500330094": {
+  "sek": 1.3,
+  "tok_in": 231,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": "p05",
+    "when": 73,
+    "amount": 2,
+    "guess": []
+   }
+  },
+  "rech": "About the party: Elena, bakery, tomorrow 12:30, 2 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-018088b48f4e2f5c": {
+  "sek": 1.1,
+  "tok_in": 198,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-01a122c1dfd5d1e9": {
+  "sek": 0.9,
+  "tok_in": 165,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-02215e32767a3080": {
+  "sek": 1.2,
+  "tok_in": 230,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0349d3603a34d621": {
+  "sek": 1.2,
+  "tok_in": 254,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": false,
+  "otkaz": "запрошен план о факте [2], а не о [1]",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0872cafa8854eecf": {
+  "sek": 1.1,
+  "tok_in": 222,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-13f9a4b7a03edb5a": {
+  "sek": 1.1,
+  "tok_in": 201,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "у факта [1] житель не знает ни одной ячейки",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-15f3df6fa884c5b3": {
+  "sek": 1.2,
+  "tok_in": 219,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-19c79e47f5844e78": {
+  "sek": 1.3,
+  "tok_in": 238,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-236e4647004b01d4": {
+  "sek": 1.2,
+  "tok_in": 260,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": false,
+  "otkaz": "запрошен план о факте [2], а не о [1]",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-4943b34d9f96bc22": {
+  "sek": 1.0,
+  "tok_in": 201,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Carlos.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-4c2ebe4f46437099": {
+  "sek": 1.4,
+  "tok_in": 297,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p03",
+    "when": 0,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "About the wedding: Paula, church, today 00:00, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-7513a36ed4b6357a": {
+  "sek": 1.5,
+  "tok_in": 295,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-8cfcfeb67f4410f4": {
+  "sek": 1.6,
+  "tok_in": 208,
+  "tok_out": 14,
+  "otvet": "tell 1 who Francisco thinks today 22:30",
+  "programma": "tell 1 who Francisco thinks today 22:30",
+  "prinyato": false,
+  "otkaz": "ячейки 'francisco' нет, есть who, where, when, amount",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-aa8c302809bafbef": {
+  "sek": 1.1,
+  "tok_in": 205,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Manuel.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-af9aa711585a26c2": {
+  "sek": 1.5,
+  "tok_in": 285,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the fine.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-007d0da4a311e152": {
+  "sek": 1.4,
+  "tok_in": 259,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-02b609a108f71e1a": {
+  "sek": 1.2,
+  "tok_in": 201,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": 46,
+    "amount": 7,
+    "guess": [
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: today 23:00, maybe 7 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-040e68d79712c087": {
+  "sek": 1.2,
+  "tok_in": 198,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n012",
+    "where": null,
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the lottery: Francisco.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0764b991e392c3de": {
+  "sek": 0.8,
+  "tok_in": 164,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-11007d150afcdbea": {
+  "sek": 1.2,
+  "tok_in": 215,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 34,
+    "amount": 190,
+    "guess": [
+     "who"
+    ]
+   }
+  },
+  "rech": "About the wedding: maybe Elena, today 17:00, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-01b6df4b09a611d7": {
+  "sek": 0.8,
+  "tok_in": 161,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0730a1e0a34881b6": {
+  "sek": 1.7,
+  "tok_in": 333,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-02755219a5ffd2fc": {
+  "sek": 1.0,
+  "tok_in": 166,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0382eb2c6a8c5475": {
+  "sek": 1.2,
+  "tok_in": 233,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the party.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-612f3f4cf3d8531d": {
+  "sek": 1.2,
+  "tok_in": 232,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-08f088d5690e2e97": {
+  "sek": 1.1,
+  "tok_in": 201,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-141d6898b9c21e55": {
+  "sek": 1.4,
+  "tok_in": 241,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n023",
+    "where": null,
+    "when": null,
+    "amount": 740,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: Sara, 740 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1a5841818751a23d": {
+  "sek": 1.3,
+  "tok_in": 231,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-ba18b3051294f559": {
+  "sek": 1.2,
+  "tok_in": 203,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-3d9340e8d7266e3b": {
+  "sek": 1.2,
+  "tok_in": 238,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-701782c72cff269f": {
+  "sek": 1.1,
+  "tok_in": 201,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Carlos.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-b7b1d37f7e9b0f96": {
+  "sek": 1.5,
+  "tok_in": 308,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n023",
+    "where": null,
+    "when": 35,
+    "amount": 740,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: Sara, today 17:30, 740 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-009d49d870043caa": {
+  "sek": 1.4,
+  "tok_in": 262,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-02f5a165c731497e": {
+  "sek": 1.1,
+  "tok_in": 201,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": 46,
+    "amount": 7,
+    "guess": [
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the fine: today 23:00, maybe 7 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0442e28f58087b11": {
+  "sek": 1.1,
+  "tok_in": 204,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 73,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the party: Elena, tomorrow 12:30.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0bc2cd9fd5ac414f": {
+  "sek": 0.8,
+  "tok_in": 164,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-13af2ce76b016eac": {
+  "sek": 1.1,
+  "tok_in": 208,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n012",
+    "where": null,
+    "when": 73,
+    "amount": 9,
+    "guess": [
+     "who",
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: maybe Francisco, tomorrow 12:30, maybe 9 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0212d1ab55572b18": {
+  "sek": 0.8,
+  "tok_in": 164,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-08705e74b4c78ed7": {
+  "sek": 1.4,
+  "tok_in": 288,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "у факта [1] житель не знает ни одной ячейки",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-04deab67f1236959": {
+  "sek": 0.8,
+  "tok_in": 163,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-03b7c023261ff9e3": {
+  "sek": 1.1,
+  "tok_in": 221,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-71f166df6dc4e82c": {
+  "sek": 1.4,
+  "tok_in": 267,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": false,
+  "otkaz": "запрошен план о факте [2], а не о [1]",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0d45d7a6184d8bf2": {
+  "sek": 1.1,
+  "tok_in": 219,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the party.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1ed3b6dbfe3f5045": {
+  "sek": 1.4,
+  "tok_in": 282,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n023",
+    "where": null,
+    "when": 35,
+    "amount": 740,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: Sara, today 17:30, 740 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-4ec3b5c5dfc15ec2": {
+  "sek": 1.4,
+  "tok_in": 237,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-865c77687871fc56": {
+  "sek": 1.3,
+  "tok_in": 254,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-a7e7cecbf0339e66": {
+  "sek": 1.3,
+  "tok_in": 231,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p03",
+    "when": 34,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the wedding: church, today 17:00.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-c49b835fa0c9ad90": {
+  "sek": 1.4,
+  "tok_in": 231,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0261b096f742c317": {
+  "sek": 1.2,
+  "tok_in": 216,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-06ab3d644c0acae7": {
+  "sek": 1.2,
+  "tok_in": 200,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": 46,
+    "amount": 0,
+    "guess": [
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: today 23:00, maybe 0 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0583e35289f6d9c0": {
+  "sek": 1.2,
+  "tok_in": 198,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p11",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the lottery: chapel.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-266b7fe1c6ff7c9c": {
+  "sek": 1.8,
+  "tok_in": 206,
+  "tok_out": 22,
+  "otvet": "Hey Carmen, did you hear about Elena's party tomorrow at the bakery with 200 people?",
+  "programma": "Hey Carmen, did you hear about Elena's party tomorrow at the bakery with 200 people?",
+  "prinyato": false,
+  "otkaz": "строка 1 не на языке village: Hey Carmen, did you hear about Elena's party tomorrow at the bakery with 200 people?",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-29530f19e45dac20": {
+  "sek": 1.2,
+  "tok_in": 208,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p11",
+    "when": null,
+    "amount": 190,
+    "guess": [
+     "where"
+    ]
+   }
+  },
+  "rech": "About the wedding: maybe chapel, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-02cc5b73643f955f": {
+  "sek": 1.1,
+  "tok_in": 191,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n010",
+    "where": null,
+    "when": null,
+    "amount": 490000,
+    "guess": []
+   }
+  },
+  "rech": "About the inheritance: Antonio, 490000 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0ba59afa1e2b9766": {
+  "sek": 1.4,
+  "tok_in": 260,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-06e326b78e1367fc": {
+  "sek": 0.9,
+  "tok_in": 164,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0658ff34df7566aa": {
+  "sek": 1.2,
+  "tok_in": 218,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-ce13893060248770": {
+  "sek": 1.2,
+  "tok_in": 221,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0f819caa2f31ebd9": {
+  "sek": 1.3,
+  "tok_in": 241,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the party.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-3a9fd61a244fa553": {
+  "sek": 1.3,
+  "tok_in": 233,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p03",
+    "when": 34,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the wedding: church, today 17:00.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-52270adc982825b2": {
+  "sek": 1.5,
+  "tok_in": 291,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-9ea023817fa05550": {
+  "sek": 1.5,
+  "tok_in": 289,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-05d28f3cdb3ae5cf": {
+  "sek": 1.2,
+  "tok_in": 221,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0b92f2532cb484c5": {
+  "sek": 1.2,
+  "tok_in": 214,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": 46,
+    "amount": 7,
+    "guess": [
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: today 23:00, maybe 7 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-05cfb5b83fba776b": {
+  "sek": 1.1,
+  "tok_in": 190,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n010",
+    "where": null,
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the inheritance: Antonio.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-31447e76a87cdbba": {
+  "sek": 0.8,
+  "tok_in": 164,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2e92e458f5085f3d": {
+  "sek": 1.3,
+  "tok_in": 258,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": 35,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: today 17:30.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-037e3ffbc8e9afff": {
+  "sek": 0.9,
+  "tok_in": 167,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1559b2ecb35ca66d": {
+  "sek": 1.3,
+  "tok_in": 240,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0c545c8a0dae3105": {
+  "sek": 0.9,
+  "tok_in": 162,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-06748d6a3a2b0a88": {
+  "sek": 1.3,
+  "tok_in": 230,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the party.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-e6a1d9fca03bc7d0": {
+  "sek": 1.2,
+  "tok_in": 216,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1ae816a6a25d59d8": {
+  "sek": 1.4,
+  "tok_in": 280,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": false,
+  "otkaz": "запрошен план о факте [2], а не о [1]",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-441a79b2aa45435c": {
+  "sek": 1.2,
+  "tok_in": 201,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n012",
+    "where": "p11",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the lottery: Francisco, chapel.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-892024d26c49f301": {
+  "sek": 1.3,
+  "tok_in": 235,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-aa81fa1bfa25daea": {
+  "sek": 1.3,
+  "tok_in": 231,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0a34ba6ba2c7fb49": {
+  "sek": 1.2,
+  "tok_in": 221,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0e9e141125d33c0f": {
+  "sek": 1.2,
+  "tok_in": 227,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n023",
+    "where": null,
+    "when": 38,
+    "amount": 740,
+    "guess": [
+     "when"
+    ]
+   }
+  },
+  "rech": "About the fine: Sara, maybe today 19:00, 740 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0644e617e96b4ad0": {
+  "sek": 1.2,
+  "tok_in": 210,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": null,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "About the wedding: 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5ca6807af302d755": {
+  "sek": 1.3,
+  "tok_in": 246,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Sara.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-424bde6725db5543": {
+  "sek": 1.2,
+  "tok_in": 198,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p11",
+    "when": null,
+    "amount": 190,
+    "guess": [
+     "where"
+    ]
+   }
+  },
+  "rech": "About the wedding: maybe chapel, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0492b7d77c706cd8": {
+  "sek": 1.0,
+  "tok_in": 162,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-178ba8271a8d8738": {
+  "sek": 1.7,
+  "tok_in": 300,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0d706a8357b3d115": {
+  "sek": 1.1,
+  "tok_in": 170,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-07345b234afdc285": {
+  "sek": 1.2,
+  "tok_in": 216,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-227a44a7328c305a": {
+  "sek": 1.3,
+  "tok_in": 224,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-47437bb406e651d4": {
+  "sek": 1.3,
+  "tok_in": 199,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": null,
+    "when": null,
+    "amount": 190,
+    "guess": []
+   }
+  },
+  "rech": "About the wedding: Paula, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-8a38aebc1b08ac10": {
+  "sek": 1.4,
+  "tok_in": 229,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-b5fc353c23723f2e": {
+  "sek": 1.6,
+  "tok_in": 266,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": false,
+  "otkaz": "запрошен план о факте [2], а не о [1]",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0bac99cb4fb93656": {
+  "sek": 1.8,
+  "tok_in": 307,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-127f4d0ac6c64e2a": {
+  "sek": 1.5,
+  "tok_in": 235,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n016",
+    "where": "p06",
+    "when": 46,
+    "amount": 1200,
+    "guess": [
+     "who",
+     "where"
+    ]
+   }
+  },
+  "rech": "About the fine: maybe Carlos, maybe school, today 23:00, 1200 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-06b57f2df81e4acc": {
+  "sek": 1.4,
+  "tok_in": 201,
+  "tok_out": 6,
+  "otvet": "tell 1 who where",
+  "programma": "tell 1 who where",
+  "prinyato": false,
+  "otkaz": "житель не знает who у факта [1]",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-5cff7918a30aab6c": {
+  "sek": 1.2,
+  "tok_in": 165,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-4ab626c98173cdaf": {
+  "sek": 1.5,
+  "tok_in": 245,
+  "tok_out": 5,
+  "otvet": "tell 2 all",
+  "programma": "tell 2 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 2,
+   "claim": {
+    "who": "n025",
+    "where": null,
+    "when": 31,
+    "amount": 190,
+    "guess": [
+     "when"
+    ]
+   }
+  },
+  "rech": "About the wedding: Paula, maybe today 15:30, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-05c495da89b9b69e": {
+  "sek": 0.9,
+  "tok_in": 163,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1c3fc6f945f0a37e": {
+  "sek": 1.8,
+  "tok_in": 317,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-14ae98763e31d290": {
+  "sek": 1.1,
+  "tok_in": 167,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-074c3c9d1ad9343c": {
+  "sek": 1.4,
+  "tok_in": 230,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the party.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-26748da860b499de": {
+  "sek": 1.4,
+  "tok_in": 229,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-73968a3325f9eba9": {
+  "sek": 1.3,
+  "tok_in": 203,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": null,
+    "amount": 490000,
+    "guess": []
+   }
+  },
+  "rech": "About the inheritance: 490000 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-909628dd2b84c858": {
+  "sek": 1.5,
+  "tok_in": 233,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0e25afb4204ea661": {
+  "sek": 1.6,
+  "tok_in": 292,
+  "tok_out": 5,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-14c4087840093793": {
+  "sek": 1.4,
+  "tok_in": 213,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": 46,
+    "amount": 0,
+    "guess": [
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: today 23:00, maybe 0 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-079cd885e284f4d8": {
+  "sek": 1.2,
+  "tok_in": 193,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p11",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: chapel.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-77dad2db370a547f": {
+  "sek": 1.0,
+  "tok_in": 164,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Carmen.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-4f80b3fde9802c23": {
+  "sek": 1.4,
+  "tok_in": 203,
+  "tok_out": 6,
+  "otvet": "tell 1 who where",
+  "programma": "tell 1 who where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": "p05",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the party: Elena, bakery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-07b7e5768dbaeecc": {
+  "sek": 0.9,
+  "tok_in": 162,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-220c6bae168346d9": {
+  "sek": 1.4,
+  "tok_in": 209,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-166939ad489a1539": {
+  "sek": 1.1,
+  "tok_in": 166,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-07f3138dd938807a": {
+  "sek": 1.4,
+  "tok_in": 209,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the inheritance.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-284b6ba566a6e2d1": {
+  "sek": 1.7,
+  "tok_in": 268,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-984d157b0d180f0e": {
+  "sek": 1.4,
+  "tok_in": 207,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 73,
+    "amount": 200,
+    "guess": []
+   }
+  },
+  "rech": "About the party: Elena, tomorrow 12:30, 200 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-9dcfc7d584ef5028": {
+  "sek": 1.7,
+  "tok_in": 272,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0e70605b578d8d1d": {
+  "sek": 1.5,
+  "tok_in": 250,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-14c7374ae0d501d3": {
+  "sek": 1.4,
+  "tok_in": 216,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": 46,
+    "amount": 7,
+    "guess": [
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: today 23:00, maybe 7 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-098ab798f38330f8": {
+  "sek": 1.7,
+  "tok_in": 243,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n023",
+    "where": null,
+    "when": 35,
+    "amount": 740,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: Sara, today 17:30, 740 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-9020f3713660e7c8": {
+  "sek": 2.5,
+  "tok_in": 202,
+  "tok_out": 24,
+  "otvet": "Hey Carmen, did you hear about Elena's party tomorrow at 12:30 with two hundred people?",
+  "programma": "Hey Carmen, did you hear about Elena's party tomorrow at 12:30 with two hundred people?",
+  "prinyato": false,
+  "otkaz": "строка 1 не на языке village: Hey Carmen, did you hear about Elena's party tomorrow at 12:30 with two hundred people?",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-53bb774e6cc3e682": {
+  "sek": 1.8,
+  "tok_in": 248,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "у факта [1] житель не знает ни одной ячейки",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-09f909d829f6b002": {
+  "sek": 1.1,
+  "tok_in": 162,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-22914792feb8e7af": {
+  "sek": 1.9,
+  "tok_in": 261,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-17e26e807fe626b6": {
+  "sek": 1.2,
+  "tok_in": 164,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0bfb96af86fb71b5": {
+  "sek": 1.5,
+  "tok_in": 223,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2e549943b64f0832": {
+  "sek": 1.6,
+  "tok_in": 223,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-9b3fb87f15bf090b": {
+  "sek": 1.5,
+  "tok_in": 203,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": null,
+    "when": null,
+    "amount": 490000,
+    "guess": []
+   }
+  },
+  "rech": "About the inheritance: 490000 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-a6e38144811c9bff": {
+  "sek": 1.6,
+  "tok_in": 244,
+  "tok_out": 5,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where about the fine?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0f0ea69db291f5d3": {
+  "sek": 1.6,
+  "tok_in": 244,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-1571e6d6371627e8": {
+  "sek": 1.4,
+  "tok_in": 200,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n011",
+    "where": "p08",
+    "when": null,
+    "amount": null,
+    "guess": [
+     "where"
+    ]
+   }
+  },
+  "rech": "About the party: Yolanda, maybe pharmacy.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0a324a41ede8ec89": {
+  "sek": 1.6,
+  "tok_in": 248,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "у факта [1] житель не знает ни одной ячейки",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-ad57d41171da52fb": {
+  "sek": 1.4,
+  "tok_in": 202,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Carmen.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-571884941bcc4776": {
+  "sek": 2.0,
+  "tok_in": 222,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n002",
+    "where": "p09",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the wedding: Luis, fountain.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0acec7d68aac06dd": {
+  "sek": 2.4,
+  "tok_in": 162,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-23c1cc5f21a9b037": {
+  "sek": 4.7,
+  "tok_in": 315,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-192013823cfc2ca9": {
+  "sek": 2.4,
+  "tok_in": 164,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0d220ca88ab6be0d": {
+  "sek": 3.4,
+  "tok_in": 215,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-3214a63350922c11": {
+  "sek": 3.2,
+  "tok_in": 221,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the fine.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-e027133eade5d687": {
+  "sek": 1.2,
+  "tok_in": 251,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n023",
+    "where": null,
+    "when": null,
+    "amount": 740,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: Sara, 740 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-b255918e2875ecd2": {
+  "sek": 1.3,
+  "tok_in": 255,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0f91847b40d39b7f": {
+  "sek": 1.4,
+  "tok_in": 267,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-18e7359c27d8a364": {
+  "sek": 1.3,
+  "tok_in": 238,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p02",
+    "when": 34,
+    "amount": 190,
+    "guess": [
+     "where"
+    ]
+   }
+  },
+  "rech": "About the wedding: Paula, maybe bar, today 17:00, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0e96e3dc9b08dd0c": {
+  "sek": 1.2,
+  "tok_in": 201,
+  "tok_out": 6,
+  "otvet": "tell 1 who where",
+  "programma": "tell 1 who where",
+  "prinyato": false,
+  "otkaz": "житель не знает who у факта [1]",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-ba943042fd392a96": {
+  "sek": 1.4,
+  "tok_in": 165,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-57cb0e46543b18ae": {
+  "sek": 2.6,
+  "tok_in": 215,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n012",
+    "where": null,
+    "when": 73,
+    "amount": 9,
+    "guess": [
+     "who",
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: maybe Francisco, tomorrow 12:30, maybe 9 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0bf2ae7f4c6ff156": {
+  "sek": 2.0,
+  "tok_in": 166,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-272c462b4ec25ee8": {
+  "sek": 2.5,
+  "tok_in": 292,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-1e42ace629a1d638": {
+  "sek": 2.0,
+  "tok_in": 197,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p11",
+    "when": 0,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the fine: chapel, today 00:00.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0e47bc2baea9e1a3": {
+  "sek": 2.2,
+  "tok_in": 229,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-3bba3d78d280cdb8": {
+  "sek": 2.0,
+  "tok_in": 222,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-e111f9e48a8e59f2": {
+  "sek": 1.9,
+  "tok_in": 206,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-ec8fc9bb35e4f4a0": {
+  "sek": 2.7,
+  "tok_in": 288,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-14dc4c179b1dc9df": {
+  "sek": 2.2,
+  "tok_in": 228,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-1a4b9faa79f51deb": {
+  "sek": 2.2,
+  "tok_in": 220,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n023",
+    "where": null,
+    "when": 38,
+    "amount": 740,
+    "guess": [
+     "when"
+    ]
+   }
+  },
+  "rech": "About the fine: Sara, maybe today 19:00, 740 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-186de7c02feda07d": {
+  "sek": 2.5,
+  "tok_in": 235,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 73,
+    "amount": 200,
+    "guess": []
+   }
+  },
+  "rech": "About the party: Elena, tomorrow 12:30, 200 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-d3dd1feab85c993e": {
+  "sek": 1.9,
+  "tok_in": 195,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Carmen.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-654ad174552ed0b7": {
+  "sek": 2.5,
+  "tok_in": 229,
+  "tok_out": 5,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-0c29c577e9efb7b0": {
+  "sek": 2.3,
+  "tok_in": 218,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 73,
+    "amount": 2,
+    "guess": []
+   }
+  },
+  "rech": "About the party: Elena, tomorrow 12:30, 2 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2819609325c46f60": {
+  "sek": 3.2,
+  "tok_in": 318,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-22d7cec36fd3b3d7": {
+  "sek": 2.6,
+  "tok_in": 211,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n010",
+    "where": null,
+    "when": null,
+    "amount": 490000,
+    "guess": []
+   }
+  },
+  "rech": "About the inheritance: Antonio, 490000 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1023833a5e475b8b": {
+  "sek": 2.4,
+  "tok_in": 220,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-44c88593ca696f58": {
+  "sek": 2.6,
+  "tok_in": 231,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-f0ca56ee9641b595": {
+  "sek": 2.5,
+  "tok_in": 205,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-153e1bdd3a72d30e": {
+  "sek": 3.1,
+  "tok_in": 285,
+  "tok_out": 5,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": false,
+  "otkaz": "житель и так знает where наверняка, спрашивать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-1aa926942e9eeeaa": {
+  "sek": 2.8,
+  "tok_in": 256,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p02",
+    "when": 34,
+    "amount": 190,
+    "guess": [
+     "where"
+    ]
+   }
+  },
+  "rech": "About the wedding: Paula, maybe bar, today 17:00, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1ae6bc9a25b9dca5": {
+  "sek": 2.7,
+  "tok_in": 210,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p05",
+    "when": 73,
+    "amount": 200,
+    "guess": []
+   }
+  },
+  "rech": "About the party: bakery, tomorrow 12:30, 200 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-d5b038b69c8ecfe2": {
+  "sek": 2.2,
+  "tok_in": 165,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Carlos.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-655b70a6df863aef": {
+  "sek": 2.4,
+  "tok_in": 187,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n009",
+    "where": null,
+    "when": null,
+    "amount": null,
+    "guess": [
+     "who"
+    ]
+   }
+  },
+  "rech": "About the wedding: maybe Marta.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0d5f675b90e364a0": {
+  "sek": 2.1,
+  "tok_in": 161,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-2eee2e1eeb189aa8": {
+  "sek": 2.8,
+  "tok_in": 206,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-2309846998c86852": {
+  "sek": 2.4,
+  "tok_in": 162,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "житель не знает ни одного факта, рассказывать нечего",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-123c0f58ee5a7dd7": {
+  "sek": 2.5,
+  "tok_in": 214,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-4b4920228bb5d04d": {
+  "sek": 2.8,
+  "tok_in": 239,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-18b05712a0c6e685": {
+  "sek": 3.2,
+  "tok_in": 229,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-1f4c061412584ec3": {
+  "sek": 3.0,
+  "tok_in": 236,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n025",
+    "where": "p03",
+    "when": 38,
+    "amount": 190,
+    "guess": [
+     "when"
+    ]
+   }
+  },
+  "rech": "About the wedding: Paula, church, maybe today 19:00, 190 guests.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-2152d02be9f72d63": {
+  "sek": 3.2,
+  "tok_in": 232,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": null,
+    "where": "p03",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the wedding: church.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-f0b2e3781c3cf594": {
+  "sek": 2.2,
+  "tok_in": 195,
+  "tok_out": 3,
+  "otvet": "greet",
+  "programma": "greet",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "greet",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "Hello, Sara.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-65ac464cb3516aab": {
+  "sek": 2.7,
+  "tok_in": 208,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n012",
+    "where": null,
+    "when": 73,
+    "amount": 9,
+    "guess": [
+     "who",
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: maybe Francisco, tomorrow 12:30, maybe 9 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0d9019ca30613801": {
+  "sek": 2.6,
+  "tok_in": 192,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n010",
+    "where": null,
+    "when": null,
+    "amount": 490000,
+    "guess": []
+   }
+  },
+  "rech": "About the inheritance: Antonio, 490000 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-309eb611f73affcb": {
+  "sek": 3.3,
+  "tok_in": 243,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-261a404e5d8c0d28": {
+  "sek": 2.4,
+  "tok_in": 168,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-15548fec1d688039": {
+  "sek": 2.8,
+  "tok_in": 212,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the lottery.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-5a43bce285297be8": {
+  "sek": 3.3,
+  "tok_in": 228,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the party.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1a37be7d26da800a": {
+  "sek": 3.4,
+  "tok_in": 227,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-2014e0d1a922709e": {
+  "sek": 2.7,
+  "tok_in": 189,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n013",
+    "where": null,
+    "when": null,
+    "amount": null,
+    "guess": [
+     "who"
+    ]
+   }
+  },
+  "rech": "About the inheritance: maybe Laura.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-230434cbe87ac33a": {
+  "sek": 3.2,
+  "tok_in": 206,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 73,
+    "amount": 2,
+    "guess": []
+   }
+  },
+  "rech": "About the party: Elena, tomorrow 12:30, 2 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-71138251a1d8e489": {
+  "sek": 3.3,
+  "tok_in": 223,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n002",
+    "where": "p09",
+    "when": null,
+    "amount": null,
+    "guess": []
+   }
+  },
+  "rech": "About the wedding: Luis, fountain.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-0da5bc8f10d5366f": {
+  "sek": 2.6,
+  "tok_in": 166,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-34be96066fcb8425": {
+  "sek": 4.4,
+  "tok_in": 310,
+  "tok_out": 5,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f1",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where about the fine?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-27f72ad9f4c33bb1": {
+  "sek": 2.3,
+  "tok_in": 164,
+  "tok_out": 2,
+  "otvet": "silent",
+  "programma": "silent",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "silent",
+   "fact": null,
+   "claim": null
+  },
+  "rech": "",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1612e8f82cedc8a9": {
+  "sek": 3.2,
+  "tok_in": 217,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the party.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-7c01268b1994fd3e": {
+  "sek": 3.3,
+  "tok_in": 220,
+  "tok_out": 4,
+  "otvet": "plan 1",
+  "programma": "plan 1",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "plan",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": null
+  },
+  "rech": "I will go about the wedding.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-1ada11b0f5065985": {
+  "sek": 3.4,
+  "tok_in": 198,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": false,
+  "otkaz": "факт [1] собеседнику уже рассказан",
+  "deystvie": null,
+  "rech": null,
+  "bedy": null
+ },
+ "decide-en-21b7b9a1331c44de": {
+  "sek": 3.6,
+  "tok_in": 225,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": "p05",
+    "when": 73,
+    "amount": 2,
+    "guess": [
+     "amount"
+    ]
+   }
+  },
+  "rech": "About the party: Elena, bakery, tomorrow 12:30, maybe 2 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-23729bd121a2279e": {
+  "sek": 3.5,
+  "tok_in": 206,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f1",
+   "nomer": 1,
+   "claim": {
+    "who": "n005",
+    "where": null,
+    "when": 73,
+    "amount": 200,
+    "guess": []
+   }
+  },
+  "rech": "About the party: Elena, tomorrow 12:30, 200 people.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-74374c0748290c7a": {
+  "sek": 3.6,
+  "tok_in": 197,
+  "tok_out": 5,
+  "otvet": "ask 1 where",
+  "programma": "ask 1 where",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "ask",
+   "fact": "f2",
+   "nomer": 1,
+   "slot": "where",
+   "claim": null
+  },
+  "rech": "Do you know where about the wedding?",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ },
+ "decide-en-149721f9d303ff55": {
+  "sek": 3.9,
+  "tok_in": 217,
+  "tok_out": 5,
+  "otvet": "tell 1 all",
+  "programma": "tell 1 all",
+  "prinyato": true,
+  "otkaz": null,
+  "deystvie": {
+   "act": "tell",
+   "fact": "f2",
+   "nomer": 1,
+   "claim": {
+    "who": "n029",
+    "where": "p10",
+    "when": null,
+    "amount": 140000,
+    "guess": []
+   }
+  },
+  "rech": "About the inheritance: Irene, mill, 140000 euros.",
+  "bedy": {
+   "vydumannoe": [],
+   "otklonennoe": [],
+   "bessvyaznoe": []
+  }
+ }
+}
