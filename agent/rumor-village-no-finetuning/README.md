@@ -8,6 +8,62 @@ published the frozen test cards. We took the same cards and trained nothing. The
 one line in a tiny per-turn language and a deterministic handler runs it. How far does that get,
 and what does it cost?
 
+## Watch the law refuse, in five seconds
+
+No model, no GPU, no account, no download of the cards, no dependencies:
+
+```bash
+git clone https://github.com/AnvarBakiyev/extella-research
+cd extella-research/agent/rumor-village-no-finetuning
+python3 -I measure/regress.py
+```
+
+34 hand-written cases, one line each, and the law has to get every one right:
+
+```
+tell a slot it does not know           ok
+tell the same listener twice           ok
+ask about a slot known for sure        ok
+a name that was not supplied           ok
+a guess stated as certain              ok
+...
+34 of 34 cases ok
+```
+
+Here is what the handler answers when a move breaks a rule. It speaks Russian, because that is
+the language it was written and measured in; the English under each line is a translation, not
+its output:
+
+```
+tell 1 where
+  line 1: житель не знает where у факта [1]
+          the villager does not know where for fact [1]
+
+ask 1 who
+  line 1: житель и так знает who наверняка, спрашивать нечего
+          the villager already knows who for sure, there is nothing to ask
+
+tell 1 who
+say: Pedro told me about it.
+  line 1: во фразе имя, которого обработчик не выдавал: Pedro
+          the sentence holds a name the handler never supplied: Pedro
+```
+
+## How a turn goes
+
+```
+  one villager, one turn
+  ┌──────────────────────┐   ┌────────────────────┐   ┌───────────────────────┐   ┌────────────────────────┐
+  │ card: who I am, what │──►│ any model you can  │──►│ one line in the       │──►│ handler: is the move   │──► the turn, or a
+  │ I know, who is in    │   │ call, nothing      │   │ village language      │   │ legal? fills the values│    refusal with the
+  │ front of me          │   │ trained for this   │   │ tell 1 who amount     │   │ from what is held      │    line and the reason
+  └──────────────────────┘   └────────────────────┘   └───────────────────────┘   └────────────────────────┘
+                              the model names the slot ────────────────────────────► the handler names the value
+```
+
+A made-up memory has nowhere to go: the model never writes a value, so there is no place in the
+syntax to write one that the villager does not hold.
+
 ## The language
 
 One turn is one line. Five moves:
@@ -25,10 +81,12 @@ holds, so a made-up memory has nowhere to be written. The handler refuses with t
 reason and the moves it would take instead:
 
 ```
-tell 1 where  -> the villager does not know where for fact [1]; you can ask: ask 1 where
+tell 1 where  -> the villager does not know where for fact [1]; it can ask instead
 tell 1 who    -> fact [1] has already been told to this listener
 ask 1 who     -> the villager knows who for sure, there is nothing to ask
 ```
+
+(Translated above. The handler's own wording is Russian, as shown at the top of this file.)
 
 An optional second line, `say: ...`, carries the sentence the villager speaks. The handler
 refuses it when it holds a name or a number the villager does not have, an event or a place the
@@ -49,6 +107,10 @@ retry" means we handed the refusal back once.
 | DeepSeek-V4-Flash, own agent, guesses marked | 3 | **171/200 (85.5 %)** | **196/200 (98.0 %)** | **0** | **0** |
 
 Across the three sets, roughly 1 500 model answers: zero made-up memories, zero rejected actions.
+
+**We wrote thresholds down before every run and missed ten of them**, including the headline one:
+we predicted DeepSeek above 85 % accepted on the first try in the first measure and got 71 %. The
+list is further down, and the files with the predictions are in `measure/`.
 
 Without the language, the same models writing a free JSON action on the same cards produced 13
 made-up memories and 83 rejected actions in 400 answers. Those files are here too
